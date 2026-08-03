@@ -26,9 +26,10 @@ Previously built production data platforms and analytics products at scale, incl
 
 | Project | Description | Stack |
 |---------|-------------|-------|
-| **[DecisionLog](https://github.com/VSBhargav5/DecisionLog)** | Turn messy meeting notes into a living decision log with clear owners and deadlines. Focuses on the overlooked layer between transcripts and actual accountability. | Python, Pydantic, SQLite, OpenAI-compatible APIs |
-| **[LMS-ETL-PIPELINE](https://github.com/VSBhargav5/LMS-ETL-PIPELINE)** | Production-style asynchronous ETL + multi-scope ranking pipeline. Cohort-based processing, DLQ, window functions, and Async vs PySpark comparison. | Python, Motor, MongoDB, AsyncIO, Docker, PySpark |
-| **[Nifty Greeks Real-Time Engine](https://github.com/VSBhargav5/Nifty-Greeks-Real-Time-Derivatives-Analytics-Engine)** | High-frequency ELT pipeline for NSE options chain — vectorized Black-Scholes Greeks, real-time Gamma Exposure, Dockerized with Streamlit dashboard. | Python, NumPy, PostgreSQL, Streamlit, Docker |
+| **[PromptGuard](https://github.com/VSBhargav5/PromptGuard)** | Regression testing for LLM apps. Record golden behaviors, re-run after prompt/model changes, catch silent breakages before users do. | Python, Pydantic, YAML, OpenAI-compatible APIs |
+| **[DecisionLog](https://github.com/VSBhargav5/DecisionLog)** | Turn messy meeting notes into a living decision log with clear owners and deadlines. | Python, Pydantic, SQLite, OpenAI-compatible APIs |
+| **[LMS-ETL-PIPELINE](https://github.com/VSBhargav5/LMS-ETL-PIPELINE)** | Production-style asynchronous ETL + multi-scope ranking pipeline. Cohort batching, DLQ, window functions, Async vs PySpark. | Python, Motor, MongoDB, AsyncIO, Docker, PySpark |
+| **[Nifty Greeks Real-Time Engine](https://github.com/VSBhargav5/Nifty-Greeks-Real-Time-Derivatives-Analytics-Engine)** | High-frequency ELT for NSE options — vectorized Greeks, Gamma Exposure, Streamlit + Docker. | Python, NumPy, PostgreSQL, Streamlit, Docker |
 
 ---
 
@@ -41,14 +42,14 @@ Python • PySpark • Pandas • SQL • MongoDB • PostgreSQL • Azure Data 
 Docker • Docker Compose • Idempotent pipelines • Dead Letter Queues • Observability
 
 **AI / Applied**  
-Structured extraction • Evaluation harnesses • Prompt engineering • Local-first AI tools
+Structured extraction • Evaluation / regression harnesses • Prompt engineering • Local-first AI tools
 
 ---
 
 ### Currently
 
-- Building and refactoring production student analytics pipelines (incremental processing, maintainability, observability)
-- Building practical AI tools that turn messy real-world inputs into reliable structured outputs
+- Building and refactoring production student analytics pipelines
+- Building practical AI tools (decision logs, LLM regression testing)
 
 Open to Data Engineer / AI Engineering roles and interesting technical collaborations.
 
