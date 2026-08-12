@@ -41,7 +41,7 @@ Previously built production data platforms and analytics products at scale, incl
 | | Project | What it solves | Stack |
 |---|---------|----------------|-------|
 | 🛡️ | **[PromptGuard](https://github.com/VSBhargav5/PromptGuard)** `v0.5` | Regression testing for LLM apps — golden cases, tags, baseline compare, parallel runs, timeouts, JUnit / Markdown / JSON, CI-ready offline tests | Python · Pydantic · YAML · Typer · Actions |
-| 📋 | **[DecisionLog](https://github.com/VSBhargav5/DecisionLog)** `v0.3` | Meeting notes → living decision log with owners, normalized deadlines, overdue filter, search, status updates, export | Python · Pydantic · SQLite · Typer |
+| 📋 | **[DecisionLog](https://github.com/VSBhargav5/DecisionLog)** `v0.4` | Meeting notes → living decision log — owners, deadlines, digest, overdue / due-soon / unassigned, search, export | Python · Pydantic · SQLite · Typer |
 | 🔄 | **[LMS-ETL-PIPELINE](https://github.com/VSBhargav5/LMS-ETL-PIPELINE)** | Production-style async ETL + multi-scope ranking — cohort batching, DLQ, window functions, Async vs PySpark | Python · Motor · MongoDB · Docker · PySpark |
 | 📈 | **[Nifty Greeks Engine](https://github.com/VSBhargav5/Nifty-Greeks-Real-Time-Derivatives-Analytics-Engine)** | High-frequency ELT for NSE options — vectorized Greeks, gamma exposure, Streamlit + Docker | Python · NumPy · PostgreSQL · Streamlit |
 
@@ -73,7 +73,7 @@ Each repo is meant to read as production-minded: clear README, local-first CLI, 
 
 ### 🔭 Currently
 
-- 🔨 Iterating on **DecisionLog** (search, overdue, offline tests, CI)
+- ✅ **DecisionLog** at v0.4 (digest, due-soon, unassigned, delete-meeting)
 - ✅ **PromptGuard** at v0.5 (tags, validate, latency stats, CI)
 - 💼 Open to **Data Engineer / AI Engineer** roles and technical collaborations
 
