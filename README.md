@@ -42,9 +42,9 @@ Previously built production data platforms and analytics products at scale, incl
 | | Project | What it solves | Stack |
 |---|---------|----------------|-------|
 | 🛡️ | **[PromptGuard](https://github.com/VSBhargav5/PromptGuard)** `v0.5` | Regression testing for LLM apps — golden cases, tags, baseline compare, parallel runs, timeouts, JUnit / Markdown / JSON, CI-ready offline tests | Python · Pydantic · YAML · Typer · Actions |
-| 📋 | **[DecisionLog](https://github.com/VSBhargav5/DecisionLog)** `v0.6` | Meeting notes → living decision log — owners, deadlines, **priority / tags / notes**, digest, done/due/assign, ICS / CSV export | Python · Pydantic · SQLite · Typer · Rich |
+| 📋 | **[DecisionLog](https://github.com/VSBhargav5/DecisionLog)** `v0.7` | Meeting notes → living decision log — owners, deadlines, priority/tags, **weekly standup digest** (md/slack) | Python · Pydantic · SQLite · Typer · Rich |
 | 🔄 | **[LMS-ETL-PIPELINE](https://github.com/VSBhargav5/LMS-ETL-PIPELINE)** | Production-style async ETL + multi-scope ranking — cohort batching, DLQ, window functions, Async vs PySpark | Python · Motor · MongoDB · Docker · PySpark |
-| 📈 | **[Nifty Greeks Engine](https://github.com/VSBhargav5/Nifty-Greeks-Real-Time-Derivatives-Analytics-Engine)** | High-frequency ELT for NSE options — vectorized Greeks, **GEX terminal**, IV skew, OI walls, γ-flip, Streamlit + Docker | Python · NumPy · PostgreSQL · Streamlit · Plotly |
+| 📈 | **[Nifty Greeks Engine](https://github.com/VSBhargav5/Nifty-Greeks-Real-Time-Derivatives-Analytics-Engine)** | NSE options ELT — vectorized Greeks, GEX terminal, **snapshot Δ** (regime / walls / GEX), Streamlit + Docker | Python · NumPy · PostgreSQL · Streamlit · Plotly |
 
 ---
 
@@ -57,7 +57,7 @@ Prefer **real, recurring pain** over tutorial clones:
 | Prompt changes silently break LLM behavior | → **PromptGuard** |
 | Decisions, owners & priorities get lost after meetings | → **DecisionLog** |
 | EdTech ranking needs reliable incremental ETL | → **LMS-ETL-PIPELINE** |
-| Options chain → actionable Greeks / positioning view | → **Nifty Greeks Engine** |
+| Options chain → *what changed since last cycle* | → **Nifty Greeks Engine** |
 
 Each repo is meant to read as production-minded: clear README, local-first CLI or compose stack, tests where they matter, CI when useful.
 
@@ -76,8 +76,8 @@ Each repo is meant to read as production-minded: clear README, local-first CLI o
 
 ### 🔭 Currently
 
-- ✅ **DecisionLog** at **v0.6** — priority, tags, notes, day-to-day ops CLI
-- ✅ **Nifty Greeks** — dark GEX terminal, IV skew, OI walls, multi-expiry ETL
+- ✅ **Nifty Greeks** — snapshot-to-snapshot Δ (GEX, walls, regime alerts)
+- ✅ **DecisionLog** at **v0.7** — weekly digest as a standup artifact
 - ✅ **PromptGuard** at v0.5 — tags, validate, latency stats, CI
 - 💼 Open to **Data Engineer / AI Engineer** roles and technical collaborations
 
