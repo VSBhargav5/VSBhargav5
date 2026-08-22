@@ -41,7 +41,7 @@ Previously built production data platforms and analytics products at scale, incl
 
 | | Project | What it solves | Stack |
 |---|---------|----------------|-------|
-| 🛡️ | **[PromptGuard](https://github.com/VSBhargav5/PromptGuard)** `v0.5` | Regression testing for LLM apps — golden cases, tags, baseline compare, parallel runs, timeouts, JUnit / Markdown / JSON, CI-ready offline tests | Python · Pydantic · YAML · Typer · Actions |
+| 🛡️ | **[PromptGuard](https://github.com/VSBhargav5/PromptGuard)** `v0.6` | LLM regression testing — golden cases, baseline compare, **PR summary + HTML report**, JUnit / JSON, CI | Python · Pydantic · YAML · Typer · Actions |
 | 📋 | **[DecisionLog](https://github.com/VSBhargav5/DecisionLog)** `v0.7` | Meeting notes → living decision log — owners, deadlines, priority/tags, **weekly standup digest** (md/slack) | Python · Pydantic · SQLite · Typer · Rich |
 | 🔄 | **[LMS-ETL-PIPELINE](https://github.com/VSBhargav5/LMS-ETL-PIPELINE)** | Production-style async ETL + multi-scope ranking — cohort batching, DLQ, window functions, Async vs PySpark | Python · Motor · MongoDB · Docker · PySpark |
 | 📈 | **[Nifty Greeks Engine](https://github.com/VSBhargav5/Nifty-Greeks-Real-Time-Derivatives-Analytics-Engine)** | NSE options ELT — vectorized Greeks, GEX terminal, **snapshot Δ** (regime / walls / GEX), Streamlit + Docker | Python · NumPy · PostgreSQL · Streamlit · Plotly |
@@ -76,9 +76,9 @@ Each repo is meant to read as production-minded: clear README, local-first CLI o
 
 ### 🔭 Currently
 
+- ✅ **PromptGuard** at **v0.6** — PR-comment summary + HTML report
 - ✅ **Nifty Greeks** — snapshot-to-snapshot Δ (GEX, walls, regime alerts)
 - ✅ **DecisionLog** at **v0.7** — weekly digest as a standup artifact
-- ✅ **PromptGuard** at v0.5 — tags, validate, latency stats, CI
 - 💼 Open to **Data Engineer / AI Engineer** roles and technical collaborations
 
 ---
