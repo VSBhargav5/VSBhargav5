@@ -24,14 +24,14 @@ Production data platforms · analytics systems · practical AI tools
 ### 🧠 About
 
 I design and operate reliable data pipelines that turn raw operational data into trustworthy analytics and rankings.  
-Alongside that, I build focused AI tools for **evaluation**, **decision capture**, and **reliability** — not generic demos.
+Alongside that, I build focused AI tools for **evaluation**, **decision capture**, **open commitments**, and **reliability** — not generic demos.
 
 **Focus areas**
 
 - ⚙️ Large-scale ETL / ELT with incremental processing and failure handling
 - 🗄️ Multi-database analytics (MongoDB + analytical stores)
 - 📊 Performance scoring, ranking, and market microstructure views
-- 🧪 LLM regression testing and structured extraction products
+- 🧪 LLM regression testing, structured extraction, and commitment tracking
 
 Previously built production data platforms and analytics products at scale, including real-time derivatives analytics and end-to-end reporting systems.
 
@@ -41,10 +41,11 @@ Previously built production data platforms and analytics products at scale, incl
 
 | | Project | What it solves | Stack |
 |---|---------|----------------|-------|
-| 🛡️ | **[PromptGuard](https://github.com/VSBhargav5/PromptGuard)** `v0.6` | LLM regression testing — golden cases, baseline compare, **PR summary + HTML report**, JUnit / JSON, CI | Python · Pydantic · YAML · Typer · Actions |
-| 📋 | **[DecisionLog](https://github.com/VSBhargav5/DecisionLog)** `v0.8` | Meeting notes → living log — **today board**, blocked/stale, activity history, weekly HTML/md digest | Python · Pydantic · SQLite · Typer · Rich |
-| 🔄 | **[LMS-ETL-PIPELINE](https://github.com/VSBhargav5/LMS-ETL-PIPELINE)** | Production-style async ETL + multi-scope ranking — cohort batching, DLQ, window functions, Async vs PySpark | Python · Motor · MongoDB · Docker · PySpark |
-| 📈 | **[Nifty Greeks Engine](https://github.com/VSBhargav5/Nifty-Greeks-Real-Time-Derivatives-Analytics-Engine)** | NSE options ELT — vectorized Greeks, GEX terminal, **snapshot Δ** (regime / walls / GEX), Streamlit + Docker | Python · NumPy · PostgreSQL · Streamlit · Plotly |
+| 🔁 | **[OpenLoop](https://github.com/VSBhargav5/OpenLoop)** `v0.1` | Commitments that die in chat/notes → **open loops** + still-open digest (md/slack) | Python · Pydantic · SQLite · Typer · Rich |
+| 🛡️ | **[PromptGuard](https://github.com/VSBhargav5/PromptGuard)** `v0.6` | LLM regression testing — golden cases, baseline compare, **PR summary + HTML report**, CI | Python · Pydantic · YAML · Typer · Actions |
+| 📋 | **[DecisionLog](https://github.com/VSBhargav5/DecisionLog)** `v0.8` | Meeting notes → living log — **today board**, blocked/stale, activity history, weekly digest | Python · Pydantic · SQLite · Typer · Rich |
+| 🔄 | **[LMS-ETL-PIPELINE](https://github.com/VSBhargav5/LMS-ETL-PIPELINE)** | Production-style async ETL + multi-scope ranking — cohort batching, DLQ, Async vs PySpark | Python · Motor · MongoDB · Docker · PySpark |
+| 📈 | **[Nifty Greeks Engine](https://github.com/VSBhargav5/Nifty-Greeks-Real-Time-Derivatives-Analytics-Engine)** | NSE options ELT — vectorized Greeks, GEX terminal, **snapshot Δ**, Streamlit + Docker | Python · NumPy · PostgreSQL · Streamlit · Plotly |
 
 ---
 
@@ -54,6 +55,7 @@ Prefer **real, recurring pain** over tutorial clones:
 
 | Pain | Project |
 |------|---------|
+| “I’ll send it Friday” dies in the thread | → **OpenLoop** |
 | Prompt changes silently break LLM behavior | → **PromptGuard** |
 | Decisions, owners & priorities get lost after meetings | → **DecisionLog** |
 | EdTech ranking needs reliable incremental ETL | → **LMS-ETL-PIPELINE** |
@@ -69,14 +71,15 @@ Each repo is meant to read as production-minded: clear README, local-first CLI o
 |------|-------|
 | 📦 **Data engineering** | Python · PySpark · Pandas · SQL · MongoDB · PostgreSQL · Azure Data Factory / Databricks |
 | 🔒 **Reliability** | Docker · idempotent pipelines · DLQ · observability · offline unit tests |
-| 🤖 **AI / applied** | structured extraction · evaluation harnesses · prompt regression · OpenAI-compatible APIs |
+| 🤖 **AI / applied** | structured extraction · evaluation harnesses · prompt regression · open-loop tracking · OpenAI-compatible APIs |
 | 📊 **Analytics UI** | Streamlit · Plotly · terminal-style dashboards |
 
 ---
 
 ### 🔭 Currently
 
-- ✅ **DecisionLog** at **v0.8** — today board, blocked/stale, activity history, HTML digest
+- 🔁 **OpenLoop** at **v0.1** — open commitments from chat/notes + still-open digest
+- ✅ **DecisionLog** at **v0.8** — today board, blocked/stale, activity history
 - ✅ **PromptGuard** at **v0.6** — PR-comment summary + HTML report
 - ✅ **Nifty Greeks** — snapshot-to-snapshot Δ (GEX, walls, regime alerts)
 - 💼 Open to **Data Engineer / AI Engineer** roles and technical collaborations
