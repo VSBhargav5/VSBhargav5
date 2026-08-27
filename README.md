@@ -41,7 +41,7 @@ Previously built production data platforms and analytics products at scale, incl
 
 | | Project | What it solves | Stack |
 |---|---------|----------------|-------|
-| 🔁 | **[OpenLoop](https://github.com/VSBhargav5/OpenLoop)** `v0.1` | Commitments that die in chat/notes → **open loops** + still-open digest (md/slack) | Python · Pydantic · SQLite · Typer · Rich |
+| 🔁 | **[OpenLoop](https://github.com/VSBhargav5/OpenLoop)** `v0.2` | Commitments that die in chat/notes → open loops, **today board**, stale/nudge digest (md/html/slack) | Python · Pydantic · SQLite · Typer · Rich |
 | 🛡️ | **[PromptGuard](https://github.com/VSBhargav5/PromptGuard)** `v0.6` | LLM regression testing — golden cases, baseline compare, **PR summary + HTML report**, CI | Python · Pydantic · YAML · Typer · Actions |
 | 📋 | **[DecisionLog](https://github.com/VSBhargav5/DecisionLog)** `v0.8` | Meeting notes → living log — **today board**, blocked/stale, activity history, weekly digest | Python · Pydantic · SQLite · Typer · Rich |
 | 🔄 | **[LMS-ETL-PIPELINE](https://github.com/VSBhargav5/LMS-ETL-PIPELINE)** | Production-style async ETL + multi-scope ranking — cohort batching, DLQ, Async vs PySpark | Python · Motor · MongoDB · Docker · PySpark |
@@ -78,7 +78,7 @@ Each repo is meant to read as production-minded: clear README, local-first CLI o
 
 ### 🔭 Currently
 
-- 🔁 **OpenLoop** at **v0.1** — open commitments from chat/notes + still-open digest
+- 🔁 **OpenLoop** at **v0.2** — today board, stale/nudge digest, dedupe, CSV import/export
 - ✅ **DecisionLog** at **v0.8** — today board, blocked/stale, activity history
 - ✅ **PromptGuard** at **v0.6** — PR-comment summary + HTML report
 - ✅ **Nifty Greeks** — snapshot-to-snapshot Δ (GEX, walls, regime alerts)
