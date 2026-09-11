@@ -39,7 +39,7 @@ Alongside that, I build focused AI tools for **evaluation**, **decision capture*
 
 | | Project | What it solves | Stack |
 |---|---------|----------------|-------|
-| 💥 | **[BlastPath](https://github.com/VSBhargav5/BlastPath)** `v0.1` | What breaks if this PR lands — **diff blast-radius**, god-node hits, path + provenance | Python · AST · Pydantic · Typer |
+| 💥 | **[BlastPath](https://github.com/VSBhargav5/BlastPath)** `v0.2` | What breaks if this PR lands — **git blast-radius**, owners, snapshot Δ | Python · AST · Pydantic · Typer |
 | 🔁 | **[OpenLoop](https://github.com/VSBhargav5/OpenLoop)** `v0.2` | Commitments that die in chat/notes → open loops + still-open digest | Python · Pydantic · SQLite · Typer · Rich |
 | 🛡️ | **[PromptGuard](https://github.com/VSBhargav5/PromptGuard)** `v0.6` | LLM regression testing — golden cases, PR summary + HTML report | Python · Pydantic · YAML · Typer |
 | 📋 | **[DecisionLog](https://github.com/VSBhargav5/DecisionLog)** `v0.8` | Meeting notes → living log — today board, blocked/stale, weekly digest | Python · Pydantic · SQLite · Typer |
@@ -61,7 +61,7 @@ Alongside that, I build focused AI tools for **evaluation**, **decision capture*
 
 ### 🔭 Currently
 
-- 💥 **BlastPath** at **v0.1** — PR blast-radius, not a Graphify clone
+- 💥 **BlastPath** at **v0.2** — git radius, CODEOWNERS, snapshot compare
 - 🔁 **OpenLoop** at **v0.2**
 - ✅ **DecisionLog** v0.8 · **PromptGuard** v0.6 · **Nifty** snapshot-Δ
 - 💼 Open to **Data Engineer / AI Engineer** roles
