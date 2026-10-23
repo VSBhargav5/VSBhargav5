@@ -10,12 +10,18 @@ meaningful verification, and an explanation of the engineering tradeoffs.
 
 | Project | Operational problem | Evidence to build | Status |
 | --- | --- | --- | --- |
-| [PromptGuard](https://github.com/VSBhargav5/PromptGuard) | AI prompt changes can silently break previously working cases | Coverage-aware comparisons, labeled failure examples, repeatable evaluation, external pilot feedback | Active; [first reliability improvement merged](https://github.com/VSBhargav5/PromptGuard/pull/1) |
+| [SettleTrace](https://github.com/VSBhargav5/SettleTrace) | A custom merchant ledger, processor activity, and bank deposits can disagree | Exact-money contracts, source-row evidence, verified export mapping, operator feedback | Active; [offline MVP merged](https://github.com/VSBhargav5/SettleTrace/pull/1) |
+| [PromptGuard](https://github.com/VSBhargav5/PromptGuard) | AI prompt changes can silently break previously working cases | Coverage-aware comparisons, labeled failure examples, repeatable evaluation, external pilot feedback | Reliability sprint completed; [merged work](https://github.com/VSBhargav5/PromptGuard/pull/2) |
 | [LMS ETL](https://github.com/VSBhargav5/LMS-ETL-PIPELINE) | Missing, duplicate, or late events can undermine learner scores and reports | Known expected results, idempotent reruns, controlled crash recovery, measured workloads | Next engineering sprint; review the existing architecture audit first |
 | [BlastPath](https://github.com/VSBhargav5/BlastPath) | Reviewers need a traceable explanation of downstream Python change impact | Representative fixtures, measured misses and false positives, honest dynamic-import limitations | Later candidate |
 
 Keep one implementation sprint active. Existing DecisionLog, OpenLoop, and Nifty
 projects remain available while these priorities are evaluated.
+
+SettleTrace became the active project after the initial PromptGuard reliability
+sprint. Its current input is canonical CSVs, not raw provider exports. The next
+gate is one explicit, verified raw-export mapping, followed by payout mapping and
+observation-window rules. Product demand remains unvalidated.
 
 ## First 90 days
 
@@ -24,9 +30,9 @@ engineering or user feedback calls for it.
 
 | Window | Work | Completion evidence |
 | --- | --- | --- |
-| Days 1-14 | Harden PromptGuard comparisons and demonstrate representative extraction failures | Offline reproduction, meaningful regression tests, clear before/after example |
-| Days 15-28 | Test LMS scoring invariants, reruns, and recovery with synthetic events | Expected scores, duplicate-safe reruns, controlled failure and recovery |
-| Days 29-42 | Package an LMS engineering case study and investigate actual operator pain | Measured workload, documented environment, runbook, user feedback where reachable |
+| Days 1-14 | Extend SettleTrace's canonical reconciliation into one documented raw-export adapter | Exact unit conversion, reproducible fixtures, source evidence, rejected unsupported formats |
+| Days 15-28 | Prove payout mapping and observation-window rules; compare an operator workflow if reachable | Explicit attribution, no false completeness claims, repeatable setup, observed feedback |
+| Days 29-42 | Review the LMS audit and demonstrate scoring invariants, duplicate-safe reruns, and recovery | Known results, controlled failure and recovery, measured workload and environment |
 | Days 43-56 | Choose one narrow product experiment from observed recurring pain | Repeated problem observed independently; at least one person tries a pilot |
 | Days 57-70 | Improve the pilot's costly or unreliable step | Observed task completion, measurable improvement, repeatable setup and recovery |
 | Days 71-90 | Publish two strong case studies and evaluate a paid pilot if value is demonstrated | Runnable artifacts, defensible tradeoffs, truthful outcomes and observed usage |
@@ -36,6 +42,8 @@ keep product demand explicitly unvalidated.
 
 ## First principles alongside implementation
 
+- SettleTrace: integer money, signs, joins, identity, currency boundaries,
+  observation windows, fingerprints, and evidence versus inference.
 - PromptGuard: set comparisons, changing denominators, observed versus missing
   outcomes, contracts, deterministic checks, and limits of model evaluation.
 - LMS: idempotency, event time, checkpoints, consistency, transactions, indexes,
@@ -50,6 +58,10 @@ verify it, and explain what it still cannot guarantee.
 
 These are hypotheses, not validated markets or revenue claims.
 
+- A bookkeeper maintains custom joins across a merchant ledger, processor, and
+  bank. Test an offline investigation pack and a custom mapping/setup offer.
+  Stripe already offers [payout reconciliation](https://docs.stripe.com/reports/payout-reconciliation);
+  a working feature list does not prove a reason to switch or pay.
 - A small AI consultancy needs an evidence pack when handing an extraction or
   support workflow to a client. Test a manual evaluation setup before hosting.
 - An education provider spends time investigating stale or inconsistent reports.
