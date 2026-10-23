@@ -2,6 +2,49 @@
 
 Entries distinguish shipped code, verification, limitations, and planned work.
 
+## 23 October 2026 — SettleTrace initial reconciliation engine
+
+**Status:** [Merged into main](https://github.com/VSBhargav5/SettleTrace/pull/1).
+[Implementation commit](https://github.com/VSBhargav5/SettleTrace/commit/c204987f07395c2b9fa6d2488d881b0760c36047).
+
+A proposed merchant/bookkeeper workflow: investigate differences between a
+custom captured-payment ledger, processor activity, and explicitly mapped bank
+deposits. The offline CLI validates three canonical CSVs and produces HTML, JSON,
+findings CSV, and a SHA-256 manifest. Amount mismatches include expected,
+observed, and signed difference with source identifiers and physical CSV lines.
+
+The clean synthetic example follows USD 100.00 through a USD 20.00 refund and
+USD 3.50 of fees to a USD 76.50 deposit. The exception example yields four
+findings, including a USD 1.00 charge difference and USD 0.50 payout difference.
+
+Verification:
+
+- 79 offline tests passed locally on Python 3.11 with normal Windows permissions.
+- [All four PR CI jobs passed](https://github.com/VSBhargav5/SettleTrace/actions/runs/39932967700):
+  Python 3.11/3.12 on Linux and Windows, including distribution installation,
+  installed-command execution outside the source tree, and a generated report.
+- [Post-merge CI passed](https://github.com/VSBhargav5/SettleTrace/actions/runs/39933117896).
+- Published main exactly matches the tested tree; the local checkout is clean
+  and synchronized. Both synthetic CLI outcomes were checked, and HTML was
+  inspected in a browser.
+- Independent review caught empty-input success, duplicate sale IDs, ambiguous
+  source filenames, input fingerprint races, and partial manifest publication.
+  These were fixed with regression coverage before merging.
+- The sandbox blocks file renames; unchanged tests pass with normal Windows
+  permissions. A first package check lacked the local wheel build command;
+  isolated installation with the declared build dependencies succeeded.
+
+[The first-principles session](https://github.com/VSBhargav5/SettleTrace/blob/main/docs/first-principles.md)
+starts with integer minor units, signed refunds/fees, and payout sums. It is a
+60–90 minute exercise to practice, not a claim of completed learning.
+
+This version accepts canonical data only. Raw Stripe exports, automatic bank
+mapping, dates/completeness, FX, split captures/deposits, and large-file
+performance are outside the demonstrated scope. Missing observations are review
+items, not proof of missing cash. Fingerprints identify parsed bytes, not their
+authenticity or completeness. No real customer data, adoption, revenue, or
+measured time saving is claimed. The next milestone is a verified export adapter.
+
 ## 23 October 2026 — PromptGuard reliability boundaries
 
 **Status:** [Merged into main](https://github.com/VSBhargav5/PromptGuard/pull/2).

@@ -39,6 +39,7 @@ Alongside that, I build focused AI tools for **evaluation**, **decision capture*
 
 | | Project | What it solves | Stack |
 |---|---------|----------------|-------|
+| 🧾 | **[SettleTrace](https://github.com/VSBhargav5/SettleTrace)** `v0.1` | Captured sales → processor activity → mapped bank deposits, with exact-money exceptions and source-row evidence | Python · CSV · HTML/JSON · unittest |
 | 💥 | **[BlastPath](https://github.com/VSBhargav5/BlastPath)** `v0.2` | What breaks if this PR lands — **git blast-radius**, owners, snapshot Δ | Python · AST · Pydantic · Typer |
 | 🔁 | **[OpenLoop](https://github.com/VSBhargav5/OpenLoop)** `v0.2` | Commitments that die in chat/notes → open loops + still-open digest | Python · Pydantic · SQLite · Typer · Rich |
 | 🛡️ | **[PromptGuard](https://github.com/VSBhargav5/PromptGuard)** `v0.6` | LLM regression testing — golden cases, PR summary + HTML report | Python · Pydantic · YAML · Typer |
@@ -61,8 +62,9 @@ Alongside that, I build focused AI tools for **evaluation**, **decision capture*
 
 ### 🔭 Currently
 
-- 🛡️ **PromptGuard** — coverage gates, validated suite inputs, safe run history, and reliable CI reports. [Latest merged work](https://github.com/VSBhargav5/PromptGuard/pull/2) · [Offline walkthrough](https://github.com/VSBhargav5/PromptGuard/blob/main/docs/reliability-boundaries.md)
-- 🔧 **Planned next: LMS pipeline reliability** — reproducible scoring, duplicate/late-event handling, and failure recovery
+- 🧾 **Building SettleTrace** — offline payment reconciliation with canonical CSV contracts, exact money arithmetic, and traceable exception reports. [Merged MVP](https://github.com/VSBhargav5/SettleTrace/pull/1) · [First-principles exercise](https://github.com/VSBhargav5/SettleTrace/blob/main/docs/first-principles.md). Raw-export adapters are next; customer demand remains unvalidated.
+- 🛡️ **PromptGuard reliability sprint completed** — coverage gates, validated inputs, safe history, and CI reports. [Merged work](https://github.com/VSBhargav5/PromptGuard/pull/2)
+- 🔧 **Later: LMS pipeline reliability** — scoring invariants, duplicate/late-event handling, and recovery
 - 📌 [90-day engineering roadmap](docs/portfolio-roadmap.md) · [Build log and verification](docs/build-log.md)
 - 💼 Open to **Data Engineer / AI Engineer** roles
 
