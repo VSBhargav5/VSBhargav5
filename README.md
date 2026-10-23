@@ -61,7 +61,7 @@ Alongside that, I build focused AI tools for **evaluation**, **decision capture*
 
 ### 🔭 Currently
 
-- 🛡️ **PromptGuard** — coverage-aware evaluation comparisons and an optional CI gate for missing baseline cases. [Merged change](https://github.com/VSBhargav5/PromptGuard/pull/1) · [Offline walkthrough](https://github.com/VSBhargav5/PromptGuard/blob/main/docs/coverage-gates.md)
+- 🛡️ **PromptGuard** — coverage gates, validated suite inputs, safe run history, and reliable CI reports. [Latest merged work](https://github.com/VSBhargav5/PromptGuard/pull/2) · [Offline walkthrough](https://github.com/VSBhargav5/PromptGuard/blob/main/docs/reliability-boundaries.md)
 - 🔧 **Planned next: LMS pipeline reliability** — reproducible scoring, duplicate/late-event handling, and failure recovery
 - 📌 [90-day engineering roadmap](docs/portfolio-roadmap.md) · [Build log and verification](docs/build-log.md)
 - 💼 Open to **Data Engineer / AI Engineer** roles
