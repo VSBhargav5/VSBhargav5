@@ -61,9 +61,9 @@ Alongside that, I build focused AI tools for **evaluation**, **decision capture*
 
 ### 🔭 Currently
 
-- 💥 **BlastPath** at **v0.2** — git radius, CODEOWNERS, snapshot compare
-- 🔁 **OpenLoop** at **v0.2**
-- ✅ **DecisionLog** v0.8 · **PromptGuard** v0.6 · **Nifty** snapshot-Δ
+- 🛡️ **PromptGuard** — coverage-aware evaluation comparisons and an optional CI gate for missing baseline cases. [Merged change](https://github.com/VSBhargav5/PromptGuard/pull/1) · [Offline walkthrough](https://github.com/VSBhargav5/PromptGuard/blob/main/docs/coverage-gates.md)
+- 🔧 **Planned next: LMS pipeline reliability** — reproducible scoring, duplicate/late-event handling, and failure recovery
+- 📌 [90-day engineering roadmap](docs/portfolio-roadmap.md) · [Build log and verification](docs/build-log.md)
 - 💼 Open to **Data Engineer / AI Engineer** roles
 
 ---
