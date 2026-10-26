@@ -39,7 +39,7 @@ Alongside that, I build focused AI tools for **evaluation**, **decision capture*
 
 | | Project | What it solves | Stack |
 |---|---------|----------------|-------|
-| 🧾 | **[SettleTrace](https://github.com/VSBhargav5/SettleTrace)** `v0.2` | Stripe payout imports, exact-money exceptions, per-payout evidence, and bundle verification | Python · CSV · HTML/JSON · unittest |
+| 🧾 | **[SettleTrace](https://github.com/VSBhargav5/SettleTrace)** `v0.3` | Exact-money exceptions, audited bank mappings, declared windows, and replayable evidence | Python · CSV · HTML/JSON · unittest |
 | 💥 | **[BlastPath](https://github.com/VSBhargav5/BlastPath)** `v0.2` | What breaks if this PR lands — **git blast-radius**, owners, snapshot Δ | Python · AST · Pydantic · Typer |
 | 🔁 | **[OpenLoop](https://github.com/VSBhargav5/OpenLoop)** `v0.2` | Commitments that die in chat/notes → open loops + still-open digest | Python · Pydantic · SQLite · Typer · Rich |
 | 🛡️ | **[PromptGuard](https://github.com/VSBhargav5/PromptGuard)** `v0.6` | LLM regression testing — golden cases, PR summary + HTML report | Python · Pydantic · YAML · Typer |
@@ -62,7 +62,7 @@ Alongside that, I build focused AI tools for **evaluation**, **decision capture*
 
 ### 🔭 Currently
 
-- 🧾 **Building SettleTrace** — documented Stripe imports, audited normalization, payout evidence, and verified report comparison. [v0.2 merged](https://github.com/VSBhargav5/SettleTrace/pull/2) · [Exact-import exercise](https://github.com/VSBhargav5/SettleTrace/blob/main/docs/import-first-principles.md). Synthetic verification is established; real-account validation and customer demand remain open.
+- 🧾 **Building SettleTrace** — exact Stripe imports, explicit bank-mapping replay, hash-bound observation declarations, and report comparison. [v0.3 merged](https://github.com/VSBhargav5/SettleTrace/pull/3) · [Observation exercise](https://github.com/VSBhargav5/SettleTrace/blob/main/docs/observation-first-principles.md). Synthetic verification is established; row-date membership, completeness, real-account validation, and customer demand remain open.
 - 🛡️ **PromptGuard reliability sprint completed** — coverage gates, validated inputs, safe history, and CI reports. [Merged work](https://github.com/VSBhargav5/PromptGuard/pull/2)
 - 🔧 **Later: LMS pipeline reliability** — scoring invariants, duplicate/late-event handling, and recovery
 - 📌 [90-day engineering roadmap](docs/portfolio-roadmap.md) · [Build log and verification](docs/build-log.md)
