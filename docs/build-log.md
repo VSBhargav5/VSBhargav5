@@ -2,6 +2,54 @@
 
 Entries distinguish shipped code, verification, limitations, and planned work.
 
+## 26 October 2026 — SettleTrace v0.3 mapping and observation evidence
+
+**Status:** [Merged into main](https://github.com/VSBhargav5/SettleTrace/pull/3).
+[Merge commit](https://github.com/VSBhargav5/SettleTrace/commit/8868da356660c9d833c8b71f0eb1f84a8ff169e8).
+This additional iteration was requested after v0.2 shipped on the same day.
+Publication uses actual October 26 timestamps; no earlier daily target is claimed.
+
+A matching net total does not explain the bank attribution or which exports were
+selected. The operator can now prepare an explicit one-to-one bank mapping,
+retain both original byte fingerprints and physical row evidence, replay the
+mapping, and attach hash-bound UTC selection declarations to a report.
+Sales capture, estimated automatic payout arrival, and bank posting are distinct
+events. Declarations do not filter rows or establish complete coverage.
+
+| # | Complete change |
+| --- | --- |
+| 1 | [Define hash-bound UTC observation declarations without completeness claims](https://github.com/VSBhargav5/SettleTrace/commit/7ff4deab8a922aae3572541c5eec587104066331) |
+| 2 | [Map every bank record through explicit one-to-one payout evidence](https://github.com/VSBhargav5/SettleTrace/commit/a25cfdd25a56ee30ff632e40b503776fc12c95f9) |
+| 3 | [Export canonical bank records with two-source row and byte audits](https://github.com/VSBhargav5/SettleTrace/commit/bb2930373f28d4130f0e86d9fb3db3773aadaa46) |
+| 4 | [Carry observation declarations through reports verification and comparisons](https://github.com/VSBhargav5/SettleTrace/commit/e125cc962ae775753b1cf00e7a9933566f55d084) |
+| 5 | [Replay bank mapping packs against original bytes and physical row evidence](https://github.com/VSBhargav5/SettleTrace/commit/7434b92b49c651635c82b83937f636eafcd1ed60) |
+| 6 | [Bind verified declaration content and reject unsafe window payloads](https://github.com/VSBhargav5/SettleTrace/commit/46db77f5905d1dae3071168b79bda783595666dd) |
+| 7 | [Ship v0.3 with portable mapping fixtures CI and an observation exercise](https://github.com/VSBhargav5/SettleTrace/commit/c6a63ba06cf0b209ab4d9b83e1a780b49ec11729) |
+
+Verification:
+
+- 210 local offline tests: 207 passed, three Windows symlink-capability skips.
+- [All four PR CI jobs passed](https://github.com/VSBhargav5/SettleTrace/actions/runs/40318692617)
+  on Python 3.11/3.12 across Windows and Linux, including installed CLI workflows.
+- The clean synthetic mapping yields USD 76.50 and verifies original mapping,
+  bank, sales, processor, and declaration bytes through the respective commands.
+- The one-cent exercise first rejects a stale bank fingerprint without a report,
+  then produces an explicit +1 minor-unit payout mismatch after a new declaration.
+- Independent review found malformed Unicode labels and substituted embedded
+  declaration content. Both were fixed with regression tests before publication.
+- Every published snapshot matches its local tree. Final tree:
+  `25edfa38975e8f72b25ede6d532563878a9035ea`.
+
+[Contract and commands](https://github.com/VSBhargav5/SettleTrace/blob/main/docs/observation-contract.md) ·
+[60–90 minute exercise](https://github.com/VSBhargav5/SettleTrace/blob/main/docs/observation-first-principles.md).
+
+Limits: a mapping replay proves the stated join, not that attribution is true.
+Dates and account scope are operator declarations; row timestamps, completeness,
+real-account export validation, production performance, customer demand, revenue,
+and learner practice remain unverified. FX, splits, and aggregates remain unsupported.
+The next evidence gate is a permitted real-account import and operator review;
+stronger completeness claims need event-time and coverage evidence.
+
 ## 26 October 2026 — SettleTrace v0.2 import and evidence workflow
 
 **Status:** [Merged into main](https://github.com/VSBhargav5/SettleTrace/pull/2).
