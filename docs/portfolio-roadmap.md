@@ -10,7 +10,7 @@ meaningful verification, and an explanation of the engineering tradeoffs.
 
 | Project | Operational problem | Evidence to build | Status |
 | --- | --- | --- | --- |
-| [SettleTrace](https://github.com/VSBhargav5/SettleTrace) | A custom merchant ledger, processor activity, and bank deposits can disagree | Exact-money contracts, source-row evidence, verified export mapping, operator feedback | Active; [offline MVP merged](https://github.com/VSBhargav5/SettleTrace/pull/1) |
+| [SettleTrace](https://github.com/VSBhargav5/SettleTrace) | A custom merchant ledger, processor activity, and bank deposits can disagree | Exact-money contracts, source-row evidence, verified export mapping, operator feedback | Active; [v0.2 import and verification merged](https://github.com/VSBhargav5/SettleTrace/pull/2) |
 | [PromptGuard](https://github.com/VSBhargav5/PromptGuard) | AI prompt changes can silently break previously working cases | Coverage-aware comparisons, labeled failure examples, repeatable evaluation, external pilot feedback | Reliability sprint completed; [merged work](https://github.com/VSBhargav5/PromptGuard/pull/2) |
 | [LMS ETL](https://github.com/VSBhargav5/LMS-ETL-PIPELINE) | Missing, duplicate, or late events can undermine learner scores and reports | Known expected results, idempotent reruns, controlled crash recovery, measured workloads | Next engineering sprint; review the existing architecture audit first |
 | [BlastPath](https://github.com/VSBhargav5/BlastPath) | Reviewers need a traceable explanation of downstream Python change impact | Representative fixtures, measured misses and false positives, honest dynamic-import limitations | Later candidate |
@@ -19,9 +19,9 @@ Keep one implementation sprint active. Existing DecisionLog, OpenLoop, and Nifty
 projects remain available while these priorities are evaluated.
 
 SettleTrace became the active project after the initial PromptGuard reliability
-sprint. Its current input is canonical CSVs, not raw provider exports. The next
-gate is one explicit, verified raw-export mapping, followed by payout mapping and
-observation-window rules. Product demand remains unvalidated.
+sprint. Its documented Stripe itemized.7 subset now imports directly with exact units
+and source evidence. The next gate is observation-window rules and a verified
+bank-mapping workflow; neither is proven by a matching payout total. Product demand remains unvalidated.
 
 ## First 90 days
 
@@ -87,3 +87,4 @@ Keep changes and commits coherent. Progress means useful behavior and evidence,
 not a target number of contribution squares.
 
 Follow the [build log](build-log.md) for completed work and verification.
+

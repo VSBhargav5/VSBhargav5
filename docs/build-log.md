@@ -2,6 +2,85 @@
 
 Entries distinguish shipped code, verification, limitations, and planned work.
 
+## 26 October 2026 — SettleTrace v0.2 import and evidence workflow
+
+**Status:** [Merged into main](https://github.com/VSBhargav5/SettleTrace/pull/2).
+[Merge commit](https://github.com/VSBhargav5/SettleTrace/commit/73d77a15ad94fef0a8954b40d6eb5166b9ce61c6).
+Work began on October 24 and was published on October 26 with actual GitHub
+timestamps. The earlier day's target is not claimed as met by this later publication.
+
+The operator can now ingest the documented Stripe `payout_reconciliation.itemized.7`
+subset directly, validate contracts before writing files, export canonical
+activity with an original-row audit, verify report/source fingerprints, and
+compare observed exceptions between verified bundles. The HTML/JSON payout
+ledger exposes matching, mismatched, mixed-currency, and unobserved payout sides.
+
+Amounts convert exactly from major-unit decimal strings; original `charge_id`
+supplies payment identity. Charges, refunds, and debit disputes are supported;
+standalone fees, reversals, and other unsupported categories abort the import.
+Fees attached to supported rows retain their signs. The adapter never silently
+removes unsupported records or substitutes unrelated identifiers.
+
+### Verification and limits
+
+- 156 local tests: 155 passed and one Windows symlink-capability test skipped.
+- [All four PR CI jobs passed](https://github.com/VSBhargav5/SettleTrace/actions/runs/40267368286):
+  Python 3.11/3.12 on Windows/Linux, including installation outside the source
+  tree and documented validate/reconcile/normalize/verify/compare workflows.
+- [Post-merge CI passed](https://github.com/VSBhargav5/SettleTrace/actions/runs/40267485248).
+- Synthetic dot/comma fixtures yield identical USD 76.50 results. The payout
+  ledger and expanded source rows were inspected in a browser.
+- Every published snapshot tree matches its local counterpart. Final main tree:
+  `527b49aeb27832a2c8778a99e185152366d0c613`.
+- Independent review caught multiline canonical audit-row drift, numeric
+  serialization limits, excessive capture limits, and nested-JSON error handling.
+  Regression coverage accompanies the fixes.
+- The first CI run exposed a Python 3.12 parser-depth assumption in a test.
+  The final test requires clean rejection regardless of the rejection stage.
+- Sandbox file-rename restrictions require normal Windows permissions for local
+  completion-marker tests; assertions were retained.
+
+The input capture default is 16 MiB per file, configurable through 256 MiB.
+Individual amounts support at most 128 minor-unit digits without rounding.
+These are explicit bounds, not measured large-file performance guarantees.
+Verification establishes recorded bytes and structure, not authenticity,
+complete exports, a consistent date window, or correct bank attribution.
+
+No real Stripe-account export, FX/split-deposit support, automatic bank mapping,
+production performance, user adoption, revenue, or completed learning is claimed.
+Next: an observation-window and bank-mapping contract, then an operator workflow
+comparison if suitable data and authorization are available.
+
+[The focused 60–90 minute session](https://github.com/VSBhargav5/SettleTrace/blob/main/docs/import-first-principles.md)
+covers exact units, original-charge identity, source evidence, and what a
+fingerprint cannot prove.
+
+### Published implementation commits
+
+The PR preserves 19 authored commits; its merge is counted separately.
+
+| # | Commit |
+| --- | --- |
+| 1 | [Convert financial CSV decimals to exact integer minor units](https://github.com/VSBhargav5/SettleTrace/commit/ad11379ea470ac7c9d0619f4c06ff2c40797208b) |
+| 2 | [Import versioned Stripe charge CSVs with explicit source identities](https://github.com/VSBhargav5/SettleTrace/commit/07f7417bb3a3c86fccc0c557ffebfeec745e7ff0) |
+| 3 | [Trace imported refunds and debit disputes to their original charges](https://github.com/VSBhargav5/SettleTrace/commit/b726d5089ec05918f4b531f481310b981be5fb38) |
+| 4 | [Expose per-payout balances and contributing source evidence](https://github.com/VSBhargav5/SettleTrace/commit/7379c4acbd704d74d8ed0f952c5de17984b81cfa) |
+| 5 | [Parse explicitly selected comma-decimal report amounts without guessing](https://github.com/VSBhargav5/SettleTrace/commit/0371538bf525c5f6dce101f37086315ee4fb0e7b) |
+| 6 | [Reconcile Stripe exports directly and record the selected import contract](https://github.com/VSBhargav5/SettleTrace/commit/c71cf63893cfa1164b14c5f86e224ffbf3febe2e) |
+| 7 | [Reject known FX and Connect account ambiguities in raw imports](https://github.com/VSBhargav5/SettleTrace/commit/08e1970b26487d7e98842d13017eea20b969c2c4) |
+| 8 | [Validate reconciliation input contracts without creating output files](https://github.com/VSBhargav5/SettleTrace/commit/5d5be499e3389bae8d6b9b4eb171a8604ef21de4) |
+| 9 | [Export normalized processor records with a raw-source audit trail](https://github.com/VSBhargav5/SettleTrace/commit/47946a3d61d07697e8c8aef9b421159d572ec095) |
+| 10 | [Make CI exit severity explicit while preserving review findings](https://github.com/VSBhargav5/SettleTrace/commit/b484b591d0f0944987f22e51a4bbd790ac27460e) |
+| 11 | [Bound input capture before parsing while hashing the same bytes](https://github.com/VSBhargav5/SettleTrace/commit/7ba0787d6e0001fce7772d0b2fe65562f55cca09) |
+| 12 | [Verify completed report bundles before trusting their recorded evidence](https://github.com/VSBhargav5/SettleTrace/commit/f92b5a67ab70523a05d4105d00f7f19fa7bc2d21) |
+| 13 | [Reject impractical capture limits before Python file reads overflow](https://github.com/VSBhargav5/SettleTrace/commit/950095a7ad3048ee24a4a83bba55e6a120448c9c) |
+| 14 | [Check original source content against report fingerprints](https://github.com/VSBhargav5/SettleTrace/commit/045d3431dfbf07443d2026168b566156539493a9) |
+| 15 | [Compare verified exception packs without treating absence as resolution](https://github.com/VSBhargav5/SettleTrace/commit/25b22c873cf96b1d64f9aa2a6a42b114c2a07805) |
+| 16 | [Ship reproducible Stripe import workflows and the v0.2 learning exercise](https://github.com/VSBhargav5/SettleTrace/commit/2208544107f646c731fcf35c6ae5b128ab9dfdd2) |
+| 17 | [Keep normalization audit rows accurate for multiline identifiers](https://github.com/VSBhargav5/SettleTrace/commit/610e9009731ccb37e4087855d646d038cc56f2aa) |
+| 18 | [Reject amounts beyond the portable serialization contract cleanly](https://github.com/VSBhargav5/SettleTrace/commit/5c98273401d5c767651f5b6f1ba366b8119b680b) |
+| 19 | [Check malformed JSON rejection across Python parser versions](https://github.com/VSBhargav5/SettleTrace/commit/36a3eb25326b4a67780be9a2b0a32e70eda3c071) |
+
 ## 23 October 2026 — SettleTrace initial reconciliation engine
 
 **Status:** [Merged into main](https://github.com/VSBhargav5/SettleTrace/pull/1).
@@ -140,3 +219,4 @@ unvalidated.
 
 The LMS reliability sprint and BlastPath accuracy work are planned; they are not
 claimed as completed changes in this entry.
+
