@@ -2,6 +2,28 @@
 
 Entries distinguish shipped code, verification, limitations, and planned work.
 
+## 29 October 2026 — StudyFrame deliberate AI study workflow
+
+[PR #2 merged](https://github.com/VSBhargav5/StudyFrame/pull/2) ·
+[Implementation](https://github.com/VSBhargav5/StudyFrame/commit/07cdb3f9dd7fc3770d92ecb95e4391d0daaf994a).
+
+Added explicit OpenAI text/image requests, a masked session-only key field,
+per-request review, asynchronous waiting, cancel, a 60-second deadline and bounded
+response parsing. Original image snapshots are sent only after review. No
+automatic retry, redirects, chat history or code execution. Failure preserves
+inputs; stale replies cannot finish a later request. Cancellation cannot reverse
+remote processing or charges. Entire image files include metadata.
+
+49 tests pass locally, including native Windows widgets and 14 new offline
+provider/UI regressions. All four PR CI jobs passed on Windows/Linux with Python
+3.11/3.12. Synthetic native rendering was inspected. Tested/published tree:
+`64de4530826174e2ec478a3d36ab4f0299f2ca31`.
+
+No live API calls, paid tests or personal screenshot uploads were made. Mock
+tests do not establish account access or answer quality. Next is an authorized
+synthetic trial and personally verified study answer; SettleTrace stays paused.
+[Practice exercise](https://github.com/VSBhargav5/StudyFrame/blob/main/docs/ai-workflow.md).
+
 ## 29 October 2026 — StudyFrame original Python foundation
 
 **Status:** [Merged into main](https://github.com/VSBhargav5/StudyFrame/pull/1).
