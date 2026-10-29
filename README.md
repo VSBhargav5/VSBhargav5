@@ -39,6 +39,7 @@ Alongside that, I build focused AI tools for **evaluation**, **decision capture*
 
 | | Project | What it solves | Stack |
 |---|---------|----------------|-------|
+| 🖥️ | **[CueDesk](https://github.com/VSBhargav5/CueDesk)** `fork · foundation` | Personal Windows study/coding workspace; offline request preparation first | Electron · JavaScript · Node tests |
 | 🧾 | **[SettleTrace](https://github.com/VSBhargav5/SettleTrace)** `v0.3` | Exact-money exceptions, audited bank mappings, declared windows, and replayable evidence | Python · CSV · HTML/JSON · unittest |
 | 💥 | **[BlastPath](https://github.com/VSBhargav5/BlastPath)** `v0.2` | What breaks if this PR lands — **git blast-radius**, owners, snapshot Δ | Python · AST · Pydantic · Typer |
 | 🔁 | **[OpenLoop](https://github.com/VSBhargav5/OpenLoop)** `v0.2` | Commitments that die in chat/notes → open loops + still-open digest | Python · Pydantic · SQLite · Typer · Rich |
@@ -62,7 +63,8 @@ Alongside that, I build focused AI tools for **evaluation**, **decision capture*
 
 ### 🔭 Currently
 
-- 🧾 **Building SettleTrace** — exact Stripe imports, explicit bank-mapping replay, hash-bound observation declarations, and report comparison. [v0.3 merged](https://github.com/VSBhargav5/SettleTrace/pull/3) · [Observation exercise](https://github.com/VSBhargav5/SettleTrace/blob/main/docs/observation-first-principles.md). Synthetic verification is established; row-date membership, completeness, real-account validation, and customer demand remain open.
+- 🖥️ **Building CueDesk for personal Windows use** — a credited Cue adaptation, starting with a tested offline study workspace. [Foundation merged](https://github.com/VSBhargav5/CueDesk/pull/1) · [MVP plan and exercise](https://github.com/VSBhargav5/CueDesk/blob/main/docs/CUEDESK-MVP.md). Screenshot preview and actual provider inference are next.
+- 🧾 **SettleTrace paused at v0.3** while the CueDesk MVP leads the sprint. [Verified shipped work](https://github.com/VSBhargav5/SettleTrace/pull/3) remains intact; completeness, real-account validation, and customer demand remain open.
 - 🛡️ **PromptGuard reliability sprint completed** — coverage gates, validated inputs, safe history, and CI reports. [Merged work](https://github.com/VSBhargav5/PromptGuard/pull/2)
 - 🔧 **Later: LMS pipeline reliability** — scoring invariants, duplicate/late-event handling, and recovery
 - 📌 [90-day engineering roadmap](docs/portfolio-roadmap.md) · [Build log and verification](docs/build-log.md)
@@ -75,4 +77,3 @@ Alongside that, I build focused AI tools for **evaluation**, **decision capture*
 **Let's build something reliable.**
 
 </div>
-

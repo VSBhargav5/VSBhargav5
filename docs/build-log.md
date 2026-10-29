@@ -2,6 +2,58 @@
 
 Entries distinguish shipped code, verification, limitations, and planned work.
 
+## 29 October 2026 — CueDesk personal Windows study foundation
+
+**Status:** [Merged into main](https://github.com/VSBhargav5/CueDesk/pull/1).
+[Implementation commit](https://github.com/VSBhargav5/CueDesk/commit/0d4f0b38e15db17bf2a5319432c193ac84eb2049) ·
+[Merge commit](https://github.com/VSBhargav5/CueDesk/commit/86c1a4bb36e5fee23ea08ddb585ff523aa86b0c0).
+
+Requested on October 27 and published on October 29 with actual timestamps.
+Bhargav chose adapting Cue, with screen-based study/coding first and meetings
+later. SettleTrace is paused at v0.3 until a usable CueDesk MVP and review.
+
+CueDesk is a fork of [Blueturboguy07/cue](https://github.com/Blueturboguy07/cue),
+pinned initially at `18f388712633bc37694450c55c4958fce63f8392` (v0.2.5).
+Upstream history, GPL license, and attribution are retained. Cue already supports
+Windows; inherited features are not original CueDesk work.
+
+The new default study entry prepares validated hint/explain/debug requests from
+typed question/context, previews/copies them locally, and invalidates stale
+context. It has a sandboxed renderer and narrow IPC bridge. It does not infer an
+answer, capture screenshots/audio, read upstream credentials/history, or call a
+provider. The executable-disguising install hook and inherited agent/release
+workflows were removed. Electron is pinned to 45.0.0.
+
+Verification:
+
+- 301 offline Node tests passed locally, including ten new request-contract tests.
+  Most repository tests are inherited; this is not a claim of 301 new tests.
+- A reproducible Electron smoke exercised the actual renderer/preload/IPC with
+  synthetic text: preview, stubbed clipboard copy, stale-context invalidation,
+  session clear, and no renderer Node access. Only this app's synthetic rendered
+  panel was captured. Physical clipboard integration and an interactive foreground
+  launch remain unverified.
+- [All four post-merge CI jobs passed](https://github.com/VSBhargav5/CueDesk/actions/runs/40814844679)
+  on Windows/Linux with Node 22/24; Windows/Node 24 also ran the native smoke.
+- Fork Actions were disabled during bootstrap so inherited publishing/agent
+  workflows could first be removed from main. Local checks passed before merge;
+  the reviewed replacement read-only CI was then enabled and dispatched on main.
+  No branch protection or required human review was bypassed.
+- Published and tested trees match: `023c306987f00df4ceb517a8db75bdf22a0c99bb`.
+
+[Setup and source map](https://github.com/VSBhargav5/CueDesk#readme) ·
+[MVP gates and 60–90 minute exercise](https://github.com/VSBhargav5/CueDesk/blob/main/docs/CUEDESK-MVP.md) ·
+[Origin and modification boundaries](https://github.com/VSBhargav5/CueDesk/blob/main/docs/CUEDESK-ORIGIN.md).
+
+Next: explicit screenshot selection/preview, then one reviewed provider path with
+send/cancel/errors; audio follows separately. The AI MVP, signed installer,
+personally observed usefulness, answer quality, performance, revenue, and learning
+completion are not established. No paid model calls or personal capture occurred.
+
+This is one authored implementation commit, not the inherited fork history.
+GitHub [does not count fork commits in the contribution graph](https://docs.github.com/en/account-and-profile/how-tos/contribution-settings/troubleshooting-missing-contributions#commit-was-made-in-a-fork);
+the project evidence is reviewable in its own default-branch history.
+
 ## 26 October 2026 — SettleTrace v0.3 mapping and observation evidence
 
 **Status:** [Merged into main](https://github.com/VSBhargav5/SettleTrace/pull/3).
@@ -267,4 +319,3 @@ unvalidated.
 
 The LMS reliability sprint and BlastPath accuracy work are planned; they are not
 claimed as completed changes in this entry.
-

@@ -10,7 +10,8 @@ meaningful verification, and an explanation of the engineering tradeoffs.
 
 | Project | Operational problem | Evidence to build | Status |
 | --- | --- | --- | --- |
-| [SettleTrace](https://github.com/VSBhargav5/SettleTrace) | A custom merchant ledger, processor activity, and bank deposits can disagree | Exact-money contracts, source-row evidence, verified export mapping, operator feedback | Active; [v0.3 mapping and observation evidence merged](https://github.com/VSBhargav5/SettleTrace/pull/3) |
+| [CueDesk](https://github.com/VSBhargav5/CueDesk) | Asking for study/coding help on Windows repeatedly requires assembling context | Explicit screenshot preview, deliberate provider send/cancel, personally verified usefulness | Active; [offline foundation merged](https://github.com/VSBhargav5/CueDesk/pull/1); credited Cue fork, AI MVP not yet complete |
+| [SettleTrace](https://github.com/VSBhargav5/SettleTrace) | A custom merchant ledger, processor activity, and bank deposits can disagree | Exact-money contracts, source-row evidence, verified export mapping, operator feedback | Paused; [v0.3 mapping and observation evidence merged](https://github.com/VSBhargav5/SettleTrace/pull/3) |
 | [PromptGuard](https://github.com/VSBhargav5/PromptGuard) | AI prompt changes can silently break previously working cases | Coverage-aware comparisons, labeled failure examples, repeatable evaluation, external pilot feedback | Reliability sprint completed; [merged work](https://github.com/VSBhargav5/PromptGuard/pull/2) |
 | [LMS ETL](https://github.com/VSBhargav5/LMS-ETL-PIPELINE) | Missing, duplicate, or late events can undermine learner scores and reports | Known expected results, idempotent reruns, controlled crash recovery, measured workloads | Next engineering sprint; review the existing architecture audit first |
 | [BlastPath](https://github.com/VSBhargav5/BlastPath) | Reviewers need a traceable explanation of downstream Python change impact | Representative fixtures, measured misses and false positives, honest dynamic-import limitations | Later candidate |
@@ -18,12 +19,12 @@ meaningful verification, and an explanation of the engineering tradeoffs.
 Keep one implementation sprint active. Existing DecisionLog, OpenLoop, and Nifty
 projects remain available while these priorities are evaluated.
 
-SettleTrace became the active project after the initial PromptGuard reliability
-sprint. Its documented Stripe itemized.7 subset now imports directly with exact units
-and source evidence. v0.3 adds explicit one-to-one bank mapping with replay verification
-and hash-bound declared windows. It does not verify row dates, account identity, or
-completeness. Next, validate a permitted real-account export and operator workflow;
-stronger coverage claims require additional evidence. Product demand remains unvalidated.
+On October 27, Bhargav chose a personal Windows assistant adapted from
+[Blueturboguy07/cue](https://github.com/Blueturboguy07/cue). CueDesk now leads one
+focused sprint; SettleTrace is paused with v0.3 intact. The first scope is a small
+offline study foundation. A usable screenshot-to-answer MVP comes next, then a
+deliberate switch-back review. Preserve upstream authorship and distinguish the
+new study code from inherited capabilities. Product demand remains unvalidated.
 
 ## First 90 days
 
@@ -32,8 +33,8 @@ engineering or user feedback calls for it.
 
 | Window | Work | Completion evidence |
 | --- | --- | --- |
-| Days 1-14 | Extend SettleTrace's canonical reconciliation into one documented raw-export adapter | Exact unit conversion, reproducible fixtures, source evidence, rejected unsupported formats |
-| Days 15-28 | Prove payout mapping and observation-window rules; compare an operator workflow if reachable | Explicit attribution, no false completeness claims, repeatable setup, observed feedback |
+| Days 1-14 | Build CueDesk's focused personal screen-study MVP; SettleTrace remains paused | Selected screenshot preview, explicit provider request/cancel, a real answer checked by the user; current foundation is offline |
+| Days 15-28 | Review CueDesk MVP usefulness and switch back to SettleTrace's next evidence gate | Personally observed study workflow; permitted export/operator review for SettleTrace; no false completeness claims |
 | Days 29-42 | Review the LMS audit and demonstrate scoring invariants, duplicate-safe reruns, and recovery | Known results, controlled failure and recovery, measured workload and environment |
 | Days 43-56 | Choose one narrow product experiment from observed recurring pain | Repeated problem observed independently; at least one person tries a pilot |
 | Days 57-70 | Improve the pilot's costly or unreliable step | Observed task completion, measurable improvement, repeatable setup and recovery |
@@ -44,6 +45,8 @@ keep product demand explicitly unvalidated.
 
 ## First principles alongside implementation
 
+- CueDesk: deterministic preparation versus inference, renderer/preload/main boundaries,
+  explicit capture/transmission, cancellation, and evidence of answer quality.
 - SettleTrace: integer money, signs, joins, identity, currency boundaries,
   observation windows, fingerprints, and evidence versus inference.
 - PromptGuard: set comparisons, changing denominators, observed versus missing
@@ -89,4 +92,3 @@ Keep changes and commits coherent. Progress means useful behavior and evidence,
 not a target number of contribution squares.
 
 Follow the [build log](build-log.md) for completed work and verification.
-
