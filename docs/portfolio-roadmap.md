@@ -10,7 +10,7 @@ meaningful verification, and an explanation of the engineering tradeoffs.
 
 | Project | Operational problem | Evidence to build | Status |
 | --- | --- | --- | --- |
-| [CueDesk](https://github.com/VSBhargav5/CueDesk) | Asking for study/coding help on Windows repeatedly requires assembling context | Explicit screenshot preview, deliberate provider send/cancel, personally verified usefulness | Active; [offline foundation merged](https://github.com/VSBhargav5/CueDesk/pull/1); credited Cue fork, AI MVP not yet complete |
+| [StudyFrame](https://github.com/VSBhargav5/StudyFrame) | Asking for study/coding help on Windows repeatedly requires assembling context | Bounded screenshot preview, deliberate provider send/cancel, personally verified usefulness | Active; [original Python foundation merged](https://github.com/VSBhargav5/StudyFrame/pull/1); 35 tests and four Windows/Linux CI jobs pass; AI MVP not yet complete |
 | [SettleTrace](https://github.com/VSBhargav5/SettleTrace) | A custom merchant ledger, processor activity, and bank deposits can disagree | Exact-money contracts, source-row evidence, verified export mapping, operator feedback | Paused; [v0.3 mapping and observation evidence merged](https://github.com/VSBhargav5/SettleTrace/pull/3) |
 | [PromptGuard](https://github.com/VSBhargav5/PromptGuard) | AI prompt changes can silently break previously working cases | Coverage-aware comparisons, labeled failure examples, repeatable evaluation, external pilot feedback | Reliability sprint completed; [merged work](https://github.com/VSBhargav5/PromptGuard/pull/2) |
 | [LMS ETL](https://github.com/VSBhargav5/LMS-ETL-PIPELINE) | Missing, duplicate, or late events can undermine learner scores and reports | Known expected results, idempotent reruns, controlled crash recovery, measured workloads | Next engineering sprint; review the existing architecture audit first |
@@ -19,12 +19,19 @@ meaningful verification, and an explanation of the engineering tradeoffs.
 Keep one implementation sprint active. Existing DecisionLog, OpenLoop, and Nifty
 projects remain available while these priorities are evaluated.
 
-On October 27, Bhargav chose a personal Windows assistant adapted from
-[Blueturboguy07/cue](https://github.com/Blueturboguy07/cue). CueDesk now leads one
-focused sprint; SettleTrace is paused with v0.3 intact. The first scope is a small
-offline study foundation. A usable screenshot-to-answer MVP comes next, then a
-deliberate switch-back review. Preserve upstream authorship and distinguish the
-new study code from inherited capabilities. Product demand remains unvalidated.
+On October 29, Bhargav chose a fresh Python implementation under the new name
+StudyFrame. It has original source and independent Git history; no Cue or CueDesk
+code, assets or tests were imported. The earlier CueDesk fork remains separate
+historical work with its upstream credit intact. StudyFrame uses Python 3.11+,
+PySide6 Essentials 6.12.0 and unittest, with small request, image and UI modules.
+
+The first scope is a local saved-PNG/JPEG preview and hint/explain/debug text
+request preparation. Copy transfers text only. Native Qt Windows rendering and
+package installation have passed locally. There is no AI inference, OCR,
+capture, audio or network path. Next is one reviewed provider with explicit
+send/cancel and useful errors; manual file-dialog and physical clipboard checks
+remain unverified. SettleTrace is paused with v0.3 intact until a usable study MVP
+and deliberate switch-back review. Product demand remains unvalidated.
 
 ## First 90 days
 
@@ -33,8 +40,8 @@ engineering or user feedback calls for it.
 
 | Window | Work | Completion evidence |
 | --- | --- | --- |
-| Days 1-14 | Build CueDesk's focused personal screen-study MVP; SettleTrace remains paused | Selected screenshot preview, explicit provider request/cancel, a real answer checked by the user; current foundation is offline |
-| Days 15-28 | Review CueDesk MVP usefulness and switch back to SettleTrace's next evidence gate | Personally observed study workflow; permitted export/operator review for SettleTrace; no false completeness claims |
+| Days 1-14 | Build StudyFrame's focused personal study MVP; SettleTrace remains paused | Selected screenshot preview, explicit provider request/cancel, a real answer checked by the user; current foundation is offline |
+| Days 15-28 | Review StudyFrame MVP usefulness and switch back to SettleTrace's next evidence gate | Personally observed study workflow; permitted export/operator review for SettleTrace; no false completeness claims |
 | Days 29-42 | Review the LMS audit and demonstrate scoring invariants, duplicate-safe reruns, and recovery | Known results, controlled failure and recovery, measured workload and environment |
 | Days 43-56 | Choose one narrow product experiment from observed recurring pain | Repeated problem observed independently; at least one person tries a pilot |
 | Days 57-70 | Improve the pilot's costly or unreliable step | Observed task completion, measurable improvement, repeatable setup and recovery |
@@ -45,8 +52,8 @@ keep product demand explicitly unvalidated.
 
 ## First principles alongside implementation
 
-- CueDesk: deterministic preparation versus inference, renderer/preload/main boundaries,
-  explicit capture/transmission, cancellation, and evidence of answer quality.
+- StudyFrame: byte snapshots, bounded image decoding, input validation, UI state,
+  local preparation versus inference, deliberate transmission and answer quality.
 - SettleTrace: integer money, signs, joins, identity, currency boundaries,
   observation windows, fingerprints, and evidence versus inference.
 - PromptGuard: set comparisons, changing denominators, observed versus missing

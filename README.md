@@ -39,7 +39,7 @@ Alongside that, I build focused AI tools for **evaluation**, **decision capture*
 
 | | Project | What it solves | Stack |
 |---|---------|----------------|-------|
-| 🖥️ | **[CueDesk](https://github.com/VSBhargav5/CueDesk)** `fork · foundation` | Personal Windows study/coding workspace; offline request preparation first | Electron · JavaScript · Node tests |
+| 🖥️ | **[StudyFrame](https://github.com/VSBhargav5/StudyFrame)** `Python · foundation` | Personal Windows study workspace; local screenshot preview and text request preparation | Python · PySide6 · unittest |
 | 🧾 | **[SettleTrace](https://github.com/VSBhargav5/SettleTrace)** `v0.3` | Exact-money exceptions, audited bank mappings, declared windows, and replayable evidence | Python · CSV · HTML/JSON · unittest |
 | 💥 | **[BlastPath](https://github.com/VSBhargav5/BlastPath)** `v0.2` | What breaks if this PR lands — **git blast-radius**, owners, snapshot Δ | Python · AST · Pydantic · Typer |
 | 🔁 | **[OpenLoop](https://github.com/VSBhargav5/OpenLoop)** `v0.2` | Commitments that die in chat/notes → open loops + still-open digest | Python · Pydantic · SQLite · Typer · Rich |
@@ -63,8 +63,8 @@ Alongside that, I build focused AI tools for **evaluation**, **decision capture*
 
 ### 🔭 Currently
 
-- 🖥️ **Building CueDesk for personal Windows use** — a credited Cue adaptation, starting with a tested offline study workspace. [Foundation merged](https://github.com/VSBhargav5/CueDesk/pull/1) · [MVP plan and exercise](https://github.com/VSBhargav5/CueDesk/blob/main/docs/CUEDESK-MVP.md). Screenshot preview and actual provider inference are next.
-- 🧾 **SettleTrace paused at v0.3** while the CueDesk MVP leads the sprint. [Verified shipped work](https://github.com/VSBhargav5/SettleTrace/pull/3) remains intact; completeness, real-account validation, and customer demand remain open.
+- 🖥️ **Building StudyFrame for personal Windows use** — original Python source in an independent repository, starting with local screenshot preview and text request preparation. [Foundation merged](https://github.com/VSBhargav5/StudyFrame/pull/1): 35 tests and four Windows/Linux CI jobs pass. Actual provider inference is next; the AI MVP is not complete. The earlier CueDesk fork remains separate historical work.
+- 🧾 **SettleTrace paused at v0.3** while the StudyFrame MVP leads the sprint. [Verified shipped work](https://github.com/VSBhargav5/SettleTrace/pull/3) remains intact; completeness, real-account validation, and customer demand remain open.
 - 🛡️ **PromptGuard reliability sprint completed** — coverage gates, validated inputs, safe history, and CI reports. [Merged work](https://github.com/VSBhargav5/PromptGuard/pull/2)
 - 🔧 **Later: LMS pipeline reliability** — scoring invariants, duplicate/late-event handling, and recovery
 - 📌 [90-day engineering roadmap](docs/portfolio-roadmap.md) · [Build log and verification](docs/build-log.md)
