@@ -10,7 +10,7 @@ meaningful verification, and an explanation of the engineering tradeoffs.
 
 | Project | Operational problem | Evidence to build | Status |
 | --- | --- | --- | --- |
-| [StudyFrame](https://github.com/VSBhargav5/StudyFrame) | Asking for study/coding help on Windows repeatedly requires assembling context | Bounded screenshot preview, deliberate provider send/cancel, personally verified usefulness | Active; [original Python foundation merged](https://github.com/VSBhargav5/StudyFrame/pull/1); 35 tests and four Windows/Linux CI jobs pass; AI MVP not yet complete |
+| [StudyFrame](https://github.com/VSBhargav5/StudyFrame) | Asking for study/coding help on Windows repeatedly requires assembling context | Bounded screenshot preview, deliberate provider send/cancel, personally verified usefulness | Active; [AI workflow](https://github.com/VSBhargav5/StudyFrame/pull/2); 49 offline tests; live validation and usefulness gate remain |
 | [SettleTrace](https://github.com/VSBhargav5/SettleTrace) | A custom merchant ledger, processor activity, and bank deposits can disagree | Exact-money contracts, source-row evidence, verified export mapping, operator feedback | Paused; [v0.3 mapping and observation evidence merged](https://github.com/VSBhargav5/SettleTrace/pull/3) |
 | [PromptGuard](https://github.com/VSBhargav5/PromptGuard) | AI prompt changes can silently break previously working cases | Coverage-aware comparisons, labeled failure examples, repeatable evaluation, external pilot feedback | Reliability sprint completed; [merged work](https://github.com/VSBhargav5/PromptGuard/pull/2) |
 | [LMS ETL](https://github.com/VSBhargav5/LMS-ETL-PIPELINE) | Missing, duplicate, or late events can undermine learner scores and reports | Known expected results, idempotent reruns, controlled crash recovery, measured workloads | Next engineering sprint; review the existing architecture audit first |
@@ -27,9 +27,10 @@ PySide6 Essentials 6.12.0 and unittest, with small request, image and UI modules
 
 The first scope is a local saved-PNG/JPEG preview and hint/explain/debug text
 request preparation. Copy transfers text only. Native Qt Windows rendering and
-package installation have passed locally. There is no AI inference, OCR,
-capture, audio or network path. Next is one reviewed provider with explicit
-send/cancel and useful errors; manual file-dialog and physical clipboard checks
+package installation have passed locally. The OpenAI request path now adds
+explicit send/cancel, per-request review, timeout and useful errors. No live
+model call was made during implementation. Next is an authorized synthetic live
+trial and personally checked study answer; manual file-dialog and physical clipboard checks
 remain unverified. SettleTrace is paused with v0.3 intact until a usable study MVP
 and deliberate switch-back review. Product demand remains unvalidated.
 
