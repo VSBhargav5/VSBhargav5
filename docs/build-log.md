@@ -2,7 +2,54 @@
 
 Entries distinguish shipped code, verification, limitations, and planned work.
 
+## 29 October 2026 — StudyFrame original Python foundation
+
+**Status:** [Merged into main](https://github.com/VSBhargav5/StudyFrame/pull/1).
+[Implementation](https://github.com/VSBhargav5/StudyFrame/commit/c56659364b2593eb485d65673b0d2e040f6c7b1e) ·
+[CI context fix](https://github.com/VSBhargav5/StudyFrame/commit/3437a5871c3735b6ce3b8e6d3740edb732bb8ef8) ·
+[CI YAML fix](https://github.com/VSBhargav5/StudyFrame/commit/84059dee0b97bca5f7a156114ef2230215955084) ·
+[Merge](https://github.com/VSBhargav5/StudyFrame/commit/5317f11bc5ba4936c4c83ac462c15f2c044dd576).
+
+Bhargav changed direction to a new Python repository and a new name. StudyFrame
+has original source and independent history; no Cue/CueDesk source, assets,
+tests or Git history were imported. Cue is acknowledged as product inspiration.
+CueDesk remains a separate historical fork. SettleTrace stays paused at v0.3.
+
+Python 3.11+ and PySide6 Essentials 6.12.0 provide a local Windows study panel:
+select a saved PNG/JPEG, inspect it, add code and a question, and prepare a
+hint/explanation/debugging request. Image reads are bounded and decoded from the
+same byte snapshot. JPEG orientation is applied. Pasted Python indentation is
+preserved. Input edits invalidate the request; cancelled/failed replacement keeps
+the prior image. Copy transfers text only; image interpretation is not connected.
+
+Verification:
+
+- 35 original tests passed locally, including native Windows Qt widget checks.
+  Automated picker/clipboard checks use stubs and synthetic files.
+- Python package build/install passed; the real native-rendered synthetic demo
+  was visually inspected. Windows offscreen rendering had no fonts, so the demo
+  selects native Windows rendering and rejects a fontless environment.
+- [All four PR CI jobs passed](https://github.com/VSBhargav5/StudyFrame/actions/runs/40817801926)
+  on Python 3.11/3.12 Windows/Linux, including package installation and demo render.
+  Two initial workflow validation failures were corrected before merge.
+- Final published and tested Git trees match:
+  `ff25d5cf2ded47adf06f7cb36b65cd8a603bd7fd`.
+
+[Run it](https://github.com/VSBhargav5/StudyFrame#run-on-windows) ·
+[First-principles exercise](https://github.com/VSBhargav5/StudyFrame/blob/main/docs/first-principles.md) ·
+[MVP gates](https://github.com/VSBhargav5/StudyFrame/blob/main/docs/mvp.md).
+
+This is an offline foundation, not a finished AI MVP. No model call, OCR,
+screen/audio capture, personal data upload or execution occurs. Manual native
+file-dialog and physical clipboard integration remain unverified; synchronous
+image decoding is not benchmarked. No installer, adoption, model quality,
+learning completion, revenue or time-savings claim is made. Next: one reviewed
+provider with an explicit payload preview, send/cancel and useful errors.
+
 ## 29 October 2026 — CueDesk personal Windows study foundation
+
+Historical experiment: later the same day, StudyFrame became the active project
+at the user's request. This record preserves what the CueDesk fork shipped.
 
 **Status:** [Merged into main](https://github.com/VSBhargav5/CueDesk/pull/1).
 [Implementation commit](https://github.com/VSBhargav5/CueDesk/commit/0d4f0b38e15db17bf2a5319432c193ac84eb2049) ·
