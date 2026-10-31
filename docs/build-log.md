@@ -2,6 +2,42 @@
 
 Entries distinguish shipped code, verification, limitations, and planned work.
 
+## 31 October 2026 — StudyFrame v0.2 screenshot focus and installed-build repair
+
+[PR #4 merged](https://github.com/VSBhargav5/StudyFrame/pull/4) ·
+[Implementation](https://github.com/VSBhargav5/StudyFrame/commit/3e6ab087e6fe661250be0e263b9c72abe888a1e6).
+Drag a crop or use pixel controls to select the relevant part of a saved image.
+The resulting preview and request contain a fresh selected-pixel PNG without
+source metadata. Restore original returns the exact original byte snapshot.
+Crop/restore reset request/consent/follow-up state; cancel preserves prior state.
+No original file overwrite, screen capture or automatic send.
+
+Investigation found the installed v0.1.0 wheel still lacked AI send/follow-ups
+despite upgraded source. Refreshed the local installation to v0.2.0, added a
+visible version and Launch-StudyFrame.cmd, and added CI checks for installed
+imports outside the source directory. This prevents testing only current source
+while a previously installed entry point remains stale.
+
+70 tests cover native Windows Qt, 11 new crop pixel,
+metadata, coordinate, payload, cancellation and restore checks. Synthetic crop
+editor/result rendered and inspected. Installed imports outside the project
+report v0.2.0 and expose AI, follow-up and crop actions. Tested/published tree:
+`c2b0a0dccb4e13689e79115f68ac4dc07de1df41`.
+Linux Python 3.11 CI twice passed all assertions then crashed during native Qt
+interpreter shutdown with 6.12.0. Explicit disposal alone did not resolve it;
+the release pins official PySide6 Essentials/Shiboken 6.11.3 and adds a native
+raster-call exit check. Both failed runs remain in PR history. Exact native root
+cause was not independently proved.
+All four final PR jobs passed on Python 3.11/3.12 Windows/Linux, including
+installed-package imports and synthetic crop rendering. The installed local
+build also passed all 70 tests from outside the source folder, with no broken
+dependency requirements.
+
+No paid calls or personal images used. Crop encoding/decoding are synchronous and
+unbenchmarked; live account access/model quality, manual Windows interaction and
+installer remain unverified. Next focused practice: crop a synthetic code block,
+predict pixel bounds and compare crop/original hashes after restore.
+
 ## 31 October 2026 — StudyFrame guided study and follow-ups
 
 The user returned the active sprint to StudyFrame and put RoleWeave aside.
