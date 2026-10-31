@@ -2,6 +2,18 @@
 
 Entries distinguish shipped code, verification, limitations, and planned work.
 
+## 31 October 2026 — CueDesk screen-assisted study
+
+[PR #2 merged](https://github.com/VSBhargav5/CueDesk/pull/2) ·
+[Implementation](https://github.com/VSBhargav5/CueDesk/commit/9b89ef97730b715b9a0eb078ea4ee425e194c288).
+The Cue-derived Windows launcher now lists screens/windows, previews a selected
+still, and sends the reviewed image and question to OpenAI after explicit consent.
+It supports session-only key entry, cancellation, pinning and a local launcher.
+306 offline tests and the synthetic Windows Electron smoke passed; all four PR
+CI jobs passed. The tested and merged tree is `f140108eb8c3f1979f4124105b35eb1839f0857c`.
+Real screen selection, a live provider response and meeting features remain
+unverified; no personal screen or paid call was used. Calls may incur charges.
+
 ## 31 October 2026 — StudyFrame v0.2 screenshot focus and installed-build repair
 
 [PR #4 merged](https://github.com/VSBhargav5/StudyFrame/pull/4) ·
