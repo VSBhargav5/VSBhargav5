@@ -2,6 +2,33 @@
 
 Entries distinguish shipped code, verification, limitations, and planned work.
 
+## 31 October 2026 — RoleWeave research and first evidence review
+
+The user requested a personal job-search tool inspired by Dossier and Jobleft,
+and chose India/remote-from-India plus international relocation as separate
+markets. Created [RoleWeave](https://github.com/VSBhargav5/RoleWeave), an original
+Python repository with no upstream code/assets/history imported.
+[Foundation PR](https://github.com/VSBhargav5/RoleWeave/pull/1) ·
+[Implementation](https://github.com/VSBhargav5/RoleWeave/commit/d1a89b66676f2074efda1f2ece9e7ab89aa0d716) ·
+[Research and plan](https://github.com/VSBhargav5/RoleWeave/blob/main/docs/research-and-plan.md).
+
+Reviewed upstream documentation for Dossier, Jobleft, JobOps, Resume Matcher and
+Reactive Resume, plus Dossier fact-check/scoring source and Jobleft matching
+integration/acceptance outcomes. Upstream claims were not independently tested.
+
+First usable artifact: a standard-library Python CLI validates exact job quotes,
+career-fact references and review flags, preserving unresolved requirements and
+separate market labels. Input and posting hashes identify the reviewed data.
+Nine local tests and a synthetic CLI run pass. Tested/published tree:
+`a11fff76c1d451e8bfa6005a233bae58d2dfd61a`.
+PR #1 is merged after all Windows/Linux Python 3.11/3.12 checks passed for both
+branch and PR runs. Merge: `810e4481d7d764e126102787993ffcca75056d78`.
+
+A selected fact is a human assertion, not verified truth, relevance or eligibility.
+No ATS/hiring score, AI, discovery, tailoring, database, desktop UI or application
+submission is implemented. Next: SQLite persistence and a small Windows review
+interface. StudyFrame is held at its live-validation gate; SettleTrace stays paused.
+
 ## 29 October 2026 — StudyFrame deliberate AI study workflow
 
 [PR #2 merged](https://github.com/VSBhargav5/StudyFrame/pull/2) ·

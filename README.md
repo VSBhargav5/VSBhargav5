@@ -39,6 +39,7 @@ Alongside that, I build focused AI tools for **evaluation**, **decision capture*
 
 | | Project | What it solves | Stack |
 |---|---------|----------------|-------|
+| 🧵 | **[RoleWeave](https://github.com/VSBhargav5/RoleWeave)** `early foundation` | Personal job-review workspace linking exact requirements to reviewed career facts; India/remote and relocation tracked separately | Python · unittest |
 | 🖥️ | **[StudyFrame](https://github.com/VSBhargav5/StudyFrame)** `Python · AI workflow` | Personal Windows study workspace with reviewed image/text requests and cancellation; live quality unverified | Python · PySide6 · unittest |
 | 🧾 | **[SettleTrace](https://github.com/VSBhargav5/SettleTrace)** `v0.3` | Exact-money exceptions, audited bank mappings, declared windows, and replayable evidence | Python · CSV · HTML/JSON · unittest |
 | 💥 | **[BlastPath](https://github.com/VSBhargav5/BlastPath)** `v0.2` | What breaks if this PR lands — **git blast-radius**, owners, snapshot Δ | Python · AST · Pydantic · Typer |
@@ -63,7 +64,8 @@ Alongside that, I build focused AI tools for **evaluation**, **decision capture*
 
 ### 🔭 Currently
 
-- 🖥️ **Building StudyFrame for personal Windows use** — original Python source with local screenshot preview and deliberate OpenAI send/cancel. [AI workflow](https://github.com/VSBhargav5/StudyFrame/pull/2): 49 offline tests; live account access, answer quality and personal usefulness remain unverified. The earlier CueDesk fork remains separate historical work.
+- 🧵 **Starting RoleWeave for my own future job search** — researched existing tools and built an offline requirement-evidence review. [Foundation](https://github.com/VSBhargav5/RoleWeave/pull/1); desktop UI, discovery and resume tailoring remain planned.
+- 🖥️ **StudyFrame's AI workflow is shipped** — [send/cancel implementation](https://github.com/VSBhargav5/StudyFrame/pull/2), with 49 offline tests. Held at its live-validation gate while RoleWeave is the current requested slice. CueDesk remains historical.
 - 🧾 **SettleTrace paused at v0.3** while the StudyFrame MVP leads the sprint. [Verified shipped work](https://github.com/VSBhargav5/SettleTrace/pull/3) remains intact; completeness, real-account validation, and customer demand remain open.
 - 🛡️ **PromptGuard reliability sprint completed** — coverage gates, validated inputs, safe history, and CI reports. [Merged work](https://github.com/VSBhargav5/PromptGuard/pull/2)
 - 🔧 **Later: LMS pipeline reliability** — scoring invariants, duplicate/late-event handling, and recovery
