@@ -8,19 +8,18 @@ meaningful verification, and an explanation of the engineering tradeoffs.
 
 ## Project focus
 
-October 31 update: the latest user request starts RoleWeave for a personal job
-search in the next few months, covering India/remote-from-India and relocation
-separately. [Research and phased plan](https://github.com/VSBhargav5/RoleWeave/blob/main/docs/research-and-plan.md).
-Its first slice is a tested offline requirement-evidence review, with desktop UI,
-storage, discovery and reviewed document tailoring planned. StudyFrame is held at
-its authorized live-trial gate; SettleTrace remains paused. This latest priority
-takes precedence over the earlier 90-day sequence below. No user demand,
-qualification accuracy or superiority to existing products has been established.
+Latest October 31 update: the user explicitly returned to StudyFrame and put
+RoleWeave aside. [StudyFrame's guided upgrade](https://github.com/VSBhargav5/StudyFrame/pull/3)
+adds separate question/review/answer views and bounded follow-ups, with 58 offline
+tests. Live account access, answer quality and usefulness remain evidence gates.
+RoleWeave's nine-test foundation and [research plan](https://github.com/VSBhargav5/RoleWeave/blob/main/docs/research-and-plan.md)
+for separate India/remote and relocation markets remain preserved. SettleTrace
+stays paused. This latest priority takes precedence over earlier sequences.
 
 | Project | Operational problem | Evidence to build | Status |
 | --- | --- | --- | --- |
-| [RoleWeave](https://github.com/VSBhargav5/RoleWeave) | Relating job requirements to defensible career evidence and application decisions | Reviewed claims, exact posting quotes, separate job markets, personally usable workflow | Active initial slice; nine offline tests; full UI and tailoring planned |
-| [StudyFrame](https://github.com/VSBhargav5/StudyFrame) | Asking for study/coding help on Windows repeatedly requires assembling context | Bounded screenshot preview, deliberate provider send/cancel, personally verified usefulness | Held at live trial; [AI workflow](https://github.com/VSBhargav5/StudyFrame/pull/2); 49 offline tests; live validation and usefulness gate remain |
+| [StudyFrame](https://github.com/VSBhargav5/StudyFrame) | Asking for study/coding help on Windows repeatedly requires assembling context | Bounded screenshot preview, deliberate provider send/cancel, reviewed follow-ups, personally verified usefulness | Active again; [guided workflow](https://github.com/VSBhargav5/StudyFrame/pull/3); 58 offline tests; live validation and usefulness gate remain |
+| [RoleWeave](https://github.com/VSBhargav5/RoleWeave) | Relating job requirements to defensible career evidence and application decisions | Reviewed claims, exact posting quotes, separate job markets, personally usable workflow | Set aside by user; nine offline tests; full UI and tailoring planned |
 | [SettleTrace](https://github.com/VSBhargav5/SettleTrace) | A custom merchant ledger, processor activity, and bank deposits can disagree | Exact-money contracts, source-row evidence, verified export mapping, operator feedback | Paused; [v0.3 mapping and observation evidence merged](https://github.com/VSBhargav5/SettleTrace/pull/3) |
 | [PromptGuard](https://github.com/VSBhargav5/PromptGuard) | AI prompt changes can silently break previously working cases | Coverage-aware comparisons, labeled failure examples, repeatable evaluation, external pilot feedback | Reliability sprint completed; [merged work](https://github.com/VSBhargav5/PromptGuard/pull/2) |
 | [LMS ETL](https://github.com/VSBhargav5/LMS-ETL-PIPELINE) | Missing, duplicate, or late events can undermine learner scores and reports | Known expected results, idempotent reruns, controlled crash recovery, measured workloads | Next engineering sprint; review the existing architecture audit first |

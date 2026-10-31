@@ -2,6 +2,36 @@
 
 Entries distinguish shipped code, verification, limitations, and planned work.
 
+## 31 October 2026 — StudyFrame guided study and follow-ups
+
+The user returned the active sprint to StudyFrame and put RoleWeave aside.
+[StudyFrame PR #3](https://github.com/VSBhargav5/StudyFrame/pull/3) introduces
+Question, Review and send, and Answer tabs; explicit answer copying; and a
+reviewed follow-up that includes only the immediately prior question and answer.
+Current notes/image are included again; source edits, new question and clear
+discard selected prior context. Each send requires a new review/consent.
+Merged after all four PR CI jobs passed on Python 3.11/3.12 Windows/Linux.
+Merge: `29209b86df915ee9a5f0f6d336c9dd8c584eb56c`.
+
+Previous exchanges are bounded to a 4,000-character question and 12,000-character
+answer; oversized answers stay readable/copyable but cannot start a follow-up.
+Earlier turns are omitted and answers remain unverified reference material.
+Final review fixed clearing the retained sent-question field.
+
+58 offline tests pass locally with offscreen and native Windows Qt. The actual
+Windows layout was rendered and inspected. Tested/published final tree:
+`e5fbb86b949f0b9e0f0769424dcfdd2a73a414f1`.
+[UI change](https://github.com/VSBhargav5/StudyFrame/commit/c64223d626c7568ccb9a49f253f368c71755115f) ·
+[Follow-ups](https://github.com/VSBhargav5/StudyFrame/commit/6581f7f8ae275b5564a4542a6b1cd26718227bb1) ·
+[Clear correction](https://github.com/VSBhargav5/StudyFrame/commit/2a6583624253e33632484dee4678b3ec15d99d91).
+
+No paid calls, personal image transmission or live model-quality evaluation were
+performed. Manual Windows dialog/physical clipboard and installer remain open.
+Next learning: predict what the second/third follow-up sends, inspect the exact
+preview and payload test, and explain bounded context versus full conversation.
+An authorized synthetic live trial and personally checked answer remain the MVP
+evidence gate. RoleWeave and SettleTrace remain set aside.
+
 ## 31 October 2026 — RoleWeave research and first evidence review
 
 The user requested a personal job-search tool inspired by Dossier and Jobleft,
