@@ -64,9 +64,10 @@ Alongside that, I build focused AI tools for **evaluation**, **decision capture*
 
 ### 🔭 Currently
 
-- 🖥️ **StudyFrame is the active sprint** — [v0.2 screenshot focus](https://github.com/VSBhargav5/StudyFrame/pull/4) adds drag/pixel cropping, original restore and a current-source Windows launcher. 70 offline tests; the stale installed wheel was refreshed and installed imports now checked in CI. Live model quality and usefulness remain unverified.
-- 🧵 **RoleWeave is set aside for now** — its [original foundation](https://github.com/VSBhargav5/RoleWeave/pull/1) and researched job-search plan remain available; desktop UI, discovery and resume tailoring remain planned. CueDesk remains historical.
-- 🧾 **SettleTrace paused at v0.3** while the StudyFrame MVP leads the sprint. [Verified shipped work](https://github.com/VSBhargav5/SettleTrace/pull/3) remains intact; completeness, real-account validation, and customer demand remain open.
+- 🖥️ **[CueDesk](https://github.com/VSBhargav5/CueDesk) is the active sprint** — a Cue-derived Windows assistant with screen preview and explicitly reviewed AI questions; real capture and model usefulness still need validation.
+- 🖥️ **StudyFrame is paused** — [v0.2 screenshot focus](https://github.com/VSBhargav5/StudyFrame/pull/4) adds drag/pixel cropping, original restore and a current-source Windows launcher. 70 offline tests; the stale installed wheel was refreshed and installed imports now checked in CI. Live model quality and usefulness remain unverified.
+- 🧵 **RoleWeave is set aside for now** — its [original foundation](https://github.com/VSBhargav5/RoleWeave/pull/1) and researched job-search plan remain available; desktop UI, discovery and resume tailoring remain planned. CueDesk is the active sprint.
+- 🧾 **SettleTrace paused at v0.3** while CueDesk leads the sprint. [Verified shipped work](https://github.com/VSBhargav5/SettleTrace/pull/3) remains intact; completeness, real-account validation, and customer demand remain open.
 - 🛡️ **PromptGuard reliability sprint completed** — coverage gates, validated inputs, safe history, and CI reports. [Merged work](https://github.com/VSBhargav5/PromptGuard/pull/2)
 - 🔧 **Later: LMS pipeline reliability** — scoring invariants, duplicate/late-event handling, and recovery
 - 📌 [90-day engineering roadmap](docs/portfolio-roadmap.md) · [Build log and verification](docs/build-log.md)

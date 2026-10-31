@@ -8,19 +8,16 @@ meaningful verification, and an explanation of the engineering tradeoffs.
 
 ## Project focus
 
-Latest October 31 update: the user explicitly returned to StudyFrame and put
-RoleWeave aside. [StudyFrame's guided upgrade](https://github.com/VSBhargav5/StudyFrame/pull/3)
-adds separate question/review/answer views and bounded follow-ups.
-[v0.2 screenshot focus](https://github.com/VSBhargav5/StudyFrame/pull/4) adds crop/
-restore and repairs the stale local installed build, with 70 offline tests.
-Live account access, answer quality and usefulness remain evidence gates.
-RoleWeave's nine-test foundation and [research plan](https://github.com/VSBhargav5/RoleWeave/blob/main/docs/research-and-plan.md)
-for separate India/remote and relocation markets remain preserved. SettleTrace
-stays paused. This latest priority takes precedence over earlier sequences.
+Latest October 31 update: Bhargav returned to the Cue-like Windows assistant.
+[CueDesk](https://github.com/VSBhargav5/CueDesk) is the active sprint; StudyFrame,
+RoleWeave and SettleTrace are paused. CueDesk retains its upstream attribution.
+Screen selection and explicitly reviewed AI questions are in development; real
+screen capture, model usefulness and meeting workflows require validation.
 
 | Project | Operational problem | Evidence to build | Status |
 | --- | --- | --- | --- |
-| [StudyFrame](https://github.com/VSBhargav5/StudyFrame) | Asking for study/coding help on Windows repeatedly requires assembling context | Bounded screenshot crop/restore, deliberate provider send/cancel, reviewed follow-ups, personally verified usefulness | Active; [v0.2 screenshot focus](https://github.com/VSBhargav5/StudyFrame/pull/4); 70 offline tests; live validation and usefulness gate remain |
+| [CueDesk](https://github.com/VSBhargav5/CueDesk) | Screen-assisted study and coding on Windows | Reviewed capture, explicit AI request, personally verified usefulness | Active; real screen and provider trial remain |
+| [StudyFrame](https://github.com/VSBhargav5/StudyFrame) | Asking for study/coding help on Windows repeatedly requires assembling context | Bounded screenshot crop/restore, deliberate provider send/cancel, reviewed follow-ups, personally verified usefulness | Paused; [v0.2 screenshot focus](https://github.com/VSBhargav5/StudyFrame/pull/4); 70 offline tests; live validation and usefulness gate remain |
 | [RoleWeave](https://github.com/VSBhargav5/RoleWeave) | Relating job requirements to defensible career evidence and application decisions | Reviewed claims, exact posting quotes, separate job markets, personally usable workflow | Set aside by user; nine offline tests; full UI and tailoring planned |
 | [SettleTrace](https://github.com/VSBhargav5/SettleTrace) | A custom merchant ledger, processor activity, and bank deposits can disagree | Exact-money contracts, source-row evidence, verified export mapping, operator feedback | Paused; [v0.3 mapping and observation evidence merged](https://github.com/VSBhargav5/SettleTrace/pull/3) |
 | [PromptGuard](https://github.com/VSBhargav5/PromptGuard) | AI prompt changes can silently break previously working cases | Coverage-aware comparisons, labeled failure examples, repeatable evaluation, external pilot feedback | Reliability sprint completed; [merged work](https://github.com/VSBhargav5/PromptGuard/pull/2) |
@@ -30,20 +27,12 @@ stays paused. This latest priority takes precedence over earlier sequences.
 Keep one implementation sprint active. Existing DecisionLog, OpenLoop, and Nifty
 projects remain available while these priorities are evaluated.
 
-On October 29, Bhargav chose a fresh Python implementation under the new name
-StudyFrame. It has original source and independent Git history; no Cue or CueDesk
-code, assets or tests were imported. The earlier CueDesk fork remains separate
-historical work with its upstream credit intact. StudyFrame uses Python 3.11+,
-PySide6 Essentials 6.12.0 and unittest, with small request, image and UI modules.
-
-The first scope is a local saved-PNG/JPEG preview and hint/explain/debug text
-request preparation. Copy transfers text only. Native Qt Windows rendering and
-package installation have passed locally. The OpenAI request path now adds
-explicit send/cancel, per-request review, timeout and useful errors. No live
-model call was made during implementation. Next is an authorized synthetic live
-trial and personally checked study answer; manual file-dialog and physical clipboard checks
-remain unverified. SettleTrace is paused with v0.3 intact until a usable study MVP
-and deliberate switch-back review. Product demand remains unvalidated.
+StudyFrame remains an independent Python project. CueDesk is the separate,
+GPL-attributed Cue adaptation selected for the current sprint. The current
+screen-study path requires deliberate capture preview and explicit send; the
+inherited meeting assistant is not yet integrated into that path. No live model
+call or personal screen capture was made during implementation. Product demand
+and usefulness remain unvalidated.
 
 ## First 90 days
 
@@ -52,8 +41,8 @@ engineering or user feedback calls for it.
 
 | Window | Work | Completion evidence |
 | --- | --- | --- |
-| Days 1-14 | Build StudyFrame's focused personal study MVP; SettleTrace remains paused | Selected screenshot preview, explicit provider request/cancel, a real answer checked by the user; current foundation is offline |
-| Days 15-28 | Review StudyFrame MVP usefulness and switch back to SettleTrace's next evidence gate | Personally observed study workflow; permitted export/operator review for SettleTrace; no false completeness claims |
+| Days 1-14 | Build CueDesk's focused personal study MVP; SettleTrace remains paused | Selected screenshot preview, explicit provider request/cancel, a real answer checked by the user; real capture and provider trial remain |
+| Days 15-28 | Review CueDesk MVP usefulness and switch back to SettleTrace's next evidence gate | Personally observed study workflow; permitted export/operator review for SettleTrace; no false completeness claims |
 | Days 29-42 | Review the LMS audit and demonstrate scoring invariants, duplicate-safe reruns, and recovery | Known results, controlled failure and recovery, measured workload and environment |
 | Days 43-56 | Choose one narrow product experiment from observed recurring pain | Repeated problem observed independently; at least one person tries a pilot |
 | Days 57-70 | Improve the pilot's costly or unreliable step | Observed task completion, measurable improvement, repeatable setup and recovery |
@@ -64,6 +53,7 @@ keep product demand explicitly unvalidated.
 
 ## First principles alongside implementation
 
+- CueDesk: capture consent, preview-to-payload identity, cancellation and provider boundaries.
 - StudyFrame: byte snapshots, bounded image decoding, input validation, UI state,
   local preparation versus inference, deliberate transmission and answer quality.
 - SettleTrace: integer money, signs, joins, identity, currency boundaries,
