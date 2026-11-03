@@ -13,7 +13,7 @@ StudyFrame and SettleTrace are paused. [RoleWeave PR #2](https://github.com/VSBh
 ships a local Tkinter/SQLite posting shelf with immutable review snapshots,
 separate market filters, and original-JSON import/export. 18 Windows tests and
 all four Python 3.11/3.12 Windows/Linux CI jobs passed. Exact-quote evidence editing and full-shelf backup/restore are implemented.
-30 Windows tests pass; fact revision and personally verified usefulness remain pending.
+37 Windows tests pass; fact corrections clear stale links. Personally verified usefulness remains pending.
 
 | Project | Operational problem | Evidence to build | Status |
 | --- | --- | --- | --- |

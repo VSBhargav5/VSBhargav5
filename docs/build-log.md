@@ -2,6 +2,22 @@
 
 Entries distinguish shipped code, verification, limitations, and planned work.
 
+## 3 November 2026 — RoleWeave fact corrections
+
+[PR #5 merged](https://github.com/VSBhargav5/RoleWeave/pull/5) ·
+[Implementation](https://github.com/VSBhargav5/RoleWeave/commit/1e2279153fd92da1b205b94226bdcff4da0ccb53).
+Load and correct an existing fact in the evidence editor. Loading clears the
+review checkbox. Changed claim/source or revoked review clears every old
+requirement link; unchanged reviewed facts keep links. Referenced facts cannot
+be removed until unlinked. Saving creates a new snapshot and preserves originals.
+37 Windows tests pass, including five cross-platform fact-change tests and two
+native UI correction/removal checks. All four Windows/Linux Python3.11/3.12 CI
+jobs passed (Linux skips native UI). Tested/merged tree:
+`d3fda70dfe81d281d41bc9687163121e58f4189f`.
+No new dependencies, personal data or AI calls. Manual layout/dialog interaction,
+personal usefulness and resume tailoring remain unverified or pending. Reviewed
+flags and links remain human assertions, not proof of qualification.
+
 ## 3 November 2026 — RoleWeave full backup and restore
 
 [PR #4 merged](https://github.com/VSBhargav5/RoleWeave/pull/4) ·
