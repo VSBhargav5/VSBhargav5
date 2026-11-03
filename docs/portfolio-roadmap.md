@@ -12,8 +12,8 @@ Latest November 3 update: RoleWeave is active at the user's request. CueDesk,
 StudyFrame and SettleTrace are paused. [RoleWeave PR #2](https://github.com/VSBhargav5/RoleWeave/pull/2)
 ships a local Tkinter/SQLite posting shelf with immutable review snapshots,
 separate market filters, and original-JSON import/export. 18 Windows tests and
-all four Python 3.11/3.12 Windows/Linux CI jobs passed. Exact-quote evidence editing is now implemented in PR #3; fact revision,
-full backup/restore rehearsal and personally verified usefulness remain pending.
+all four Python 3.11/3.12 Windows/Linux CI jobs passed. Exact-quote evidence editing and full-shelf backup/restore are implemented.
+30 Windows tests pass; fact revision and personally verified usefulness remain pending.
 
 | Project | Operational problem | Evidence to build | Status |
 | --- | --- | --- | --- |
