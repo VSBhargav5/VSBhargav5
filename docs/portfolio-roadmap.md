@@ -8,17 +8,18 @@ meaningful verification, and an explanation of the engineering tradeoffs.
 
 ## Project focus
 
-Latest October 31 update: Bhargav returned to the Cue-like Windows assistant.
-[CueDesk](https://github.com/VSBhargav5/CueDesk) is the active sprint; StudyFrame,
-RoleWeave and SettleTrace are paused. CueDesk retains its upstream attribution.
-Screen selection and explicitly reviewed AI questions are in development; real
-screen capture, model usefulness and meeting workflows require validation.
+Latest November 3 update: RoleWeave is active at the user's request. CueDesk,
+StudyFrame and SettleTrace are paused. [RoleWeave PR #2](https://github.com/VSBhargav5/RoleWeave/pull/2)
+ships a local Tkinter/SQLite posting shelf with immutable review snapshots,
+separate market filters, and original-JSON import/export. 18 Windows tests and
+all four Python 3.11/3.12 Windows/Linux CI jobs passed. Evidence editing,
+full backup/restore rehearsal and personally verified usefulness remain pending.
 
 | Project | Operational problem | Evidence to build | Status |
 | --- | --- | --- | --- |
-| [CueDesk](https://github.com/VSBhargav5/CueDesk) | Screen-assisted study and coding on Windows | Reviewed capture, explicit AI request, personally verified usefulness | Active; real screen and provider trial remain |
+| [CueDesk](https://github.com/VSBhargav5/CueDesk) | Screen-assisted study and coding on Windows | Reviewed capture, explicit AI request, personally verified usefulness | Paused; real screen and provider trial remain |
 | [StudyFrame](https://github.com/VSBhargav5/StudyFrame) | Asking for study/coding help on Windows repeatedly requires assembling context | Bounded screenshot crop/restore, deliberate provider send/cancel, reviewed follow-ups, personally verified usefulness | Paused; [v0.2 screenshot focus](https://github.com/VSBhargav5/StudyFrame/pull/4); 70 offline tests; live validation and usefulness gate remain |
-| [RoleWeave](https://github.com/VSBhargav5/RoleWeave) | Relating job requirements to defensible career evidence and application decisions | Reviewed claims, exact posting quotes, separate job markets, personally usable workflow | Set aside by user; nine offline tests; full UI and tailoring planned |
+| [RoleWeave](https://github.com/VSBhargav5/RoleWeave) | Relating job requirements to defensible career evidence and application decisions | Reviewed claims, exact posting quotes, separate job markets, personally usable workflow | Active; local posting shelf shipped; evidence editing and tailoring pending |
 | [SettleTrace](https://github.com/VSBhargav5/SettleTrace) | A custom merchant ledger, processor activity, and bank deposits can disagree | Exact-money contracts, source-row evidence, verified export mapping, operator feedback | Paused; [v0.3 mapping and observation evidence merged](https://github.com/VSBhargav5/SettleTrace/pull/3) |
 | [PromptGuard](https://github.com/VSBhargav5/PromptGuard) | AI prompt changes can silently break previously working cases | Coverage-aware comparisons, labeled failure examples, repeatable evaluation, external pilot feedback | Reliability sprint completed; [merged work](https://github.com/VSBhargav5/PromptGuard/pull/2) |
 | [LMS ETL](https://github.com/VSBhargav5/LMS-ETL-PIPELINE) | Missing, duplicate, or late events can undermine learner scores and reports | Known expected results, idempotent reruns, controlled crash recovery, measured workloads | Next engineering sprint; review the existing architecture audit first |
@@ -28,7 +29,7 @@ Keep one implementation sprint active. Existing DecisionLog, OpenLoop, and Nifty
 projects remain available while these priorities are evaluated.
 
 StudyFrame remains an independent Python project. CueDesk is the separate,
-GPL-attributed Cue adaptation selected for the current sprint. The current
+GPL-attributed Cue adaptation preserved for a later sprint. The current
 screen-study path requires deliberate capture preview and explicit send; the
 inherited meeting assistant is not yet integrated into that path. No live model
 call or personal screen capture was made during implementation. Product demand

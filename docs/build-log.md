@@ -2,6 +2,22 @@
 
 Entries distinguish shipped code, verification, limitations, and planned work.
 
+## 3 November 2026 — RoleWeave local job shelf
+
+[PR #2 merged](https://github.com/VSBhargav5/RoleWeave/pull/2) ·
+[Implementation](https://github.com/VSBhargav5/RoleWeave/commit/636953482f738fca194c8e1639e0e3bbb6bb23e8).
+Save and reopen manually selected postings in a local Tkinter/SQLite app, filter
+India/remote and relocation separately, import existing evidence reviews and
+export their exact original JSON without overwriting files. Changed source hashes
+fail on reopen. Edits append a new posting without inheriting old evidence links.
+18 local Windows tests passed, including native UI save/reopen/filter/import;
+all four Windows/Linux Python 3.11/3.12 CI jobs passed (Linux skips native UI).
+An initial test run found unclosed SQLite connections; explicit closure resolved
+Windows file locks. Tested/merged tree: `ceefd097e3e2487fb3eaa6de2f1d5c5f8280bf70`.
+No new dependencies, AI calls, personal data, scraping or submissions. Export
+excludes job metadata; full backup/restore, evidence editing, desktop launcher
+interaction and personal usefulness remain unverified or pending.
+
 ## 31 October 2026 — CueDesk screen-assisted study
 
 [PR #2 merged](https://github.com/VSBhargav5/CueDesk/pull/2) ·
