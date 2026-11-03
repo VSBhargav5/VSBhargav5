@@ -2,6 +2,22 @@
 
 Entries distinguish shipped code, verification, limitations, and planned work.
 
+## 3 November 2026 — RoleWeave full backup and restore
+
+[PR #4 merged](https://github.com/VSBhargav5/RoleWeave/pull/4) ·
+[Implementation](https://github.com/VSBhargav5/RoleWeave/commit/d81e9d622b79f09fc7a0ca277074bdf6b84d58f5).
+Full-shelf backup now includes job metadata, separate markets, capture timestamps
+and original review bytes. Restore validates records, skips duplicates, and rolls
+back all inserts on an ID conflict. Backups refuse existing filenames; JSON files
+are bounded to 64 MiB and original reviews to 1 MiB each.
+30 Windows tests pass, including eight recovery tests and native UI wiring.
+All four Python3.11/3.12 Windows/Linux CI jobs passed (Linux skips native UI).
+Tested/merged tree: `63b18260bc99ed4c66e76066027ca99b5a2f6a31`.
+Synthetic recovery into a fresh shelf and repeat restore were verified. Personal
+recovery and manual dialogs remain unverified. Backup files are unencrypted;
+source fingerprints do not authenticate metadata. A failed write may leave a
+partial backup file, which must be discarded and retried under a new filename.
+
 ## 3 November 2026 — RoleWeave evidence editor
 
 [PR #3 merged](https://github.com/VSBhargav5/RoleWeave/pull/3) ·
