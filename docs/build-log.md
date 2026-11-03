@@ -2,6 +2,22 @@
 
 Entries distinguish shipped code, verification, limitations, and planned work.
 
+## 3 November 2026 — RoleWeave evidence editor
+
+[PR #3 merged](https://github.com/VSBhargav5/RoleWeave/pull/3) ·
+[Implementation](https://github.com/VSBhargav5/RoleWeave/commit/07ea559c3e2626550e7434c8039df36602162676).
+The Windows app now edits exact requirement quotes, adds human-reviewed claims
+with source provenance, and links selected facts to requirements. Invalid quotes
+and unreviewed links fail validation. Pending form edits block saving rather
+than disappearing; saving appends a new snapshot and keeps originals intact.
+22 Windows tests pass, including four new native editor regressions; all four
+Python3.11/3.12 Windows/Linux CI jobs passed (Linux skips native UI tests).
+Tested/merged tree: `6d9dd7ccdb4277e005fa60126b2188bc426ebb08`.
+Existing fact revision/removal and resume tailoring remain pending. Links and
+reviewed flags are human assertions, not proof of qualification or eligibility.
+No AI calls, personal data or new dependencies. Manual layout/dialog interaction
+and personal usefulness remain unverified.
+
 ## 3 November 2026 — RoleWeave local job shelf
 
 [PR #2 merged](https://github.com/VSBhargav5/RoleWeave/pull/2) ·
