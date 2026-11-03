@@ -2,6 +2,35 @@
 
 Entries distinguish shipped code, verification, limitations, and planned work.
 
+## 3 November 2026 — RoleWeave manual application workflow
+
+[PR #6 merged](https://github.com/VSBhargav5/RoleWeave/pull/6) ships six tested changes:
+
+- [Manual stage, note and follow-up history](https://github.com/VSBhargav5/RoleWeave/commit/3d1e6f4bd72144d7463622f2f156ef918d6ac01e).
+- [Backup v2 history preservation and v1 compatibility](https://github.com/VSBhargav5/RoleWeave/commit/9b0e19094d371167699b762d0ad3dbfb81f4d7bb).
+- [Combined market, stage, Unicode search and due-date filters](https://github.com/VSBhargav5/RoleWeave/commit/4be417caa079aa94be544cd6936673896d51160c).
+- [Windows application tracker](https://github.com/VSBhargav5/RoleWeave/commit/d5520c625e8958b4891f1eed7ad033f07728e7d2).
+- [Private text preparation packs](https://github.com/VSBhargav5/RoleWeave/commit/74815d82e8440ab34669d33dc5368dd557e8d4f1).
+- [Unsaved-draft guards and focused learning exercise](https://github.com/VSBhargav5/RoleWeave/commit/7b41b5cf3a426b32333d5092e7c4fb2a26d9caa2).
+
+66 Windows tests passed and all four Python3.11/3.12 Windows/Linux PR CI jobs
+passed. Linux skips native Windows UI checks. Tested and merged tree:
+`6c0c09e1324a00efe4acc19d76a8441a468acb1d`. Every published commit tree matches
+its tested local counterpart. One draft-guard test initially failed because an
+assertion was placed in the wrong test; it was corrected before final checks.
+
+Tracking is a manual observation tied to an exact saved review; later evidence
+revisions do not inherit applied status. V2 backups preserve history; v1 restores
+do not erase it, and divergent histories fail atomically. Preparation packs copy
+only selected reviewed claims and keep open questions; they are not resumes or
+submissions. Follow-ups use local calendar dates in the app, without background
+notifications. Drafts remain unsaved until explicitly saved/recorded.
+
+No personal data, network/provider calls or dependencies added. Shared career
+profiles, resume/PDF output, permitted live discovery, AI assistance, integrations
+and installer remain pending. Manual dialog/layout use and personal usefulness
+remain unverified. Try the [synthetic workflow exercise](https://github.com/VSBhargav5/RoleWeave/blob/main/docs/application-first-principles.md).
+
 ## 3 November 2026 — RoleWeave fact corrections
 
 [PR #5 merged](https://github.com/VSBhargav5/RoleWeave/pull/5) ·
