@@ -2,6 +2,30 @@
 
 Entries distinguish shipped code, verification, limitations, and planned work.
 
+## 4 November 2026 — RoleWeave v0.6 daily-use readiness
+
+[PR #10 merged](https://github.com/VSBhargav5/RoleWeave/pull/10) contains 19 coherent authored changes.
+[Release commit](https://github.com/VSBhargav5/RoleWeave/commit/cebe184ee40f59722707dda85b333ab893dc2d3d).
+
+- Atomic no-overwrite exports, Unicode/control validation and staged build rollback.
+- Opt-in posting search, sort order, explicit source opening and guarded shortcuts.
+- Private profile transfer with renewed review, frozen resume TXT and exact-job browsing.
+- Read-only backup/storage inspection and filtered spreadsheet-safe CSV/calendar files.
+- Related review comparison, exact-evidence rehearsal, fact search and offline AI payload export.
+
+All five [PR CI jobs](https://github.com/VSBhargav5/RoleWeave/actions/runs/41813795960) passed.
+137 offline native Windows tests passed; source and final packaged v0.6 full-workflow
+self-tests passed. Tk teardown emitted ThemeChanged diagnostics despite passing tests.
+Every connector-published commit tree matches its tested local counterpart; final tree
+4729f9a579ceb7050521dffdc80ab74d0ad06702. No provider call or personal transmission.
+Hard-link-capable storage is required for atomic exports; unsupported filesystems fail
+closed. Build staging retains earlier directories for manual recovery. Manual layout,
+calendar-client import, live AI quality and personal usefulness remain unverified.
+
+[Runnable workflow and 60–90 minute practice](https://github.com/VSBhargav5/RoleWeave/blob/main/docs/readiness-workflow.md)
+covers a separate synthetic shelf, profile re-review, exact resume identity and backup
+inspection. Learning is not marked complete without user practice.
+
 ## 4 November 2026 — RoleWeave Windows frontend redesign
 
 [PR #9 merged](https://github.com/VSBhargav5/RoleWeave/pull/9) ·
