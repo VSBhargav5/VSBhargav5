@@ -8,19 +8,20 @@ meaningful verification, and an explanation of the engineering tradeoffs.
 
 ## Project focus
 
-Latest November 3 update: RoleWeave remains active; CueDesk, StudyFrame and
-SettleTrace are paused. [PR #6](https://github.com/VSBhargav5/RoleWeave/pull/6)
-adds manual application history, follow-ups, combined search/market/stage/due
-filters, preparation packs, history-preserving backup v2 and unsaved-draft guards.
-66 Windows tests pass; personal usefulness and real application outcomes remain
-unverified. Resume/PDF generation, shared career profiles, permitted live source
-adapters, AI assistance, external integrations and an installer remain pending.
+Latest November 4 update: RoleWeave remains active; CueDesk, StudyFrame and
+SettleTrace are paused. [PR #7](https://github.com/VSBhargav5/RoleWeave/pull/7)
+adds reusable reviewed profiles, frozen HTML/PDF resume versions, v3 recovery and
+a portable Windows x64 build. 92 local Windows tests and all five PR CI jobs
+passed, including packaged-runtime smoke. The next gate is personal use of the
+profile → job review → resume → recovery workflow. Live source adapters, AI
+assistance, integrations and an installer remain pending. No usefulness or hiring
+outcome is claimed from passing tests.
 
 | Project | Operational problem | Evidence to build | Status |
 | --- | --- | --- | --- |
 | [CueDesk](https://github.com/VSBhargav5/CueDesk) | Screen-assisted study and coding on Windows | Reviewed capture, explicit AI request, personally verified usefulness | Paused; real screen and provider trial remain |
 | [StudyFrame](https://github.com/VSBhargav5/StudyFrame) | Asking for study/coding help on Windows repeatedly requires assembling context | Bounded screenshot crop/restore, deliberate provider send/cancel, reviewed follow-ups, personally verified usefulness | Paused; [v0.2 screenshot focus](https://github.com/VSBhargav5/StudyFrame/pull/4); 70 offline tests; live validation and usefulness gate remain |
-| [RoleWeave](https://github.com/VSBhargav5/RoleWeave) | Relating job requirements to defensible career evidence and application decisions | Reviewed claims, exact posting quotes, separate job markets, personally usable workflow | Active; evidence review, manual tracking, preparation packs and recovery shipped; tailoring pending |
+| [RoleWeave](https://github.com/VSBhargav5/RoleWeave) | Relating job requirements to defensible career evidence and application decisions | Reviewed claims, exact posting quotes, separate job markets, personally usable workflow | Active; profiles, reviewed resume selection, frozen HTML/PDF, tracking, v3 recovery and portable build shipped; personal trial next |
 | [SettleTrace](https://github.com/VSBhargav5/SettleTrace) | A custom merchant ledger, processor activity, and bank deposits can disagree | Exact-money contracts, source-row evidence, verified export mapping, operator feedback | Paused; [v0.3 mapping and observation evidence merged](https://github.com/VSBhargav5/SettleTrace/pull/3) |
 | [PromptGuard](https://github.com/VSBhargav5/PromptGuard) | AI prompt changes can silently break previously working cases | Coverage-aware comparisons, labeled failure examples, repeatable evaluation, external pilot feedback | Reliability sprint completed; [merged work](https://github.com/VSBhargav5/PromptGuard/pull/2) |
 | [LMS ETL](https://github.com/VSBhargav5/LMS-ETL-PIPELINE) | Missing, duplicate, or late events can undermine learner scores and reports | Known expected results, idempotent reruns, controlled crash recovery, measured workloads | Next engineering sprint; review the existing architecture audit first |
