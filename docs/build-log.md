@@ -2,6 +2,44 @@
 
 Entries distinguish shipped code, verification, limitations, and planned work.
 
+## 4 November 2026 — RoleWeave Windows frontend redesign
+
+[PR #9 merged](https://github.com/VSBhargav5/RoleWeave/pull/9) ·
+[Implementation](https://github.com/VSBhargav5/RoleWeave/commit/ee3875a8d70fe07a367a0a9e47268b1b2f2106c9).
+[Dialog allocation correction](https://github.com/VSBhargav5/RoleWeave/commit/62f9421428913ac4b53385b467fad30a71126614).
+The crowded form becomes a navy navigation rail, pale canvas, white cards, teal
+primary actions and Segoe UI typography. Posting, evidence/next steps and editable
+details have separate tabs; descriptions get a full reading area and scrollbars.
+Titles appear first in the opportunity list, filters explain empty results, and
+global cards count saved review snapshots, active due follow-ups and frozen resume
+versions. They do not claim unique applications or verified hiring outcomes.
+Profile, resume, discovery, AI and tracking dialogs share the native ttk theme.
+
+119 offline native Windows tests passed on Python 3.12.14. Added regressions cover
+global counts versus filters, draft-preserving tabs, resume-count refresh and
+all current-page actions staying mapped/full-height inside supported window sizes.
+An evidence-editor Save action
+was initially clipped at650px; its form is compacted and minimum height enforced
+at700px, then verified. Source and final packaged full-workflow smoke passed
+without provider calls. Packaged main/posting/evidence layouts were visually
+checked on synthetic data. A profile footer collapse was caught during visual
+review after the initial bounds-only test passed. Fixed shared footer allocation,
+split the fact library/editor and strengthened tests across all dialog tabs.
+The additional visual check was denied by Windows automation; the corrected
+dialog's manual visual acceptance remains unverified. Tested tree:
+`6f2e491e150c3ec6ebe98aaf678c7f7cab9c20b6`.
+All five [final-head PR checks](https://github.com/VSBhargav5/RoleWeave/actions/runs/41804556610)
+and all five [post-merge checks](https://github.com/VSBhargav5/RoleWeave/actions/runs/41805222822)
+passed, including the packaged-runtime workflow.
+
+No new runtime dependency, data migration or provider behavior change. Existing
+private databases and v1/v2/v3 backups remain supported. Minimum main workspace
+1040×700 logical pixels; unusual scaling/small displays and complete native
+file-dialog acceptance still need user checks. Live AI, calendar-client import,
+personal usefulness, account integrations and installer remain unverified/pending.
+The [workspace guide and practice exercise](https://github.com/VSBhargav5/RoleWeave/blob/main/docs/workspace-design.md)
+explain navigation and why snapshots cannot be counted as applications sent.
+
 ## 4 November 2026 — RoleWeave discovery, AI quote review and calendar files
 
 [PR #8 merged](https://github.com/VSBhargav5/RoleWeave/pull/8) ships six coherent changes:
