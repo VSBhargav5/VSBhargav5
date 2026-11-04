@@ -2,6 +2,45 @@
 
 Entries distinguish shipped code, verification, limitations, and planned work.
 
+## 4 November 2026 — RoleWeave local profile-to-resume release
+
+[PR #7 merged](https://github.com/VSBhargav5/RoleWeave/pull/7) ships eight coherent changes:
+
+- [Immutable reusable career profiles](https://github.com/VSBhargav5/RoleWeave/commit/6b487f9e5444f42093a33c06c36b5fdfab07f1f4).
+- [Reviewed resume selection and safe HTML/PDF output](https://github.com/VSBhargav5/RoleWeave/commit/e507b54a0cbccd732b75ff84a605ef734ed2dfaf).
+- [V3 profile/resume backup with v1/v2 compatibility](https://github.com/VSBhargav5/RoleWeave/commit/d709b6fd57247784a9bc4a6d3da12313e5b5e8d6).
+- [Windows profile editor and deliberate fact reuse](https://github.com/VSBhargav5/RoleWeave/commit/10c755863a89115f1d2e5ac49d560f7de495111e).
+- [Windows resume preview, approval, versioning and export](https://github.com/VSBhargav5/RoleWeave/commit/11eb9a402f9d7012f9d014ca6222daa64a4333b5).
+- [Separate synthetic practice workspace and runtime self-test](https://github.com/VSBhargav5/RoleWeave/commit/b96c0ff3d17dbd224378565cbc620cdc8315d42a).
+- [Portable Windows packaging, setup and CI](https://github.com/VSBhargav5/RoleWeave/commit/498a05bfa53e479a1e7938ae25783c3f90ab5fad).
+- [Start guide and focused recovery exercise](https://github.com/VSBhargav5/RoleWeave/commit/03868d09607a64460ba045f4a0c1388db8eced4c).
+
+92 native Windows tests passed on Python 3.12.14. All four OS/Python test jobs
+and the portable-build/runtime job passed in [PR CI](https://github.com/VSBhargav5/RoleWeave/actions/runs/41773381960).
+[Post-merge main CI also passed](https://github.com/VSBhargav5/RoleWeave/actions/runs/41773520315).
+Every published commit tree matches its local snapshot; merged/tested tree:
+`5b0408d258750ca45e21f6da77f28149516f82b9`. The final local executable passed
+synthetic profile, frozen document export and full recovery smoke. A PDF was
+rendered and visually checked; extracted text preserves selected claims.
+
+Direct Windows UI checks covered profile display, claim selection, preview,
+approval and saving a resume version. Native Save dialog completion could not be
+automated reliably and remains a manual acceptance item. Initial local test runs
+hit sandbox temp permissions and a missing test dependency; both were resolved
+before the final green run.
+
+Profile corrections never rewrite old resume bytes. No claim is invented or
+rewritten, and unreviewed facts cannot be selected. V3 backups preserve source
+profiles and exact documents privately; older backups remain readable. Data and
+exports are unencrypted. The unsigned portable build requires its whole folder;
+it is not an installer. Unsupported PDF glyphs require HTML/browser printing.
+Personal usefulness, ATS behavior and real outcomes remain unverified. Live
+discovery, AI assistance, external integrations and submissions are not shipped.
+No personal data or paid calls were used.
+
+Try the [resume version/recovery exercise](https://github.com/VSBhargav5/RoleWeave/blob/main/docs/resume-first-principles.md)
+in a separate synthetic workspace. Practice is not marked complete by the build.
+
 ## 3 November 2026 — RoleWeave manual application workflow
 
 [PR #6 merged](https://github.com/VSBhargav5/RoleWeave/pull/6) ships six tested changes:
