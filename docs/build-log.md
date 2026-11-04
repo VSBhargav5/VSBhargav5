@@ -2,6 +2,49 @@
 
 Entries distinguish shipped code, verification, limitations, and planned work.
 
+## 4 November 2026 — RoleWeave discovery, AI quote review and calendar files
+
+[PR #8 merged](https://github.com/VSBhargav5/RoleWeave/pull/8) ships six coherent changes:
+
+- [Bounded public Greenhouse adapter and provenance](https://github.com/VSBhargav5/RoleWeave/commit/58ff852eff6d8eef05c5fd7711e4eea0748ce25c).
+- [Cancellable Windows discovery, preview and explicit import](https://github.com/VSBhargav5/RoleWeave/commit/ed986004d60a31df8034c9fe77cc500f932ebc96).
+- [Consent-bound AI exact-quote contract](https://github.com/VSBhargav5/RoleWeave/commit/f7cf08db2abf97ca0d0f445f87c7ae5b3df68896).
+- [Request preview, session key and human quote adoption](https://github.com/VSBhargav5/RoleWeave/commit/3d9779c1a2d16e71ddc1beb8c2fca72402f7e398).
+- [Private calendar follow-up export](https://github.com/VSBhargav5/RoleWeave/commit/076fb6a79ab25e897f76716c732883946d2f4cf2).
+- [V0.4 portable smoke and explicit-use guide](https://github.com/VSBhargav5/RoleWeave/commit/639dc45a44e1e574c775d38bf6535a92034c964e).
+
+116 offline native Windows tests passed on Python 3.12.14. Source and final
+packaged executable smoke passed synthetic discovery → AI quote review →
+HTML/PDF → calendar → v3 recovery without provider calls. Tested tree:
+`f2b39ec621a37a97ae8e5fb1e63617a81bb81467`. Every published commit tree matches
+its local counterpart. A Tk teardown diagnostic in an earlier run was addressed
+by draining pending idle events in the new UI tests; final suite passed cleanly.
+All five [PR CI jobs](https://github.com/VSBhargav5/RoleWeave/actions/runs/41792981922)
+passed, including the packaged executable smoke. Local main is clean and
+synchronized with the merge. Packaged main/discovery layout was visually checked;
+AI review was exercised with native offline UI tests, not a live provider call.
+All five [post-merge main checks](https://github.com/VSBhargav5/RoleWeave/actions/runs/41793294960) also passed.
+
+One separate public GET through the source adapter observed 20 Greenhouse vacancy
+posts at 2026-11-04T07:24:53Z, response SHA256
+`be3b408ec52ffc2732c413abbff0792b0197812fc7e4c0c4fabe83e5fd73eed4`.
+No profile/candidate data was sent. This establishes that response only, not all
+boards or current vacancy availability. A sandbox network attempt failed before
+the authorized network check succeeded.
+
+Discovery imports selected posts into a manually chosen market. It never infers
+eligibility, closes missing jobs or replaces earlier evidence. AI only receives
+the explicitly previewed posting after per-request consent and session-key entry;
+exact quotes still require relevance review before entering an unsaved draft.
+No paid/live AI request was made; account access and model quality are unverified.
+Cancel/store=false are not no-charge/zero-retention guarantees. Calendar files
+include title/company, date and saved-review/history identity, excluding notes and
+resumes. They require user import; no account linking, invitations or remote event
+changes. Calendar-client acceptance, manual dialog coverage and personal usefulness
+remain unverified. The portable build remains unsigned; no new runtime packages.
+
+See the [connected workflow and focused exercise](https://github.com/VSBhargav5/RoleWeave/blob/main/docs/connected-workflow.md).
+
 ## 4 November 2026 — RoleWeave local profile-to-resume release
 
 [PR #7 merged](https://github.com/VSBhargav5/RoleWeave/pull/7) ships eight coherent changes:
