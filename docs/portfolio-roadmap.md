@@ -9,10 +9,11 @@ meaningful verification, and an explanation of the engineering tradeoffs.
 ## Project focus
 
 Latest November 4 update: RoleWeave remains active; CueDesk, StudyFrame and
-SettleTrace are paused. [PR #8](https://github.com/VSBhargav5/RoleWeave/pull/8)
-starts explicit public Greenhouse discovery, optional reviewed AI quote proposals
-and calendar-file integration, retaining reviewed profiles, frozen resumes and
-v3 recovery. 116 offline native Windows tests passed; a separate public GET through
+SettleTrace are paused. [PR #9](https://github.com/VSBhargav5/RoleWeave/pull/9)
+redesigns the Windows frontend with consistent navigation, cards and dialogs,
+plus separate posting/evidence/details tabs. Existing public Greenhouse discovery,
+reviewed AI quote proposals, calendar files, profiles, frozen resumes and v3
+recovery remain. 119 offline native Windows tests passed; a separate public GET through
 the adapter returned 20 vacancy posts. Packaged smoke uses synthetic responses
 without network calls. The next gates are personal use, an authorized live AI
 trial and calendar-client acceptance. Broader sources, account integrations and
