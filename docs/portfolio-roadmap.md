@@ -8,6 +8,12 @@ meaningful verification, and an explanation of the engineering tradeoffs.
 
 ## Project focus
 
+Latest November10 discovery update: [v0.7 PR #12](https://github.com/VSBhargav5/RoleWeave/pull/12)
+adds Lever global/EU and Ashby alongside Greenhouse, local filters, board-URL
+resolution and private byte-verified observation replay/comparison. 156 offline
+Windows tests and source smoke pass. Live new-provider compatibility and manual
+acceptance remain unverified; no complete-board or eligibility inference.
+
 Latest November 10 update: [Windows setup PR #11](https://github.com/VSBhargav5/RoleWeave/pull/11)
 adds per-user installation, Start-menu access and uninstall with data retained.
 139 offline Windows tests pass. Signing, manual wizard acceptance, interrupted
