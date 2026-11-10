@@ -2,6 +2,34 @@
 
 Entries distinguish shipped code, verification, limitations, and planned work.
 
+## 10 November 2026 — RoleWeave v0.7 discovery workspace
+
+[PR #12 merged](https://github.com/VSBhargav5/RoleWeave/pull/12) contains nine coherent changes.
+[Release commit](https://github.com/VSBhargav5/RoleWeave/commit/27b3e48f522e7475dc1141ceba4a9374b3594800).
+
+- Public-board transport rejects credentials and POST bodies before dispatch.
+- Lever global/EU and listed-only Ashby adapters preserve exact source identity.
+- Windows provider/board-URL selection guards against importing stale results.
+- Original-byte private archives replay offline and compare observations without closure inference.
+- Description/exclusion filtering and observed-result counts run entirely locally.
+- V0.7 runnable fixtures and packaged smoke exercise every supported provider.
+
+All five [PR CI jobs](https://github.com/VSBhargav5/RoleWeave/actions/runs/42807456479) passed, including portable and installed runtimes.
+156 offline Windows tests and the source self-test passed. The expanded UI initially
+collapsed the preview at850x650; actions are consolidated and the existing minimum
+layout regression now passes. Every published commit tree matches its tested local
+counterpart. Final tree: a1e02328e31b5ce5687f27737adc3d71c0f189d2.
+
+Provider contracts were checked against current official docs. No live new-provider
+fetch, paid call, profile transmission or account connection occurred. Real feed
+compatibility, manual dialogs/unusual scaling and completeness remain unverified;
+Lever responses at1000 posts fail closed. Archives are separate private files,
+not part of shelf backups. Integrity does not prove authenticity or eligibility.
+
+[Runnable discovery guide and60-90minute practice](https://github.com/VSBhargav5/RoleWeave/blob/main/docs/discovery-workflow.md)
+covers source identity, hidden Ashby listings, local filters, offline replay and why
+not_observed cannot be called closed. No learning or usefulness claim is made.
+
 ## 10 November 2026 — RoleWeave per-user Windows setup
 
 [PR #11 merged](https://github.com/VSBhargav5/RoleWeave/pull/11) adds an Inno Setup
