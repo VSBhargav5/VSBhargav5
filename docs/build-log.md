@@ -2,6 +2,25 @@
 
 Entries distinguish shipped code, verification, limitations, and planned work.
 
+## 10 November 2026 — RoleWeave per-user Windows setup
+
+[PR #11 merged](https://github.com/VSBhargav5/RoleWeave/pull/11) adds an Inno Setup
+installer, Start-menu entry and Windows uninstall support. Program files install
+separately from the existing user database; no source-shelf migration or automatic
+launch happens. The stable application ID supports an in-place reinstall.
+
+139 offline Windows tests passed; existing Tk teardown diagnostics remain.
+All five [PR CI jobs](https://github.com/VSBhargav5/RoleWeave/actions/runs/42799947287) passed.
+Windows CI compiles setup and tests isolated installation, reinstall, installed
+frozen runtime and uninstall while retaining synthetic data. Manual wizard
+acceptance, signing/reputation and interrupted-upgrade recovery remain unverified.
+The [installation guide](https://github.com/VSBhargav5/RoleWeave/blob/main/docs/windows-installation.md)
+documents backup, source/installed data locations and deliberate restore.
+
+Live AI quality, calendar-client import and remote account integrations still
+need their own authorized trials. No paid call, account linking or personal
+transmission was performed. Other project sprints remain paused.
+
 ## 4 November 2026 — RoleWeave v0.6 daily-use readiness
 
 [PR #10 merged](https://github.com/VSBhargav5/RoleWeave/pull/10) contains 19 coherent authored changes.

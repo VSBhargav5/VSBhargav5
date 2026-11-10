@@ -8,6 +8,11 @@ meaningful verification, and an explanation of the engineering tradeoffs.
 
 ## Project focus
 
+Latest November 10 update: [Windows setup PR #11](https://github.com/VSBhargav5/RoleWeave/pull/11)
+adds per-user installation, Start-menu access and uninstall with data retained.
+139 offline Windows tests pass. Signing, manual wizard acceptance, interrupted
+upgrades, live AI and calendar-client use remain evidence gates.
+
 Latest November 4 update: RoleWeave remains active; CueDesk, StudyFrame and
 SettleTrace are paused. [v0.6 readiness sprint](https://github.com/VSBhargav5/RoleWeave/pull/10)
 adds profile transfer with fresh human review, exact-job resume browsing and TXT,
