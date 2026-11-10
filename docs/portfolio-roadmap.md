@@ -8,6 +8,12 @@ meaningful verification, and an explanation of the engineering tradeoffs.
 
 ## Project focus
 
+Latest November10 delivery update: [v0.8 PR #13](https://github.com/VSBhargav5/RoleWeave/pull/13)
+ships reviewed letters, exact private dossiers/recipient-only exports, manual
+submission and local email excerpts, plus stale-history protection.194 offline
+tests and source/portable/installed CI pass. Saved employer-board reuse is next;
+live accounts/AI and user acceptance remain gated.
+
 Latest November10 discovery update: [v0.7 PR #12](https://github.com/VSBhargav5/RoleWeave/pull/12)
 adds Lever global/EU and Ashby alongside Greenhouse, local filters, board-URL
 resolution and private byte-verified observation replay/comparison. 156 offline

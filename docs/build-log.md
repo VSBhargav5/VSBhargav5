@@ -2,6 +2,32 @@
 
 Entries distinguish shipped code, verification, limitations, and planned work.
 
+## 10 November 2026 — RoleWeave v0.8 application delivery
+
+[PR #13 merged](https://github.com/VSBhargav5/RoleWeave/pull/13) ships14 coherent changes.
+[Release](https://github.com/VSBhargav5/RoleWeave/commit/73cec96dd0affb8e8dad8c24ac72d5cb9cb0ebe7).
+
+Reviewed cover letters copy selected claims exactly and freeze profile/job context.
+Private dossiers bind an exact review/resume/optional matching letter and replay
+documents without archive extraction. Recipient-only exports exclude private
+sources/history. Manual submission receipts and selected local plaintext email
+excerpts append observations without sending or inferring hiring stages.
+Optimistic revisions reject stale tracking writes; explicit reload preserves
+user control over drafts. No database schema migration or new dependency.
+
+194 offline native Windows tests and source smoke passed. All five [PR CI jobs](https://github.com/VSBhargav5/RoleWeave/actions/runs/42815871690)
+passed, including portable/installed end-to-end delivery and recovery.
+New form minimum-size and tamper/concurrency regressions pass. Existing Tk teardown
+diagnostics remain despite passing assertions. Every published tree matches the
+tested local counterpart; final tree `d83813dee0c6cf8c993ea13ce5a01f46ab296e61`.
+
+Private letter/dossier/email files are separate from shelf backups; recorded
+observations use existing v3 recovery. PDF replay needs the matching deterministic
+renderer and can refuse legacy outputs without deleting originals.
+No paid calls, personal transmissions, account connection or actual application.
+Live accounts/AI, manual dialogs/scaling and personal usefulness remain unverified.
+[Workflow and60-90minute practice](https://github.com/VSBhargav5/RoleWeave/blob/main/docs/application-delivery.md).
+
 ## 10 November 2026 — RoleWeave v0.7 discovery workspace
 
 [PR #12 merged](https://github.com/VSBhargav5/RoleWeave/pull/12) contains nine coherent changes.
