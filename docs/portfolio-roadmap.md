@@ -8,11 +8,11 @@ meaningful verification, and an explanation of the engineering tradeoffs.
 
 ## Project focus
 
-Latest November11 update: [v0.12 workspace design PR #20](https://github.com/VSBhargav5/RoleWeave/pull/20)
-ships the user-requested visual refresh: rich stable-ID opportunity rows, compact
-collapsible filters and clearer review/evidence hierarchy.259 offline Windows
-tests, source/frozen runtime checks and portable/installed PR CI pass. Synthetic
-workspace visuals were reviewed; unusual scaling/full manual acceptance remain.
+Latest November11 update: [v0.13 dark workspace PR #21](https://github.com/VSBhargav5/RoleWeave/pull/21)
+adds near-black surfaces, violet/cyan accents, gradient weave artwork, rounded
+native controls and exact evidence cards.261 offline Windows tests, eight final
+design tests and source/frozen synthetic checks pass. Main synthetic visuals
+were inspected; unusual scaling/full manual acceptance remain open.
 The [v0.11 Google follow-up integration](https://github.com/VSBhargav5/RoleWeave/pull/19)
 remains implemented/offline tested, with no live account/write trial yet. Next:
 user-owned Desktop OAuth setup and a synthetic consent/create/update/conflict
