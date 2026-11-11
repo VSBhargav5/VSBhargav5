@@ -2,6 +2,29 @@
 
 Entries distinguish shipped code, verification, limitations, and planned work.
 
+## 11 November 2026 — RoleWeave v0.9 selected-source collections
+
+[PR #15 merged](https://github.com/VSBhargav5/RoleWeave/pull/15) ships eight coherent changes.
+[Release](https://github.com/VSBhargav5/RoleWeave/commit/ce15b5c1e5f9fdcf567a2d36ad6335c3a0b79eef).
+Explicit multi-board Windows review/import keeps source status/times separate.
+Private original-byte archives reopen offline with local filters. Comparisons
+distinguish failed/unselected sources from observed posting changes. Metadata-only
+shortlists carry source fingerprints and partial-coverage counts. Failed-source
+retries retain successful response bytes and their original ages.
+
+225 offline native Windows tests/source smoke passed. All five [PR CI jobs](https://github.com/VSBhargav5/RoleWeave/actions/runs/42957173679)
+passed, including portable/installed runtime and installer lifecycle. Minimum-size
+actions/reading space and cancellation-after-failure regressions pass. Existing Tk
+teardown diagnostics persist despite passing assertions. Every connector tree
+matches its tested local counterpart; final tree `1a9ee99b6fdb989d39fd4c761864b943937feddc`.
+
+No new dependency/database migration, automatic scan, paid call, personal
+transmission, account access or application. Archives are separate private files.
+Hashes/time membership do not prove authenticity, completeness or eligibility.
+Retried collections mix source ages; real-feed compatibility and manual user
+acceptance remain unverified.
+[Runnable workflow and60-90minute exercise](https://github.com/VSBhargav5/RoleWeave/blob/main/docs/selected-collections.md).
+
 ## 10 November 2026 — RoleWeave employer-watchlist foundation
 
 [PR #14 merged](https://github.com/VSBhargav5/RoleWeave/pull/14) contains four coherent changes.
