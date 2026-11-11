@@ -2,6 +2,57 @@
 
 Entries distinguish shipped code, verification, limitations, and planned work.
 
+## 11 November 2026 — RoleWeave v0.11 personal readiness and Google follow-ups
+
+[Readiness PR #18](https://github.com/VSBhargav5/RoleWeave/pull/18) and
+[Google Calendar PR #19](https://github.com/VSBhargav5/RoleWeave/pull/19) are merged.
+[Readiness release](https://github.com/VSBhargav5/RoleWeave/commit/9105abccb0220f23de324ec0705b6c85297811cd),
+[Calendar release](https://github.com/VSBhargav5/RoleWeave/commit/f5a3975a43f0bdc5a821fa50f79f8412632ef601).
+
+The user requested a concrete readiness breakdown and selected Google Calendar
+follow-up sync first. Getting started now has readable current-workflow,
+readiness and storage tabs. It distinguishes eight implemented/offline-tested
+local workflow groups from personal acceptance and optional online gates;
+there is no invented overall completion percentage. Reproduced immediate-close
+Tk theme errors and cancelled-worker poll callbacks are fixed with regressions.
+
+The Google integration uses browser consent/PKCE/state through Google's
+maintained library and only app-created-secondary-calendar scope. Credentials
+stay in memory for the window; no config/token file lookup, persistence or
+automatic refresh. Windows separates scope consent, deliberate calendar creation,
+local-only preview, consented exact-event read and one confirmed create/update.
+Generic private reminders are default; company/role is opt-in. Deterministic
+base32hex IDs, exact local source/history checks and conditional ETag PATCH guard
+duplicates/stale writes. No primary calendar, invitations, automatic deletions,
+background/two-way sync, mailbox access or local application-stage mutation.
+Cancellation cannot reverse remote processing. OAuth adds pinned dependencies
+whose licenses/metadata are included in the portable build.
+
+One unauthenticated bounded GET per documented public board example parsed
+Greenhouse19posts and Lever EU6; Lever global was empty. Ashby returned76listed
+records but three descriptions around357000characters exceeded the50000-character
+posting contract, so the entire feed was refused. Errors now name row/size and
+next steps; there is no silent truncation/subset import. Only metadata/hashes
+are published, not employer posting bodies. This is limited historical evidence,
+not complete provider coverage or current job recommendations.
+
+258 final offline native Windows tests and source/frozen v0.11 runtime checks
+passed. All five [readiness PR CI jobs](https://github.com/VSBhargav5/RoleWeave/actions/runs/42961711298)
+and [Calendar PR CI jobs](https://github.com/VSBhargav5/RoleWeave/actions/runs/42963395268)
+passed, including portable/installed runtime and installer lifecycle. The final
+suite had zero prior ThemeChanged/shutdown diagnostics. Tested/published tree:
+`9b77b197a8ab75b37a12f570cdb6f8a53582d657`. Local exe/ZIP refreshed; main clean.
+
+No Google account linked, calendar created, event written, paid model call or
+personal transmission. Desktop OAuth client setup and a synthetic live Calendar
+trial are required. AI quality, calendar-client import, manual UI acceptance,
+source coverage and personal usefulness remain unverified. Mailbox/general
+account synchronization is not implemented. Separate artifacts remain outside
+shelf backups; no new outcome/authenticity/recovery guarantee is claimed.
+
+[Readiness matrix/start here](https://github.com/VSBhargav5/RoleWeave/blob/main/docs/personal-readiness.md),
+[Google setup and controlled trial](https://github.com/VSBhargav5/RoleWeave/blob/main/docs/google-calendar.md).
+
 ## 11 November 2026 — RoleWeave v0.10.1 private rehearsal and shelf verification
 
 [Rehearsal PR #16](https://github.com/VSBhargav5/RoleWeave/pull/16) and
