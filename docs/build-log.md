@@ -2,6 +2,31 @@
 
 Entries distinguish shipped code, verification, limitations, and planned work.
 
+## 11 November 2026 — RoleWeave v0.13 dark neon workspace
+
+[UI PR #21](https://github.com/VSBhargav5/RoleWeave/pull/21),
+[implementation commit](https://github.com/VSBhargav5/RoleWeave/commit/7db924daf0b483d7efdb3456a27554625697035e).
+
+The user requested black/dark colors, gradients, neon accents and better
+alignment. The native workspace now uses near-black surfaces, rounded ttk
+controls, violet actions, cyan highlights, compact tinted metrics, preferred
+Segoe UI Variable Text and original gradient weave artwork. Exact requirement
+quotes, linked claims and sources appear as distinct evidence cards. Large
+reviews have bounded 20-card pages; explicit copying preserves the full review.
+Existing workflow identity, draft guards and native consent controls remain.
+No new dependency, backend rewrite or network-loaded asset was introduced.
+
+261 offline Windows tests, eight final design tests and source/frozen v0.13
+synthetic self-tests passed. The main synthetic Windows workspace was visually
+inspected. Contrast, exact evidence, pagination, explicit copying, disabled
+consent controls and minimum-size layouts have regression coverage. The tested
+and connector-published tree is `1cc638da08a416b56d079fbcd1811aee8d1d7ba3`.
+[PR CI](https://github.com/VSBhargav5/RoleWeave/actions/runs/43004668316)
+checks source, portable and installed behavior. Local exe/ZIP refreshed.
+Unusual scaling, every native file dialog, personal acceptance and live
+Google/AI behavior remain unverified. No personal window/data or live account
+was used in this redesign.
+
 ## 11 November 2026 — RoleWeave v0.12 Windows workspace refresh
 
 [PR #20 merged](https://github.com/VSBhargav5/RoleWeave/pull/20).

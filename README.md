@@ -39,7 +39,7 @@ Alongside that, I build focused AI tools for **evaluation**, **decision capture*
 
 | | Project | What it solves | Stack |
 |---|---------|----------------|-------|
-| 🧵 | **[RoleWeave](https://github.com/VSBhargav5/RoleWeave)** `v0.5 · Windows` | Designed local workspace for reviewed resumes, job evidence, explicit public-board discovery, AI quote review and follow-ups | Python · SQLite · Tkinter · ReportLab |
+| 🧵 | **[RoleWeave](https://github.com/VSBhargav5/RoleWeave)** `v0.13 · Windows` | Dark local workspace for reviewed resumes, exact job evidence, public-board discovery and reviewed follow-ups | Python · SQLite · Tkinter · ReportLab |
 | 🖥️ | **[StudyFrame](https://github.com/VSBhargav5/StudyFrame)** `v0.2 · screenshot focus` | Crop code/diagrams before reviewed AI requests; restore originals, ask follow-ups and cancel; live quality unverified | Python · PySide6 · unittest |
 | 🧾 | **[SettleTrace](https://github.com/VSBhargav5/SettleTrace)** `v0.3` | Exact-money exceptions, audited bank mappings, declared windows, and replayable evidence | Python · CSV · HTML/JSON · unittest |
 | 💥 | **[BlastPath](https://github.com/VSBhargav5/BlastPath)** `v0.2` | What breaks if this PR lands — **git blast-radius**, owners, snapshot Δ | Python · AST · Pydantic · Typer |
@@ -66,7 +66,7 @@ Alongside that, I build focused AI tools for **evaluation**, **decision capture*
 
 - **CueDesk is paused** after the screen-study iteration; real capture and live usefulness remain unverified.
 - 🖥️ **StudyFrame is paused** — [v0.2 screenshot focus](https://github.com/VSBhargav5/StudyFrame/pull/4) adds drag/pixel cropping, original restore and a current-source Windows launcher. 70 offline tests; the stale installed wheel was refreshed and installed imports now checked in CI. Live model quality and usefulness remain unverified.
-- **[RoleWeave is the active sprint](https://github.com/VSBhargav5/RoleWeave/pull/20)** — a refreshed native Windows workspace with rich opportunity rows, collapsible filters and clearer review/evidence hierarchy. Eight core local workflow groups and optional reviewed Google follow-ups remain implemented. 259 offline Windows tests and portable/installed PR CI pass; personal/live acceptance remains open.
+- **[RoleWeave is the active sprint](https://github.com/VSBhargav5/RoleWeave/pull/21)** — a dark Windows workspace with near-black surfaces, violet/cyan accents, gradient weave artwork, rounded native controls and exact evidence cards. 261 offline Windows tests and source/frozen self-tests pass. Eight core local workflows and optional reviewed Google follow-ups remain; personal/live acceptance is open.
 - 🧾 **SettleTrace paused at v0.3** while RoleWeave leads the sprint. [Verified shipped work](https://github.com/VSBhargav5/SettleTrace/pull/3) remains intact; completeness, real-account validation, and customer demand remain open.
 - 🛡️ **PromptGuard reliability sprint completed** — coverage gates, validated inputs, safe history, and CI reports. [Merged work](https://github.com/VSBhargav5/PromptGuard/pull/2)
 - 🔧 **Later: LMS pipeline reliability** — scoring invariants, duplicate/late-event handling, and recovery
