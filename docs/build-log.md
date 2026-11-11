@@ -2,6 +2,48 @@
 
 Entries distinguish shipped code, verification, limitations, and planned work.
 
+## 11 November 2026 — RoleWeave v0.10.1 private rehearsal and shelf verification
+
+[Rehearsal PR #16](https://github.com/VSBhargav5/RoleWeave/pull/16) and
+[read-only audit PR #17](https://github.com/VSBhargav5/RoleWeave/pull/17) are merged.
+[Rehearsal release](https://github.com/VSBhargav5/RoleWeave/commit/f46063099aed8ca02e8e14d34c0b8adc69680402),
+[audit implementation](https://github.com/VSBhargav5/RoleWeave/commit/87dbb79c4d0bd594d77b3cc3b1ac1836e407e64e).
+
+Selected requirement IDs now anchor private answer/reflection drafts to the exact
+frozen review. Windows navigation/reveal preserves drafts; save/reopen preserves
+source identity. Re-selecting or restoring unchanged questions cannot manufacture
+a timestamp-only version. Private TXT packs contain selected quotes/evidence,
+with answer drafts only by explicit choice. An explicitly started local timer
+records unverified elapsed seconds. Version comparison requires the same exact
+source and shows text/selection changes without assigning a learning score.
+
+SQLite structure can pass while source bytes/references are inconsistent. The
+new audit checks every stored review, profile, resume, history sequence and
+reference in one bounded read-only snapshot. It rejects shelves above10000 rows
+or64MiB field bytes, never repairs/writes, and omits source claims/notes from
+optional private ID/check reports. Separate exported files are outside the audit.
+
+245 offline native Windows tests and source/frozen v0.10.1 self-tests passed.
+All five [rehearsal CI jobs](https://github.com/VSBhargav5/RoleWeave/actions/runs/42959279534)
+and all five [audit CI jobs](https://github.com/VSBhargav5/RoleWeave/actions/runs/42959858269)
+passed, including portable/installed runtime and installer lifecycle. Local
+portable exe/ZIP are refreshed. Tested/published tree:
+`5aa576ea3a5a40c311aa9ef0a88eb9bffa00b967`. Existing Tk theme shutdown diagnostics
+persist despite passing assertions. A disposable test fixture initially retained
+a SQLite connection; explicit closure corrected it before the final suite.
+
+No dependency/schema migration or live/personal transmission. Journals/packs are
+unencrypted separate files, outside shelf backups. Hashes do not authenticate
+claims. Recorded time and draft changes do not verify learning; no application
+stage is changed by rehearsal. Audit checks stored PDF contracts rather than
+renderer replay and does not guarantee recovery. Manual dialogs/scaling, large-
+shelf performance, real-feed compatibility, live AI quality, remote integrations
+and personal usefulness remain unverified. Next is a focused user trial and
+observed fixes, not an automatic expansion of the feature list.
+
+[Runnable60-90minute practice](https://github.com/VSBhargav5/RoleWeave/blob/main/docs/rehearsal-workflow.md),
+[read-only audit verification](https://github.com/VSBhargav5/RoleWeave/blob/main/docs/shelf-audit.md).
+
 ## 11 November 2026 — RoleWeave v0.9 selected-source collections
 
 [PR #15 merged](https://github.com/VSBhargav5/RoleWeave/pull/15) ships eight coherent changes.

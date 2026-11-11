@@ -8,17 +8,21 @@ meaningful verification, and an explanation of the engineering tradeoffs.
 
 ## Project focus
 
-Latest November11 update: [v0.9 PR #15](https://github.com/VSBhargav5/RoleWeave/pull/15)
-completes selected-board Windows review/import, offline collection archives,
-scope-aware comparison, shortlist CSV and failed-source retries.225 offline tests
-and portable/installed CI pass. Private source-bound rehearsal notes are next;
-live/user acceptance and connected-account gates remain.
+Latest November11 update: [v0.10.1 audit PR #17](https://github.com/VSBhargav5/RoleWeave/pull/17)
+and [private rehearsal PR #16](https://github.com/VSBhargav5/RoleWeave/pull/16)
+are shipped after [selected collections PR #15](https://github.com/VSBhargav5/RoleWeave/pull/15).
+Source-bound drafts, private opt-in answer packs, explicit elapsed time and exact-
+source differences support deliberate practice without grading learning. A bounded
+read-only audit checks shelf sources/references beyond SQLite structure.245
+offline Windows tests and portable/installed CI pass. Next: try one complete
+synthetic workflow, then permitted personal use and observed fixes. Manual UI,
+real feeds/AI and connected-account evidence gates remain; no outcomes claimed.
 
-Latest November10 stopping point: [v0.8.1 watchlist foundation](https://github.com/VSBhargav5/RoleWeave/pull/14)
+Historical November10 stopping point (completed by v0.9): [v0.8.1 watchlist foundation](https://github.com/VSBhargav5/RoleWeave/pull/14)
 adds portable board/filter choices, a guarded Windows editor and explicit bounded
 multi-board source CLI.204 offline tests pass. Resume next with multi-board
-Windows collection preview/import, then collection archives/comparison. Those
-remain unfinished; live/user acceptance gates remain.
+Windows collection preview/import and collection archives/comparison were the
+next steps and are now shipped. Live/user acceptance gates remain.
 
 Latest November10 delivery update: [v0.8 PR #13](https://github.com/VSBhargav5/RoleWeave/pull/13)
 ships reviewed letters, exact private dossiers/recipient-only exports, manual
