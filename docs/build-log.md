@@ -2,6 +2,27 @@
 
 Entries distinguish shipped code, verification, limitations, and planned work.
 
+## 10 November 2026 — RoleWeave employer-watchlist foundation
+
+[PR #14 merged](https://github.com/VSBhargav5/RoleWeave/pull/14) contains four coherent changes.
+[Stopping-point package](https://github.com/VSBhargav5/RoleWeave/commit/1c9ccb37e39309f4270eb2fd3da168a8640cea02).
+Portable JSON stores checked board choices, explicit market defaults and local
+filters. The Windows editor preserves unapplied drafts and opens a selected
+discovery board without fetching. A source CLI explicitly fetches1-5 selected
+boards with cancellation,16MiB total byte bounds and visible partial failures.
+
+All five [PR CI jobs](https://github.com/VSBhargav5/RoleWeave/actions/runs/42817866841) passed, including portable and installed runtimes.
+204 offline Windows tests and source v0.8.1 self-test pass, including minimum-size
+layout and offline saved-source reuse. Every connector tree matches the tested
+source; final tree `c56be2c9a61949a189bc2bc78bc4a45146705c6f`.
+The user wrapped up for today. Multi-board Windows collection preview/import,
+collection archives/comparison and live compatibility remain unfinished.
+[Exact continuation and guide](https://github.com/VSBhargav5/RoleWeave/blob/main/docs/employer-watchlists.md).
+
+Watchlist files remain separate from shelf backups. No automatic scanning,
+account connection, paid call or actual application was performed. Prior v0.8
+delivery features remain; manual user acceptance and usefulness are unverified.
+
 ## 10 November 2026 — RoleWeave v0.8 application delivery
 
 [PR #13 merged](https://github.com/VSBhargav5/RoleWeave/pull/13) ships14 coherent changes.

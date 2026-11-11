@@ -8,6 +8,12 @@ meaningful verification, and an explanation of the engineering tradeoffs.
 
 ## Project focus
 
+Latest November10 stopping point: [v0.8.1 watchlist foundation](https://github.com/VSBhargav5/RoleWeave/pull/14)
+adds portable board/filter choices, a guarded Windows editor and explicit bounded
+multi-board source CLI.204 offline tests pass. Resume next with multi-board
+Windows collection preview/import, then collection archives/comparison. Those
+remain unfinished; live/user acceptance gates remain.
+
 Latest November10 delivery update: [v0.8 PR #13](https://github.com/VSBhargav5/RoleWeave/pull/13)
 ships reviewed letters, exact private dossiers/recipient-only exports, manual
 submission and local email excerpts, plus stale-history protection.194 offline

@@ -66,7 +66,7 @@ Alongside that, I build focused AI tools for **evaluation**, **decision capture*
 
 - **CueDesk is paused** after the screen-study iteration; real capture and live usefulness remain unverified.
 - 🖥️ **StudyFrame is paused** — [v0.2 screenshot focus](https://github.com/VSBhargav5/StudyFrame/pull/4) adds drag/pixel cropping, original restore and a current-source Windows launcher. 70 offline tests; the stale installed wheel was refreshed and installed imports now checked in CI. Live model quality and usefulness remain unverified.
-- **[RoleWeave is the active sprint](https://github.com/VSBhargav5/RoleWeave/pull/13)** — v0.8 adds reviewed cover letters, exact private application dossiers, recipient-only files, manual submission/reply observations and conflict-safe history. 194 offline tests and portable/installed CI pass. Live accounts/AI and personal usefulness remain unverified.
+- **[RoleWeave is the active sprint](https://github.com/VSBhargav5/RoleWeave/pull/14)** — reviewed application files, submission/reply observations and saved employer boards. 204 offline tests and source self-test pass. Multi-board Windows collection UI is next; live accounts/AI and usefulness remain unverified.
 - 🧾 **SettleTrace paused at v0.3** while RoleWeave leads the sprint. [Verified shipped work](https://github.com/VSBhargav5/SettleTrace/pull/3) remains intact; completeness, real-account validation, and customer demand remain open.
 - 🛡️ **PromptGuard reliability sprint completed** — coverage gates, validated inputs, safe history, and CI reports. [Merged work](https://github.com/VSBhargav5/PromptGuard/pull/2)
 - 🔧 **Later: LMS pipeline reliability** — scoring invariants, duplicate/late-event handling, and recovery
