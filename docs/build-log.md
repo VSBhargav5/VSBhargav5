@@ -2,6 +2,37 @@
 
 Entries distinguish shipped code, verification, limitations, and planned work.
 
+## 11 November 2026 — RoleWeave v0.12 Windows workspace refresh
+
+[PR #20 merged](https://github.com/VSBhargav5/RoleWeave/pull/20).
+[Workspace implementation](https://github.com/VSBhargav5/RoleWeave/commit/477eed44a58292b1b022c7955cf9fb8f07c82787),
+[compact-filter correction](https://github.com/VSBhargav5/RoleWeave/commit/fa1d677884703bfb7272a1d92efb0e3f464042a1).
+
+Dense single-line job rows now show role/company on two lines with a separate
+manual-stage column. Rows use immutable review IDs through sorting/filtering;
+existing tracking/export/draft guards remain. Filters collapse without losing
+values or the opened draft, and a visible summary preserves scope awareness.
+Indigo accents, a midnight rail/monogram, pastel metric cards, bordered work
+surfaces, clearer primary/secondary actions, stage badges and distinct linked/
+open/source typography give the native app a stronger reading hierarchy.
+
+Freshly authorized synthetic previews were visually inspected. Footer wrapping,
+native tab borders and taskbar overlap were corrected. A separate minimum-size
+check caught the expanded drawer leaving too little list space; the final compact
+layout retains visible role rows and posting space at1040x700. No personal window
+or data was controlled; full manual interaction/unusual scaling acceptance is
+still unverified. No screenshot bodies or private data are published here.
+
+259 final offline native Windows tests, exact final source and frozen runtime
+self-tests passed. All five [final PR CI jobs](https://github.com/VSBhargav5/RoleWeave/actions/runs/42991657450)
+passed, including portable/installed runtime and installer lifecycle. The final
+connector tree matches the tested tree `e45705b02cd6e0f3c28e32904ad01ab88da7a451`.
+Local v0.12 exe/ZIP refreshed. No new theme dependency, schema migration, hosted
+frontend or provider/account behavior. Google OAuth setup/live trial, AI quality,
+provider coverage and personal usefulness remain evidence gates.
+
+[Design guide and runnable verification](https://github.com/VSBhargav5/RoleWeave/blob/main/docs/workspace-design.md).
+
 ## 11 November 2026 — RoleWeave v0.11 personal readiness and Google follow-ups
 
 [Readiness PR #18](https://github.com/VSBhargav5/RoleWeave/pull/18) and

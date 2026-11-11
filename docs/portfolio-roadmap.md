@@ -8,16 +8,16 @@ meaningful verification, and an explanation of the engineering tradeoffs.
 
 ## Project focus
 
-Latest November11 update: [v0.11 Google follow-up sync](https://github.com/VSBhargav5/RoleWeave/pull/19)
-ships after [personal readiness PR #18](https://github.com/VSBhargav5/RoleWeave/pull/18).
-Eight core local groups are implemented/offline tested. Current onboarding and
-bounded live source evidence make remaining gates explicit. The chosen Google
-integration provides reviewed one-way reminders, app-created-calendar scope,
-session-only OAuth and source/ETag guards; no account or remote write tested yet.
-258 offline Windows tests and portable/installed PR CI pass. Next: user-owned
-Desktop OAuth setup, synthetic consent/create/update/conflict checks, then
-permitted personal use and observed fixes. AI quality/manual acceptance remain
-open; mailbox and general two-way synchronization stay deferred. No outcomes claimed.
+Latest November11 update: [v0.12 workspace design PR #20](https://github.com/VSBhargav5/RoleWeave/pull/20)
+ships the user-requested visual refresh: rich stable-ID opportunity rows, compact
+collapsible filters and clearer review/evidence hierarchy.259 offline Windows
+tests, source/frozen runtime checks and portable/installed PR CI pass. Synthetic
+workspace visuals were reviewed; unusual scaling/full manual acceptance remain.
+The [v0.11 Google follow-up integration](https://github.com/VSBhargav5/RoleWeave/pull/19)
+remains implemented/offline tested, with no live account/write trial yet. Next:
+user-owned Desktop OAuth setup and a synthetic consent/create/update/conflict
+trial, then permitted personal use and observed fixes. AI quality/manual acceptance
+remain open; mailbox/general two-way sync stays deferred. No outcomes claimed.
 
 Historical November10 stopping point (completed by v0.9): [v0.8.1 watchlist foundation](https://github.com/VSBhargav5/RoleWeave/pull/14)
 adds portable board/filter choices, a guarded Windows editor and explicit bounded
