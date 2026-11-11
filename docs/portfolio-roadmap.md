@@ -8,15 +8,16 @@ meaningful verification, and an explanation of the engineering tradeoffs.
 
 ## Project focus
 
-Latest November11 update: [v0.10.1 audit PR #17](https://github.com/VSBhargav5/RoleWeave/pull/17)
-and [private rehearsal PR #16](https://github.com/VSBhargav5/RoleWeave/pull/16)
-are shipped after [selected collections PR #15](https://github.com/VSBhargav5/RoleWeave/pull/15).
-Source-bound drafts, private opt-in answer packs, explicit elapsed time and exact-
-source differences support deliberate practice without grading learning. A bounded
-read-only audit checks shelf sources/references beyond SQLite structure.245
-offline Windows tests and portable/installed CI pass. Next: try one complete
-synthetic workflow, then permitted personal use and observed fixes. Manual UI,
-real feeds/AI and connected-account evidence gates remain; no outcomes claimed.
+Latest November11 update: [v0.11 Google follow-up sync](https://github.com/VSBhargav5/RoleWeave/pull/19)
+ships after [personal readiness PR #18](https://github.com/VSBhargav5/RoleWeave/pull/18).
+Eight core local groups are implemented/offline tested. Current onboarding and
+bounded live source evidence make remaining gates explicit. The chosen Google
+integration provides reviewed one-way reminders, app-created-calendar scope,
+session-only OAuth and source/ETag guards; no account or remote write tested yet.
+258 offline Windows tests and portable/installed PR CI pass. Next: user-owned
+Desktop OAuth setup, synthetic consent/create/update/conflict checks, then
+permitted personal use and observed fixes. AI quality/manual acceptance remain
+open; mailbox and general two-way synchronization stay deferred. No outcomes claimed.
 
 Historical November10 stopping point (completed by v0.9): [v0.8.1 watchlist foundation](https://github.com/VSBhargav5/RoleWeave/pull/14)
 adds portable board/filter choices, a guarded Windows editor and explicit bounded
