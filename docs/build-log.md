@@ -2,6 +2,38 @@
 
 Entries distinguish shipped code, verification, limitations, and planned work.
 
+## 12 November 2026 — RoleWeave v0.14 release safety beta
+
+[Release-safety PR #22](https://github.com/VSBhargav5/RoleWeave/pull/22),
+[schema compatibility](https://github.com/VSBhargav5/RoleWeave/commit/20e542722fb33485a7c2bbe3df4ce8cfbeac2b08),
+[private UI errors](https://github.com/VSBhargav5/RoleWeave/commit/84056f75022b29f53b9bcaa77a0e670f40b8d566),
+[release gates](https://github.com/VSBhargav5/RoleWeave/commit/575a56ed44ff7e541c204fe0d3ec051a57d5c0de).
+
+The user requested production readiness. Auditing startup found that table
+initialization could touch incompatible files before detecting the problem.
+Known legacy declarations are now adopted atomically; foreign/newer/altered
+schemas and unexpected objects are refused before DDL. Valid marked shelves
+reopen without header rewrites. Regression fixtures prove source-row preservation,
+byte-preserving refusals and rollback after a synthetic mid-adoption failure.
+
+Unexpected Tk callbacks show RW-UI-001 without private exception text,
+persistence, transmission or automatic retry. The message warns that prior work
+may already have committed and asks users to inspect state before repeating it.
+Startup errors exit nonzero. This does not claim power-loss recovery.
+
+272 offline native Windows tests and source/frozen v0.14 synthetic self-tests
+passed. [PR CI](https://github.com/VSBhargav5/RoleWeave/actions/runs/43151637777)
+checks portable and installed behavior and emits same-run SHA256SUMS for the
+ZIP/setup artifacts. Checksums detect changed downloads; they are not signing.
+The tested/published tree is `6846f518d3bbe9a3f438aa7080b9384145c937bd`.
+
+The owner selected local Windows v1 first. Google/AI stay optional previews
+outside local-v1 acceptance. This remains an unsigned controlled beta:
+clean-Windows human acceptance, signing/distribution and interrupted-upgrade
+confidence remain open; no production, adoption or usefulness claim is made. No real database,
+account, credential or paid call was used. See the
+[release acceptance and rollback guide](https://github.com/VSBhargav5/RoleWeave/blob/main/docs/release-acceptance.md).
+
 ## 11 November 2026 — RoleWeave v0.13 dark neon workspace
 
 [UI PR #21](https://github.com/VSBhargav5/RoleWeave/pull/21),
