@@ -8,6 +8,15 @@ meaningful verification, and an explanation of the engineering tradeoffs.
 
 ## Project focus
 
+Latest November12 user-goal update: [v0.15 Apply workspace PR #23](https://github.com/VSBhargav5/RoleWeave/pull/23)
+connects the entire manual application journey: save job, review profile/evidence,
+prepare PDF/letter, export recipient files, open employer page and record the
+submission/follow-up. A fresh synthetic UI journey verifies these steps and
+backup restore without requiring a private dossier.276 Windows tests pass;
+actual employer submission remains the user's manual action. Next is a permitted
+personal first-application trial and observed friction fixes. Google/AI remain
+optional previews outside local v1; no real submission or outcome is claimed.
+
 Latest November12 update: [v0.14 release-safety PR #22](https://github.com/VSBhargav5/RoleWeave/pull/22)
 adds atomic known-legacy schema adoption, incompatible-file refusal, private UI
 error reporting, startup failure exit codes and download checksums.272 offline
