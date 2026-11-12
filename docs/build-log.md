@@ -2,6 +2,41 @@
 
 Entries distinguish shipped code, verification, limitations, and planned work.
 
+## 12 November 2026 — RoleWeave v0.16 practical application handoff
+
+[Handoff PR #24](https://github.com/VSBhargav5/RoleWeave/pull/24),
+[upload folders](https://github.com/VSBhargav5/RoleWeave/commit/17191da366cb56ce6f5f12b0cc9109df73af093c),
+[structured submissions](https://github.com/VSBhargav5/RoleWeave/commit/9abc2fbbdc7ac8a5817a9b2ec9c9dce944169acf),
+[release verification](https://github.com/VSBhargav5/RoleWeave/commit/705a39a6437f753051b360230ddea08ebfb29685).
+
+Users can select PDF/TXT/HTML/matching-letter files with checkboxes and save an
+upload-ready folder. No format-name typing or ZIP extraction is required.
+Only recipient documents are written; private sources/history are excluded.
+Existing folders are never reused. The local completion note is published last;
+failed exports can leave an incomplete folder without that note and never
+claim success. The user can open the saved folder and upload documents manually.
+Legacy ZIP export remains available; no automatic upload or applying is added.
+
+Tracking now opens a structured submission form for date, channel, reference,
+note and follow-up without a private dossier. A matching dossier remains an
+optional evidence link. Older submission notes retain interview/offer/closed
+states. Stale forms cannot overwrite newer tracking; explicit reload preserves
+submission fields and requires renewed confirmation. Exact duplicates are
+refused. A saved observation followed by view failure is reported as saved.
+
+291 native Windows offline tests, final source/frozen self-tests and the updated
+fresh-user UI journey pass. That journey exports actual PDF/TXT upload files,
+checks private-source exclusion, records a basic structured submission after a
+mocked browser handoff and restores history/documents into another shelf; it
+creates no ZIP/dossier file. Native minimum-size form controls and cancellation,
+partial writes, stale drafts and refresh failures have regressions. Packaged
+smoke checks upload-folder generation and the native picker. Tested tree:
+`3da6d718ed2e7bc0fccc6b6408ea835164ac040f`.
+
+No personal/employer data, real application/upload, live account or paid model
+call was used. Real portal behavior, personal usability and unusual scaling
+remain unverified. [Updated first-application guide](https://github.com/VSBhargav5/RoleWeave/blob/main/docs/first-application.md).
+
 ## 12 November 2026 — RoleWeave v0.15 complete manual application journey
 
 [Workflow PR #23](https://github.com/VSBhargav5/RoleWeave/pull/23),
