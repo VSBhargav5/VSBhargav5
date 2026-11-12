@@ -8,6 +8,15 @@ meaningful verification, and an explanation of the engineering tradeoffs.
 
 ## Project focus
 
+Latest November12 update: [v0.14 release-safety PR #22](https://github.com/VSBhargav5/RoleWeave/pull/22)
+adds atomic known-legacy schema adoption, incompatible-file refusal, private UI
+error reporting, startup failure exit codes and download checksums.272 offline
+Windows tests and source/frozen checks pass. The current deliverable is a
+controlled beta. The owner chose local Windows v1 first: clean-Windows human
+acceptance, signing/distribution and interrupted-upgrade validation remain
+tracked. Google/AI are optional previews, outside local-v1 acceptance.
+See the [release acceptance guide](https://github.com/VSBhargav5/RoleWeave/blob/main/docs/release-acceptance.md).
+
 Latest November11 update: [v0.13 dark workspace PR #21](https://github.com/VSBhargav5/RoleWeave/pull/21)
 adds near-black surfaces, violet/cyan accents, gradient weave artwork, rounded
 native controls and exact evidence cards.261 offline Windows tests, eight final
