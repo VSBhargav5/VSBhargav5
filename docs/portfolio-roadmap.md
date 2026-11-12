@@ -8,6 +8,14 @@ meaningful verification, and an explanation of the engineering tradeoffs.
 
 ## Project focus
 
+Latest November12 handoff update: [v0.16 PR #24](https://github.com/VSBhargav5/RoleWeave/pull/24)
+adds direct upload folders with checkbox document selection and structured
+submission date/channel/reference/follow-up without a dossier. Later stages and
+newer tracking are protected.291 native Windows tests and source/frozen smoke
+pass; the complete synthetic journey uses actual files without ZIP extraction.
+Next is permitted personal application use and observed friction fixes. Employer
+submission remains manual; Google/AI are optional previews outside local v1.
+
 Latest November12 user-goal update: [v0.15 Apply workspace PR #23](https://github.com/VSBhargav5/RoleWeave/pull/23)
 connects the entire manual application journey: save job, review profile/evidence,
 prepare PDF/letter, export recipient files, open employer page and record the
