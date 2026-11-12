@@ -2,6 +2,35 @@
 
 Entries distinguish shipped code, verification, limitations, and planned work.
 
+## 12 November 2026 — RoleWeave v0.15 complete manual application journey
+
+[Workflow PR #23](https://github.com/VSBhargav5/RoleWeave/pull/23),
+[implementation](https://github.com/VSBhargav5/RoleWeave/commit/aa5670d70a618a9ad4bc3763566cc051f2029eb4).
+
+The owner clarified the goal: a user must be able to complete the application
+journey, not accumulate isolated features and tests. A visible Apply workspace
+now connects reviewed career profile, exact job evidence, frozen PDF resume,
+optional letter/recipient bundle, employer-page handoff and manual tracking.
+Actual saved prerequisites are explained. Basic Applied/follow-up tracking needs
+no private dossier. Recipient files are emphasized; private archives remain
+private. A failed browser launch is reported instead of claiming the page opened.
+Opening a page or exporting documents never marks an application Applied.
+
+The fresh-user native UI journey starts from an empty shelf, saves a posting,
+creates a reviewed profile, links evidence, freezes/exports a PDF, parses its
+text, exports a letter and recipient-only ZIP, exercises a mocked browser
+handoff, records explicit Applied/follow-up and restores the records into a
+separate shelf. Private source notes are absent from employer-facing files;
+no private dossier is written. This verifies the local software journey, not
+an actual employer submission, successful hiring outcome or personal usefulness.
+
+276 offline Windows tests, final focused journey checks and source/frozen v0.15
+self-tests pass. Tested/published tree: `2fd2ea32e2980f07c657cc644a8a4eb7c8808c12`.
+[First-application walkthrough](https://github.com/VSBhargav5/RoleWeave/blob/main/docs/first-application.md)
+explains direct PDF upload, extracting recipient ZIPs, manual employer-site
+submission and tracking without a dossier. Google/AI stay optional previews;
+real portal behavior, unusual scaling and user acceptance remain unverified.
+
 ## 12 November 2026 — RoleWeave v0.14 release safety beta
 
 [Release-safety PR #22](https://github.com/VSBhargav5/RoleWeave/pull/22),
