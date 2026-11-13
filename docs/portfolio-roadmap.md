@@ -8,6 +8,15 @@ meaningful verification, and an explanation of the engineering tradeoffs.
 
 ## Project focus
 
+Latest November13 continuation: [v0.18 PR #26](https://github.com/VSBhargav5/RoleWeave/pull/26)
+closes repeat-use gaps: saved letters reopen and join matching recipient PDFs;
+explicit search pages preserve scope/market; application filters and stale-safe
+reminders keep the next action visible.304 Windows tests and the expanded
+synthetic browser journey pass. Next useful gates remain a permitted real first
+application/helper acceptance trial and observed fixes. Existing-resume import,
+richer supported form controls and complete web-artifact recovery are possible
+next workflow work, not shipped claims.
+
 Latest November13 workflow: [v0.17 PR #25](https://github.com/VSBhargav5/RoleWeave/pull/25)
 replaces the default presentation with a browser-rendered CSS/SVG workspace while
 preserving Python/SQLite and native advanced tools. Search by role/location no

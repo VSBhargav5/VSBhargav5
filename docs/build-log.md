@@ -2,6 +2,43 @@
 
 Entries distinguish shipped code, verification, limitations, and planned work.
 
+## 13 November 2026 — RoleWeave v0.18 continuing applications
+
+[Workflow PR #26](https://github.com/VSBhargav5/RoleWeave/pull/26),
+[saved letters and matching documents](https://github.com/VSBhargav5/RoleWeave/commit/f8f65a4cf7edf52c06eb3fbdf8ee9f7d8ea1d334),
+[explicit search pages](https://github.com/VSBhargav5/RoleWeave/commit/095634c63c8dd6167aacdca425ec047c1538c051),
+[board filters and reminders](https://github.com/VSBhargav5/RoleWeave/commit/4400b28da444069fd21643e84cf42a925ad1d25e),
+[release and practice guide](https://github.com/VSBhargav5/RoleWeave/commit/061283b1d58c436f25b4a066deb33ed063e5675e).
+
+Saved cover letters reopen after restart in Documents and exact-job application
+kits. Recipient ZIPs can include a PDF plus a same-job/frozen-profile letter TXT;
+private sources/history remain excluded. Corrupt files are reported and preserved.
+The catalog is bounded; private web artifacts still need separate preservation
+outside shelf backups.
+
+Discovery has explicit Previous/Next20-record pages, validated provider offsets,
+retained destination market, scoped result labels and no automatic polling.
+Concurrent searches are refused, and failed requests preserve prior results.
+Pages can move/repeat as a live source changes; no completeness/closure claim.
+A generic public IN/data-engineer offset20 check accepted20records/excluded0.
+Applications combines market/text/stage/due filters. Stage/submission forms keep
+existing reminders; stale saves refuse, while explicit reload retains drafts and
+shows newer tracking, resetting submission confirmation.
+
+304 offline Windows tests pass. Expanded Chromium checks cover letter reopening,
+recipient selection, reminder preservation, concurrent tracking refusal/reload,
+combined filters and21synthetic records over2pages, alongside earlier document
+and7native-contact-fill/no-submit checks. Source/frozen runtime checks and bundled
+asset equality pass. The complete v0.18 ZIP and a separate verified Windows copy
+are available; promotion into the current app folder was refused because it was
+open, preserving that package. Real installed-helper/employer compatibility,
+personal acceptance, signing and optional live integrations remain unverified.
+No personal data, paid call, account link or actual application was sent.
+All6PR CI43414730533 jobs passed, including browser, Windows/Linux3.11/3.12,
+portable/installed runtime and installer lifecycle/checksums. PR #26 merged at
+955db25a1b5a5f5e9827e7c278a0e412e86ae244; tested/published tree
+ba53f048be84117feea2f5a7ae1280b3724eff9b matches exactly.
+
 ## 13 November 2026 — RoleWeave browser application workspace
 
 [Workspace and form-helper PR #25](https://github.com/VSBhargav5/RoleWeave/pull/25),
