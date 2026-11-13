@@ -2,6 +2,40 @@
 
 Entries distinguish shipped code, verification, limitations, and planned work.
 
+## 13 November 2026 — RoleWeave browser application workspace
+
+[Workspace and form-helper PR #25](https://github.com/VSBhargav5/RoleWeave/pull/25),
+[implementation](https://github.com/VSBhargav5/RoleWeave/commit/d4b16016660697dc943fb9fa7b0664be02fd14d7),
+[setup and runnable checks](https://github.com/VSBhargav5/RoleWeave/blob/main/docs/browser-workspace.md).
+
+The default launcher opens a browser-rendered charcoal/lime workspace with CSS
+and original SVG rather than another native Tkinter theme. Python/SQLite remain
+authoritative and native advanced tools remain accessible. Users search by role,
+location, country and remote preference through the personal/non-commercial
+FreeHire API, explicitly choose an application market, review evidence, freeze
+resumes/letters, download recipient documents and record their own submissions.
+One generic public IN search returned20 accepted records with0 exclusions;
+provider totals are not verified coverage, relevance or sponsorship evidence.
+
+The original MV3 Chrome/Edge helper uses activeTab and session memory. It loads
+only an explicitly prepared contact sheet, previews destination/fields and fills
+checked supported empty native contact inputs after consent. It never submits,
+uploads, clicks Next, overwrites existing values or answers sensitive questions.
+No upstream Dossier source/assets/history were imported.
+
+298 offline native Windows tests pass. Chromium verifies synthetic search/save,
+PDF, letter and recipient ZIP downloads, submission tracking, draft guards,
+seven actual native input fills, stale-preview refusal and zero submits. Desktop
+and900px layouts were checked and screenshots inspected. Source/frozen web assets
+and retained native runtime smoke pass; bundled assets match committed source.
+All six PR CI checks passed, including browser-workflow, four Python jobs
+and Windows portable/installer lifecycle checks. PR #25 is merged at
+960ca73d36f94cb511f4b2c47d84c7f8987c0901; tested/published tree
+60bf9ccc272d9f9198956c842d7faec75dc6902b matches exactly. Public/production readiness is
+not inferred from these checks. Manual helper installation/toolbar permissions,
+real ATS compatibility, personal acceptance, signing and optional live accounts
+remain unverified. Separate private web artifacts are outside shelf backups.
+
 ## 12 November 2026 — RoleWeave v0.16 practical application handoff
 
 [Handoff PR #24](https://github.com/VSBhargav5/RoleWeave/pull/24),
