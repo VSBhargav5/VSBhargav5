@@ -8,6 +8,16 @@ meaningful verification, and an explanation of the engineering tradeoffs.
 
 ## Project focus
 
+Latest November13 workflow: [v0.17 PR #25](https://github.com/VSBhargav5/RoleWeave/pull/25)
+replaces the default presentation with a browser-rendered CSS/SVG workspace while
+preserving Python/SQLite and native advanced tools. Search by role/location no
+longer needs a board URL. The original Chrome/Edge helper reviews and fills
+supported empty contact inputs; uploads, screening answers and final submission
+remain manual.298 offline Windows tests, a synthetic Chromium application
+journey, seven native input fills and source/frozen runtime checks pass. Next:
+permitted helper installation and a real first-application acceptance trial,
+followed by observed compatibility fixes. No universal ATS/production claim.
+
 Latest November12 handoff update: [v0.16 PR #24](https://github.com/VSBhargav5/RoleWeave/pull/24)
 adds direct upload folders with checkbox document selection and structured
 submission date/channel/reference/follow-up without a dossier. Later stages and
