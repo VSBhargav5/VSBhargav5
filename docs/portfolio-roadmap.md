@@ -8,6 +8,14 @@ meaningful verification, and an explanation of the engineering tradeoffs.
 
 ## Project focus
 
+Latest November13 correction: [v0.18.1 PR #27](https://github.com/VSBhargav5/RoleWeave/pull/27)
+fixes a real packaged first-search failure that source/mocked checks missed.
+A missing runtime SSL policy asset is now retained without bypassing TLS checks.
+306 offline tests, frozen TLS initialization and the actual packaged browser
+search path are verified;20public London results observed from an isolated empty
+workspace. Prior v0.17/v0.18 local builds should be replaced with the corrected
+complete package. Remaining personal/helper/ATS gates stay open.
+
 Latest November13 continuation: [v0.18 PR #26](https://github.com/VSBhargav5/RoleWeave/pull/26)
 closes repeat-use gaps: saved letters reopen and join matching recipient PDFs;
 explicit search pages preserve scope/market; application filters and stale-safe
