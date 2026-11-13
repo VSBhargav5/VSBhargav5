@@ -2,6 +2,37 @@
 
 Entries distinguish shipped code, verification, limitations, and planned work.
 
+## 13 November 2026 — fix the actual packaged first search
+
+[Search fix PR #27](https://github.com/VSBhargav5/RoleWeave/pull/27),
+[implementation](https://github.com/VSBhargav5/RoleWeave/commit/b2ec8d36f98607174a8fb3d040f8922b1723d165).
+
+The user reported failure on their initial search. Reproduced v0.18 packaged
+HTTP400 while source returned20results. The build Python's SSLContext expected a
+runtime policy sidecar omitted from the local Windows package, raising before
+any HTTPS request. Earlier source live checks and mocked browser tests had not
+verified this real packaged path. Those checks did not establish live packaged
+search functionality.
+
+v0.18.1 retains the runtime SSL policy asset beside frozen ssl.py without weakening
+certificate/hostname verification or changing global trust settings. HTTPS setup
+errors are actionable and sanitized; loading/errors remain visible inline. The
+frozen offline web smoke now initializes a verified TLS context. Optional public
+CLI and browser checks exercise the actual installed executable, not source.
+
+306 offline Windows tests and synthetic browser regressions pass. The corrected
+packaged CLI, local HTTP route and actual browser form returned HTTP200 with20
+accepted/0excluded public results for data engineer/london; screenshot inspected
+using an empty isolated database. Frozen smoke reports verified_https_context=true.
+No personal saved jobs, credentials, paid calls, account links or applications
+used. Corrected ZIP/versioned app copy are ready; the open old folder was preserved.
+The old host must be quit before opening v0.18.1. Real employer submission and
+installed-helper acceptance remain unverified.
+All6PR CI43419724546 jobs passed, including frozen TLS initialization, browser,
+Windows/Linux3.11/3.12 and portable/installer lifecycle checks. PR #27 merged at
+8235901663703c4f7b4689dde7ea182ca3246e41, tested tree
+7d89ee4ecfc9170e170795878fa8cea20a3f444b matched exactly.
+
 ## 13 November 2026 — RoleWeave v0.18 continuing applications
 
 [Workflow PR #26](https://github.com/VSBhargav5/RoleWeave/pull/26),
