@@ -8,6 +8,13 @@ meaningful verification, and an explanation of the engineering tradeoffs.
 
 ## Project focus
 
+Latest November13 startup correction: [v0.18.2 PR #28](https://github.com/VSBhargav5/RoleWeave/pull/28)
+removes the need to find a hidden old server before opening the app. Current
+matching hosts are reused; older/unrelated processes are preserved and occupied
+ports recover automatically.311 offline tests and real packaged normal/repeat
+startup plus public search are verified. User acceptance and actual employer/helper
+compatibility remain open; do not infer them from these checks.
+
 Latest November13 correction: [v0.18.1 PR #27](https://github.com/VSBhargav5/RoleWeave/pull/27)
 fixes a real packaged first-search failure that source/mocked checks missed.
 A missing runtime SSL policy asset is now retained without bypassing TLS checks.

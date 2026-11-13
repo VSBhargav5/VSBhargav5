@@ -2,6 +2,35 @@
 
 Entries distinguish shipped code, verification, limitations, and planned work.
 
+## 13 November 2026 — recover from hidden background servers
+
+[Startup recovery PR #28](https://github.com/VSBhargav5/RoleWeave/pull/28),
+[implementation](https://github.com/VSBhargav5/RoleWeave/commit/54faa8678ae69450f4b2d4232aa4adada8e9acbc).
+
+The user could not find the old app to close: its browser tab was gone but its
+v0.17 server still owned8765, blocking the corrected executable. Read-only health
+inspection confirmed this. Immediate recovery opened corrected0.18.1 on a free
+port without closing another process or resetting the workspace.
+
+v0.18.2 normal launch checks a bounded loopback range for the exact current
+version/workspace, reopens a match or binds a free port. Different versions,
+workspaces and unrelated servers stay untouched. Occupancy/bind races fall back
+safely; Windows can time out before reporting refused loopback connections, so
+binding supplies the authoritative occupancy check. Non-port failures still fail
+explicitly. No process termination or CLI flag is needed for ordinary launch.
+
+311 offline Windows tests and the full synthetic Chromium workflow pass. The
+actual packaged preferred-port startup was tested while the hidden v0.17 server
+remained: a second launch reused the matching host, and the packaged browser
+London search returnedHTTP200/20accepted/0excluded using an empty isolated DB.
+The complete ZIP and versioned app copy are ready; the old locked folder stays
+preserved. The previous TLS asset fix and privacy/consent boundaries remain.
+Personal acceptance, real installed-helper/employer compatibility, signing and
+optional live integrations remain separate unverified gates. No personal data
+was transmitted externally and no application was submitted.
+All6PR CI43422969675 checks passed, including browser, Windows/Linux3.11/3.12,
+portable/installed runtime and installer lifecycle checks.
+
 ## 13 November 2026 — fix the actual packaged first search
 
 [Search fix PR #27](https://github.com/VSBhargav5/RoleWeave/pull/27),
