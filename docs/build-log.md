@@ -2,6 +2,35 @@
 
 Entries distinguish shipped code, verification, limitations, and planned work.
 
+## 14 November 2026 — stop reopening the retired native interface
+
+[Browser-only release PR #32](https://github.com/VSBhargav5/RoleWeave/pull/32),
+[coherent repair commit](https://github.com/VSBhargav5/RoleWeave/commit/6ca168e4a867cab2ea996ec151576fa72d637d9c),
+[launcher and preserved-data guide](https://github.com/VSBhargav5/RoleWeave/blob/main/docs/single-interface.md).
+
+Old native windows could return through an advanced-tools button, a launcher
+preferring stale out/portable, and local native GUI tests. V0.22 makes the browser
+the only normal interface, returns 410 for the retired spawn endpoint, redirects
+old --legacy arguments and selects the exact current versioned package. Native
+regression windows are opt-in on isolated CI runners, not ordinary laptop tests.
+Both packaged smoke flags run the headless browser runtime. Existing databases,
+builds and running processes are preserved; no automatic workspace merge occurs.
+
+346 local tests discovered: 255 passed, 91 archived native UI skips. All six
+[PR CI jobs](https://github.com/VSBhargav5/RoleWeave/actions/runs/43587062321)
+passed, including native archive coverage on Windows, actual browser workflow,
+packaged runtime, installer lifecycle and data preservation. Actual local v0.22
+frozen API and full packaged synthetic browser journey passed. Tested and
+published tree: 8a7a7b4213499c19b5b0038ec002fa34d4b61b42; merged at
+927c0d28dfbf17071ab92595ee299907e1581d79. Local portable ZIP SHA256:
+c075373b22f603a96345275555195e2af693444445470475318770ece4964648.
+
+Native-only employer boards, Calendar setup, audit and rehearsal screens are
+pending browser migration. This consolidation does not establish full Dossier
+parity, real model quality, universal employer compatibility or personal
+acceptance. Existing old windows need a one-time save/close; use the stable
+launcher thereafter. No personal data, live model call or account link used.
+
 ## 14 November 2026 — reviewed AI drafts and aligned application workspace
 
 [AI workflow / UI PR #31](https://github.com/VSBhargav5/RoleWeave/pull/31),

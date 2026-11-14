@@ -8,6 +8,17 @@ meaningful verification, and an explanation of the engineering tradeoffs.
 
 ## Project focus
 
+
+Latest November 14 interface repair: [v0.22 PR #32](https://github.com/VSBhargav5/RoleWeave/pull/32)
+retires the native-tools fallback, redirects historical --legacy launches to the
+browser and fixes the repository launcher to choose the current versioned build.
+Default local tests no longer open archived native windows; CI explicitly retains
+that regression coverage. 255 local tests passed, 91 archived native skips;
+all six PR CI jobs and actual packaged synthetic browser checks passed. Stored
+data is preserved. Native-only board management, Calendar setup, audit and
+rehearsal need browser migration before being offered again.
+[One interface and workspace paths](https://github.com/VSBhargav5/RoleWeave/blob/main/docs/single-interface.md).
+
 Latest November 14 AI/UI iteration: [v0.21 PR #31](https://github.com/VSBhargav5/RoleWeave/pull/31)
 adds reviewed browser proposals and explicit revisions, persistent per-job drafts,
 master-profile preservation and matching PDF/letter handoff. The previous missing
