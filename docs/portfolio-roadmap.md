@@ -8,6 +8,16 @@ meaningful verification, and an explanation of the engineering tradeoffs.
 
 ## Project focus
 
+Latest November 14: [v0.19 PR #29](https://github.com/VSBhargav5/RoleWeave/pull/29)
+adds reviewed existing-resume import and complete managed-web-workspace recovery,
+with a guided first application path. The actual Windows package, rather than
+only source/mocks, is exercised through import, profile save, documents, contact
+filling, manual tracking and separate recovery. Current scope and limits:
+[first-use guide](https://github.com/VSBhargav5/RoleWeave/blob/main/docs/using-roleweave.md).
+The import/recovery items described as possible work in older entries below
+are now implemented. Real helper/employer acceptance, signing and optional live
+account/model checks remain separate; no production or hiring outcome is claimed.
+
 Latest November13 startup correction: [v0.18.2 PR #28](https://github.com/VSBhargav5/RoleWeave/pull/28)
 removes the need to find a hidden old server before opening the app. Current
 matching hosts are reused; older/unrelated processes are preserved and occupied

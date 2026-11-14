@@ -2,6 +2,40 @@
 
 Entries distinguish shipped code, verification, limitations, and planned work.
 
+## 14 November 2026 — start from an existing resume and recover the workspace
+
+[Workflow PR #29](https://github.com/VSBhargav5/RoleWeave/pull/29),
+[local parser](https://github.com/VSBhargav5/RoleWeave/commit/14a479639d6f01dd40d336b6756064d624c754ab),
+[reviewed import and recovery](https://github.com/VSBhargav5/RoleWeave/commit/19f0318d6b7675c159c26e7806e83b47155f5602),
+[packaged workflow](https://github.com/VSBhargav5/RoleWeave/commit/b0a2e69265c4934f8dbeb10d0cb5e054a551dc5d),
+[dependency consistency](https://github.com/VSBhargav5/RoleWeave/commit/3d4de8e9dbbf0b58a133420fb80c3f2592d2cd44).
+
+Career profile imports selectable-text PDF, DOCX or UTF-8 TXT locally in a
+bounded child process. Users review actual excerpts, select sections, confirm
+and explicitly save their profile draft. Original bytes and fingerprints remain
+local; no identity, qualification or employment claim is inferred. No OCR or
+layout reproduction is promised.
+
+Recovery ZIPs include the shelf and all managed web letters, recipient files,
+original imports and retained provider responses. Preview validates paths, sizes,
+hashes and the database before confirmed, staged recovery into a new workspace.
+The active one is preserved. Completed copies reopen from Settings. Bundles are
+unencrypted and bounded at 64 MiB/1,000 managed files; external exports, other
+workspaces, credentials and unsaved drafts are excluded. Windows paths at the
+legacy length boundary are refused before persistent output.
+
+All 325 offline Windows tests and all six PR CI checks passed, including the
+Windows/Linux matrix, packaged browser journey, installed runtime and installer
+lifecycle data preservation. PR #29 is merged with its exact tested tree.
+The actual v0.19 Windows executable passes the frozen PDF-worker/recovery/TLS
+self-test and complete synthetic Chromium application journey. Final packaged
+QA caught the deep-path failure; CI initially caught a duplicate PDF dependency
+pin. Both were corrected before merge. Synthetic checks do not establish real
+helper installation, arbitrary employer controls, personal acceptance, signing
+or optional live AI/Google compatibility. Submission, uploads and screening
+answers stay with the user. No personal transmission or application was made.
+[First-use guide](https://github.com/VSBhargav5/RoleWeave/blob/main/docs/using-roleweave.md).
+
 ## 13 November 2026 — recover from hidden background servers
 
 [Startup recovery PR #28](https://github.com/VSBhargav5/RoleWeave/pull/28),
