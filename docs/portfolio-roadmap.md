@@ -8,6 +8,15 @@ meaningful verification, and an explanation of the engineering tradeoffs.
 
 ## Project focus
 
+Latest November 14 studio: [v0.20 PR #30](https://github.com/VSBhargav5/RoleWeave/pull/30)
+adds visual resume preparation, three themes, ordered facts and frozen PDF letters
+in recipient kits. The actual Windows package and 331 offline tests exercise the
+workflow. Deep Windows recovery paths are supported. Next implementation priority
+is source-bound browser AI tailoring/refinement with deliberate payload/provider
+consent; existing native quote proposals are not equivalent. Scheduled discovery,
+Gmail/general sync, broader form controls and real acceptance remain separate gaps.
+[Current scope and guide](https://github.com/VSBhargav5/RoleWeave/blob/main/docs/application-studio.md).
+
 Latest November 14: [v0.19 PR #29](https://github.com/VSBhargav5/RoleWeave/pull/29)
 adds reviewed existing-resume import and complete managed-web-workspace recovery,
 with a guided first application path. The actual Windows package, rather than
