@@ -2,6 +2,39 @@
 
 Entries distinguish shipped code, verification, limitations, and planned work.
 
+## 14 November 2026 — visual application studio and PDF cover letters
+
+[Studio PR #30](https://github.com/VSBhargav5/RoleWeave/pull/30),
+[frozen document contracts](https://github.com/VSBhargav5/RoleWeave/commit/44c1d4a63f38ca3766194654c3855080cd188f91),
+[Windows recovery paths](https://github.com/VSBhargav5/RoleWeave/commit/b3c7cfa65cdcd57d323502dcb1c4dadbbca19585),
+[browser studio](https://github.com/VSBhargav5/RoleWeave/commit/70942b4558193b77288be5c9717229e042289847),
+[release evidence](https://github.com/VSBhargav5/RoleWeave/commit/372574697e2ae1a8fffce16a6d9317b6a9361d1b).
+
+The two-pane browser studio selects a resume theme and orders reviewed facts
+within fixed sections. Its HTML layout preview is read-only; exact preview PDF
+bytes can be downloaded before freezing. Changing layout/order/label invalidates
+review, and the server checks the preview fingerprint before saving. New letters
+freeze PDF bytes and join the matching resume in a recipient-only two-PDF kit.
+TXT remains available; old document/dossier/backup versions remain compatible.
+Windows recovery now handles deep paths without changing system settings.
+
+PR #30 is merged; all six PR checks passed, covering Windows/Linux 3.11/3.12,
+source and actual packaged browser workflows, installed runtime and installer lifecycle.
+331 offline native Windows tests, actual packaged browser workflow and frozen
+TLS/parser/recovery/studio checks passed. Three resume PDFs and a cover letter
+were rendered and visually inspected; prior executable-created documents replay.
+Visual QA caught an unstyled preview under the restrictive content policy; a
+scoped local stylesheet corrected it without relaxing that policy. Browser QA
+also found the deep-path issue and verifies fact ordering and stale preview.
+
+[Current guide](https://github.com/VSBhargav5/RoleWeave/blob/main/docs/application-studio.md)
+and [gap review](https://github.com/VSBhargav5/RoleWeave/blob/main/docs/research-and-plan.md)
+separate this work from Dossier parity. Browser AI drafting/chat, scheduled
+search agent, Gmail/broad sync and universal employer controls remain missing;
+manual uploads/screening/final submission and real acceptance remain explicit.
+No live model call, personal transmission or application was performed. Unsigned
+controlled beta; no hiring, usefulness or production reliability claim.
+
 ## 14 November 2026 — start from an existing resume and recover the workspace
 
 [Workflow PR #29](https://github.com/VSBhargav5/RoleWeave/pull/29),
