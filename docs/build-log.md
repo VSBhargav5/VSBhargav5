@@ -2,6 +2,48 @@
 
 Entries distinguish shipped code, verification, limitations, and planned work.
 
+## 14 November 2026 — reviewed AI drafts and aligned application workspace
+
+[AI workflow / UI PR #31](https://github.com/VSBhargav5/RoleWeave/pull/31),
+[request and review contracts](https://github.com/VSBhargav5/RoleWeave/commit/66e2366c592ef6d62a2b027de95bbf113f555c10),
+[persistent draft recovery](https://github.com/VSBhargav5/RoleWeave/commit/3fc43e9d12126448d925bd269b8d206a809f1a55),
+[dashboard alignment](https://github.com/VSBhargav5/RoleWeave/commit/12a642ec9c66c1818c10aa62bac29f9db886272f),
+[browser review / revision](https://github.com/VSBhargav5/RoleWeave/commit/49ab2145332ddedfbab0b1b869203b9db2c03f3d),
+[release verification](https://github.com/VSBhargav5/RoleWeave/commit/83f9e65c9c891a60bc7ab006651beea3ee1b3547),
+[one-click offline practice](https://github.com/VSBhargav5/RoleWeave/commit/07951a2d299c96ba68f4fab11414362d197ca2d8).
+
+Browser tailoring now previews one exact posting/selected-facts request, requires
+explicit provider consent, validates bounded source references and lets users
+compare, edit and selectively approve proposals. Another revision includes the
+current edited proposal in a new reviewed request. Approved wording creates an
+inactive application profile and a private job draft; the master remains unchanged.
+Drafts reopen after reload, retain matching letter wording and survive managed
+recovery with source-reference checks. Safe retries avoid duplicate profile/draft
+records after a failed save. Source IDs do not prove factual truth: user accuracy
+review is required, and editing wording clears confirmation.
+
+The dashboard uses a compact next action instead of three oversized onboarding
+cards, aligned setup markers, consistent section gaps, button sizing and metrics.
+The review workspace has original/proposed wording, collapsible sources and a
+sticky approval footer. Settings opens a separate offline practice workspace with
+fixed demo arguments. Practice uses labelled fixed output and cannot call a model.
+
+PR #31 is merged; all six PR checks passed, including Windows/Linux 3.11/3.12,
+source/packaged browser journeys, installed runtime and installer lifecycle.
+342 offline Windows tests, actual packaged browser workflow and frozen HTTP API/
+TLS/parser/recovery/studio/offline-tailoring checks passed. Browser verification
+covers masked synthetic key entry/back with zero sends, exact revision content,
+selective review, persisted reload, unchanged master and PDF/letter/kit handoff.
+Screenshots inspected. Launcher process creation is mocked in its contract test;
+physical user acceptance is still open. No live model call, personal transmission,
+account linking or application submission was performed.
+
+[AI workflow and privacy](https://github.com/VSBhargav5/RoleWeave/blob/main/docs/ai-tailoring.md).
+One provider/model and explicit single-request revisions; this is not automatic
+chat/agent or full Dossier parity. Live model quality, broad integrations, real
+employer controls, signing and personal acceptance remain gaps. Unencrypted
+accepted drafts join managed backups; keys/raw provider history are excluded.
+
 ## 14 November 2026 — visual application studio and PDF cover letters
 
 [Studio PR #30](https://github.com/VSBhargav5/RoleWeave/pull/30),
