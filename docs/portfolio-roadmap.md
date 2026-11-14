@@ -8,6 +8,18 @@ meaningful verification, and an explanation of the engineering tradeoffs.
 
 ## Project focus
 
+Latest November 14 AI/UI iteration: [v0.21 PR #31](https://github.com/VSBhargav5/RoleWeave/pull/31)
+adds reviewed browser proposals and explicit revisions, persistent per-job drafts,
+master-profile preservation and matching PDF/letter handoff. The previous missing
+browser-tailoring item is now implemented and offline tested. Compact onboarding,
+aligned spacing and one-click offline practice address UI/entrypoint friction.
+342 Windows tests and actual packaged synthetic checks pass. Source references
+are not factual verification; real model quality/account access is unverified.
+[Current workflow / limits](https://github.com/VSBhargav5/RoleWeave/blob/main/docs/ai-tailoring.md).
+Multiple providers/full chat, scheduled discovery, Gmail/general sync, universal
+employer controls and production acceptance remain future scope. No live calls,
+personal data transmission or automatic applications are claimed.
+
 Latest November 14 studio: [v0.20 PR #30](https://github.com/VSBhargav5/RoleWeave/pull/30)
 adds visual resume preparation, three themes, ordered facts and frozen PDF letters
 in recipient kits. The actual Windows package and 331 offline tests exercise the
