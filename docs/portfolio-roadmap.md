@@ -8,6 +8,24 @@ meaningful verification, and an explanation of the engineering tradeoffs.
 
 ## Project focus
 
+Latest November 16 milestone: [v0.25 PR #35](https://github.com/VSBhargav5/RoleWeave/pull/35)
+ships saved manual discovery queries, explicit first-page runs, a persisted review
+queue, exact source recovery and Markdown import. Three active named searches,
+local rolling attempt budget, stale guards, interrupt/late-result ownership and
+whole-run capacity rollback preserve decisions. Changed location/work-mode/content
+requires new review. Explicit application imports are idempotent, never submissions.
+[Saved discovery guide](https://github.com/VSBhargav5/RoleWeave/blob/main/docs/saved-discovery.md).
+
+381local tests discovered:290passed/91native archive skips. Actual source and
+packaged synthetic browser journeys and all six PR checks passed; live saved-run
+compatibility/coverage and personal acceptance remain unverified. Scoped parity
+9implemented/9partial/7missing: Markdown closes the import-format gap; named manual
+queue makes the agent area partial, not full scheduled/scored agent parity.
+The user's request to finish partials remains active: provider/model settings next,
+then other documented partials. FreeHire current terms restrict unpaid reads to
+personal/noncommercial use; public offering requires its plan. No paid plan/live
+provider request, source scraping, account linking or application sending performed.
+
 Latest November 16 comparison/email: [v0.24 PR #34](https://github.com/VSBhargav5/RoleWeave/pull/34)
 adds a local sender/recipient/message composer with exact matching frozen PDFs,
 renewed preview/confirmation, immutable save/reopen, EML download and managed

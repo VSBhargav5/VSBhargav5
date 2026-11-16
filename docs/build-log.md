@@ -2,6 +2,48 @@
 
 Entries distinguish shipped code, verification, limitations, and planned work.
 
+## 16 November 2026 — saved searches, review queue and Markdown intake
+
+[Milestone PR #35](https://github.com/VSBhargav5/RoleWeave/pull/35),
+[complete implementation commit](https://github.com/VSBhargav5/RoleWeave/commit/e42a2f5b3b98d4a1e0434e98c64bfc32984da4c5),
+[workflow and limits](https://github.com/VSBhargav5/RoleWeave/blob/main/docs/saved-discovery.md).
+
+Saved queries retain role/location/country/remote/market without a request. Explicit
+first-page runs preserve original source bytes and populate pending observations;
+keep/dismiss/reopen/confirmed-save decisions persist. Exact repeats retain decisions;
+changed content/location/work-mode/post-date/source/market requires fresh review.
+No absence-based closure, scheduler, AI scoring, automatic draft or application.
+Three active searches/20retained,200cached observations,100recent runs,16MiB state;
+three attempts/rolling24h including failures, one persisted active run. Explicit
+interruption blocks late results; capacity failure rolls back the whole result.
+
+A companion SQLite store preserves the existing shelf schema. Application saves
+span two transactions; a tested partial-commit failure recovers idempotently rather
+than duplicating the saved canonical review. Queue metadata and original provider
+sources remain separate from canonical description text. Managed ZIP discovery.json
+validates state, normalized rows/run summaries and application references before
+persistent restore. Old bundles remain supported; DB-only backup excludes companion.
+Provider-ignored filter values now fail closed; lower-bound counts preserve paging.
+
+Markdown .md/.markdown is literal bounded UTF8 text, never rendered/executed or
+remote-fetched. Confirmed source excerpts preserve original bytes in recovery;
+no inferred facts or automatic profile write. Scoped parity9implemented/9partial/
+7missing; remaining partials are active work. This is not an overall completion ratio.
+
+17new discovery/source/provider/capacity/recovery tests and2Markdown tests passed.
+381local discovered:290passed/91native archive skips. Actual source and final v0.25
+packaged synthetic browser workflows and frozen API smoke passed. Browser check
+caught save closing before refresh; fixed before release. Synthetic screenshot
+inspected; no comprehensive manual/layout acceptance claim. [All six PR checks](https://github.com/VSBhargav5/RoleWeave/actions/runs/43816431714)
+passed. Merged242f61018809b50cff77f8d1813ee218434bcb06; tested/remote tree
+50702b8b597b662b5945ba9a8cc060656fb2c300. Local ZIP SHA256:
+812c40e1f5d8a09f6c21de175545a413e8ed941aec98c9044bd6521ca5644d7f.
+
+Current [FreeHire API](https://freehire.me/docs/api) and [terms](https://freehire.me/terms)
+reviewed for personal use, no plan/auth/live request or source scraping. Synthetic
+practice has clearly labelled fixed observations; it does not prove source coverage.
+No eligibility/sponsorship, learning/usefulness/hiring or production acceptance claim.
+
 ## 16 November 2026 — Dossier parity review and application email
 
 [Comparison/email PR #34](https://github.com/VSBhargav5/RoleWeave/pull/34),
