@@ -8,6 +8,24 @@ meaningful verification, and an explanation of the engineering tradeoffs.
 
 ## Project focus
 
+Latest November 16 comparison/email: [v0.24 PR #34](https://github.com/VSBhargav5/RoleWeave/pull/34)
+adds a local sender/recipient/message composer with exact matching frozen PDFs,
+renewed preview/confirmation, immutable save/reopen, EML download and managed
+recovery. It sends nothing and does not alter application history. Actual source
+and packaged synthetic browser journeys,271 local passing tests/91 native skips,
+and all six PR release checks passed. Physical mail-client/clipboard acceptance,
+real accounts and personal usefulness remain unverified.
+
+[Pinned 25-area Dossier checklist](https://github.com/VSBhargav5/RoleWeave/blob/main/docs/dossier-parity.md):
+8 implemented,9 partial,8 missing after v0.24; baseline v0.23 was7/9/9. These
+are stated local capability areas, not effort percentages or production acceptance.
+Next: saved discovery searches with deliberate run/review queue, then broader
+AI providers. Gmail/inbox, startup discovery, nightly backups, MCP, remote hosting/
+password access and localized document labels/dates remain missing. Rich profile,
+themes, discovery/scoring/chat/Calendar/analytics remain partial. The README's
+claims were rechecked against Dossier c79562e; no upstream app benchmark or code copy.
+[Email guide and limits](https://github.com/VSBhargav5/RoleWeave/blob/main/docs/application-email.md).
+
 Latest November 16 migration: [v0.23 PR #33](https://github.com/VSBhargav5/RoleWeave/pull/33)
 adds private interview rehearsal inside the single browser interface: selected
 source questions, linked evidence reveal, bounded answers/reflections, confirmed

@@ -2,6 +2,54 @@
 
 Entries distinguish shipped code, verification, limitations, and planned work.
 
+## 16 November 2026 — Dossier parity review and application email
+
+[Comparison/email PR #34](https://github.com/VSBhargav5/RoleWeave/pull/34),
+[pinned comparison artifact](https://github.com/VSBhargav5/RoleWeave/commit/6d4d347b80ffb5e7fed0aa161ddd0a7dcb87c60b),
+[complete email workflow](https://github.com/VSBhargav5/RoleWeave/commit/4050762b26c89548addbd6a8b972e7fee34ed4af),
+[25-area checklist](https://github.com/VSBhargav5/RoleWeave/blob/main/docs/dossier-parity.md).
+
+Rechecked Dossier main c79562e67e0459c999ea5dcbbeb444e98837ccda, README and
+email UI/helper, agent runner and provider options. No upstream app installed,
+benchmarked or code/assets/history imported. Baseline v0.23:7 implemented,
+9 partial,9 missing. V0.24 local composer/handoff:8 implemented,9 partial,8 missing.
+Counts include hosting/password and localized documents; not overall completion,
+effort or production readiness. Dossier does not document automatic employer-form
+submission; our contact helper also leaves uploads/screening/final submit manual.
+
+Saved applications now compose sender/recipient/subject/message with exact frozen
+resume PDF and optional same-review/same-profile PDF letter. Preview shows exact
+content/attachment hashes. Any edit invalidates preview/confirmation. Explicit
+save creates a private immutable draft and downloads deterministic EML. Save/reopen,
+copy/download and source-bound managed recovery preserve the prepared handoff.
+No message sent, credentials/account linked or history/stage changed. No automatic
+recipient extraction, AI email refinement, Gmail/inbox or SMTP integration.
+
+Header injection, multiple/plain-address violations, wrong job/profile/TXT-only
+attachments, stale preview and tampered/rehashed recovery sources fail closed.
+Original PDF bytes used, no renderer replay. Private drafts/collection and EML have
+explicit size/count bounds; overall recovery limits unchanged. EML contains only
+the entered fields and selected PDFs, not review/history/journal attachments.
+
+362 local tests discovered:271 passed,91 archived native UI skips. Eight new email
+regressions and full actual source/v0.24 packaged synthetic browser journeys passed,
+including refusal without consent, changed-field reset, draft retention, original
+PDF downloads, restart/reopen and unchanged tracking. Browser QA found hidden
+confirmation initially blocked preview; fixed before shipping while retaining
+server save consent. Frozen API/TLS/parser/recovery/studio/AI smoke passed.
+[All six PR CI jobs](https://github.com/VSBhargav5/RoleWeave/actions/runs/43811658267)
+passed including Windows/Linux Python3.11/3.12, packaged browser/runtime and installer
+lifecycle. Final tested/published tree761b0d12618702f6e4c3067ab389d996bf6415f6;
+merged at0c7d38bf32637b52da502dbe0023e4a437ab84a9. Local ZIP SHA256:
+00e775c40f01d69cc6f2a53b2096f6e07bcf434dae762f3cc35b49b01c18c213.
+
+Mail-client EML import/X-Unsent behavior and physical clipboard remain unverified;
+clients may need manual draft import or PDF attachment. Date/Message-ID belong to
+the mail client's send step. Byte replay is checked; cross-runtime MIME serializer
+compatibility is not established and inconsistent replay fails closed. Preserve
+external originals independently. No personal send/usefulness, model quality,
+hiring or production acceptance claim. [Email guide](https://github.com/VSBhargav5/RoleWeave/blob/main/docs/application-email.md).
+
 ## 16 November 2026 — private interview rehearsal in the browser
 
 [Release PR #33](https://github.com/VSBhargav5/RoleWeave/pull/33),
