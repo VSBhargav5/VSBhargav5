@@ -39,7 +39,7 @@ Alongside that, I build focused AI tools for **evaluation**, **decision capture*
 
 | | Project | What it solves | Stack |
 |---|---------|----------------|-------|
-| 🧵 | **[RoleWeave](https://github.com/VSBhargav5/RoleWeave)** `v0.24 beta · browser interface` | Reviewed AI application drafts, visual PDFs, job discovery, contact filling and source-verified recovery | Python · SQLite · CSS/SVG · MV3 · ReportLab |
+| 🧵 | **[RoleWeave](https://github.com/VSBhargav5/RoleWeave)** `v0.25 beta · browser interface` | Reviewed AI application drafts, visual PDFs, job discovery, contact filling and source-verified recovery | Python · SQLite · CSS/SVG · MV3 · ReportLab |
 | 🖥️ | **[StudyFrame](https://github.com/VSBhargav5/StudyFrame)** `v0.2 · screenshot focus` | Crop code/diagrams before reviewed AI requests; restore originals, ask follow-ups and cancel; live quality unverified | Python · PySide6 · unittest |
 | 🧾 | **[SettleTrace](https://github.com/VSBhargav5/SettleTrace)** `v0.3` | Exact-money exceptions, audited bank mappings, declared windows, and replayable evidence | Python · CSV · HTML/JSON · unittest |
 | 💥 | **[BlastPath](https://github.com/VSBhargav5/BlastPath)** `v0.2` | What breaks if this PR lands — **git blast-radius**, owners, snapshot Δ | Python · AST · Pydantic · Typer |
@@ -66,7 +66,7 @@ Alongside that, I build focused AI tools for **evaluation**, **decision capture*
 
 - **CueDesk is paused** after the screen-study iteration; real capture and live usefulness remain unverified.
 - 🖥️ **StudyFrame is paused** — [v0.2 screenshot focus](https://github.com/VSBhargav5/StudyFrame/pull/4) adds drag/pixel cropping, original restore and a current-source Windows launcher. 70 offline tests; the stale installed wheel was refreshed and installed imports now checked in CI. Live model quality and usefulness remain unverified.
-- **[RoleWeave is the active sprint](https://github.com/VSBhargav5/RoleWeave/pull/34)** — v0.24 adds reviewed application-email drafts with exact frozen PDFs, private save/reopen, EML download and managed recovery; no sending or tracking mutation. The pinned Dossier comparison covers 25 areas:8 implemented,9 partial,8 missing—not an overall completion percentage. 271 local tests passed,91 native skips; all six PR checks and actual packaged synthetic browser/runtime checks passed. Live accounts, mail-client import and personal acceptance remain unverified.
+- **[RoleWeave is the active sprint](https://github.com/VSBhargav5/RoleWeave/pull/35)** — v0.25 adds saved manual discovery searches, a persisted keep/dismiss/save review queue, source-bound recovery and Markdown resume intake. Changed posting metadata requires fresh review; failed/empty results preserve decisions. 290 local tests passed,91 native skips; all six PR checks and actual packaged synthetic browser/runtime checks passed. Scoped parity9 implemented/9 partial/7 missing; broader partials remain active work. No scheduler/AI agent, automatic application or live usefulness claim.
 - 🧾 **SettleTrace paused at v0.3** while RoleWeave leads the sprint. [Verified shipped work](https://github.com/VSBhargav5/SettleTrace/pull/3) remains intact; completeness, real-account validation, and customer demand remain open.
 - 🛡️ **PromptGuard reliability sprint completed** — coverage gates, validated inputs, safe history, and CI reports. [Merged work](https://github.com/VSBhargav5/PromptGuard/pull/2)
 - 🔧 **Later: LMS pipeline reliability** — scoring invariants, duplicate/late-event handling, and recovery
