@@ -8,6 +8,16 @@ meaningful verification, and an explanation of the engineering tradeoffs.
 
 ## Project focus
 
+Latest v0.28 [theme builder PR #38](https://github.com/VSBhargav5/RoleWeave/pull/38)
+is merged: bounded document styling and portable JSON sharing preserve exact old
+preset rendering and new frozen source provenance.321local tests passed/91native
+skips; actual final package browser/runtime and all six PR checks passed. Six
+rendered synthetic PDF pages inspected; personal/ATS acceptance unverified.
+The12implemented/6partial/7missing matrix is capability scope, not a readiness
+percentage. Remaining rich profile, browser employer boards, assessment, refinement
+chat/undo, Calendar and scheduled-agent work is pending. User requested a break;
+resume deliberately from verified main, with no new feature work during the break.
+
 Latest November16: [provider PR #36](https://github.com/VSBhargav5/RoleWeave/pull/36)
 and [insights PR #37](https://github.com/VSBhargav5/RoleWeave/pull/37) are merged.
 Non-secret provider/model selection (OpenAI/Anthropic/Mistral and numeric-loopback
