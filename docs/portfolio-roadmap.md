@@ -8,6 +8,17 @@ meaningful verification, and an explanation of the engineering tradeoffs.
 
 ## Project focus
 
+Latest November 16 migration: [v0.23 PR #33](https://github.com/VSBhargav5/RoleWeave/pull/33)
+adds private interview rehearsal inside the single browser interface: selected
+source questions, linked evidence reveal, bounded answers/reflections, confirmed
+immutable versions, reopen and original JSON download. Managed recovery verifies
+both journal integrity and full saved-review identity. 263 local tests passed,
+91 archived native skips; all six PR CI jobs and actual packaged synthetic browser
+checks passed. No generated answers, timer, grading or learning-completion claim.
+[Rehearsal workflow and limits](https://github.com/VSBhargav5/RoleWeave/blob/main/docs/browser-rehearsal.md).
+Older journal import/comparison/text packs and other native-only screens remain
+pending browser migration, alongside broader Dossier parity and personal acceptance.
+
 
 Latest November 14 interface repair: [v0.22 PR #32](https://github.com/VSBhargav5/RoleWeave/pull/32)
 retires the native-tools fallback, redirects historical --legacy launches to the
