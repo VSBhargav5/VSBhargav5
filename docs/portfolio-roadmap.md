@@ -8,6 +8,25 @@ meaningful verification, and an explanation of the engineering tradeoffs.
 
 ## Project focus
 
+Latest resumed16November work: [browser boards v0.29 PR #39](https://github.com/VSBhargav5/RoleWeave/pull/39)
+and [local review undo v0.30 PR #40](https://github.com/VSBhargav5/RoleWeave/pull/40)
+are merged. Existing four ATS board contracts, local filters/import/replay/comparison
+and required source receipts now stay in the browser; unchanged observations reuse
+reviews and derived evidence revisions preserve source recovery. No application or
+account action. Local Undo/Redo/reset improves wording review without another model
+request; accuracy confirmation resets,20states per proposal, no permanent chat log.
+Board337local Python tests/91native skips; undo25targeted Python+5Node tests; actual
+source/final portable workflows and all six PR release checks passed. Windows CI's
+caught archived-Tk lifecycle failure was resolved by per-case process isolation,
+retaining coverage. No native GUI checks executed on the user's laptop.
+
+The12implemented/6partial/7missing matrix remains honest: broader aggregators,
+scheduled/scored agents, persisted full refinement chat, rich structured profiles,
+assessment and browser/broader Calendar remain. No new live provider/model/account,
+personal transmission, production readiness or learning outcome claimed. Next focus
+should complete a justified remaining workflow and validate personal usefulness.
+Earlier break notes below are historical; the user explicitly resumed.
+
 Latest v0.28 [theme builder PR #38](https://github.com/VSBhargav5/RoleWeave/pull/38)
 is merged: bounded document styling and portable JSON sharing preserve exact old
 preset rendering and new frozen source provenance.321local tests passed/91native
