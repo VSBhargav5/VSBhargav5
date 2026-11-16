@@ -3,6 +3,35 @@
 Entries distinguish shipped code, verification, limitations, and planned work.
 
 
+
+## 16 November2026 — portable resume theme builder
+
+[PR #38](https://github.com/VSBhargav5/RoleWeave/pull/38),
+[implementationb225ea8](https://github.com/VSBhargav5/RoleWeave/commit/b225ea868d79a4c6c1907170b08cdb279bbcaaf7),
+[guide and verification](https://github.com/VSBhargav5/RoleWeave/blob/main/docs/resume-theme-builder.md).
+Three unchanged presets plus a bounded accent/body/name/margins/Sans-or-Serif/
+A4-or-Letter builder. Strict2KiB styling-only JSON sharing; no CSS/script/URL/font
+files or career content. Accent4.5:1 on white; new styles require renewed preview/
+confirmation and freeze in the exact resume snapshot. Old preset HTML fingerprints
+unchanged; recovery replays new configuration against selected source facts.
+
+Eight targeted tests;412discovered321passed/91native archive skips. Actual source
+and final v0.28 portable synthetic browser journeys/frozen runtime passed. Three
+synthetic PDFs rendered and all six pages inspected, including a four-page stress
+example. Source/package CSS hashes match after spacing correction. All six
+[PR release checks](https://github.com/VSBhargav5/RoleWeave/actions/runs/43824982477)
+passed. Tested/published tree579498c7b1f8a9b90a9eb3736868c1b97b4f69ee;
+mergee170291d1ba3ce1f7d96db24f0a0ed74fc1cf9a6. v0.28 ZIP SHA256
+c839292c53a5c56bfeddc2d6622ab6a9089987738d8c77073d89facb22fdaea7.
+Post-merge CI is being checked separately; no pending result is claimed passed.
+
+Serif PDF uses standard Times/Windows-1252 and refuses unsupported characters;
+Sans uses embedded Vera with its existing glyph checks. Browser HTML fonts are
+not pixel-identical to PDF. No ATS/hiring/personal acceptance claim. Scoped matrix
+now12implemented/6partial/7missing areas, not overall readiness. Rich profile,
+multi-source browser migration, scored assessment, full chat/undo, Calendar and
+scheduled agent gaps remain. User requested a break; no further feature started.
+
 ## 16 November2026 — explicit model providers and read-only workspace insights
 
 Provider milestone [PR #36](https://github.com/VSBhargav5/RoleWeave/pull/36),
