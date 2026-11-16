@@ -4,6 +4,67 @@ Entries distinguish shipped code, verification, limitations, and planned work.
 
 
 
+
+## 16 November2026 — browser employer boards and local review undo
+
+User resumed after the break. [v0.29 PR #39](https://github.com/VSBhargav5/RoleWeave/pull/39)
+merged55e1f76e9b0c7ee82e37450598e13489188596a0, published final tree
+44d2abde7c5dbbc25233b38f6d7b5a6c031db28c. [Board implementation](https://github.com/VSBhargav5/RoleWeave/commit/cadf95d0793968f58c11008dfed973cd315f80b1),
+[observed CI lifecycle fix](https://github.com/VSBhargav5/RoleWeave/commit/8cefd5a8ca2c3c016d9eb16a27f5b6b8e79ac550),
+[workflow and limits](https://github.com/VSBhargav5/RoleWeave/blob/main/docs/browser-employer-boards.md).
+
+Existing Greenhouse/Lever global/Lever Europe/Ashby contracts now stay in the one
+browser UI. Explicit one-board GET/cancel,20row local filters, exact posting review,
+checked employer label/market, original observation download/replay and same-board
+comparison. Primary role/location search still needs no employer URL. Three transient
+observations/20minute API expiry; no profile/resume/key is sent. Unchanged postings
+reuse a saved review across observation times, preserving first evidence. Changed
+record/market has independent review/history; no automatic Applied event.
+
+Managed source receipts bind archive→provider row→saved input fingerprint. Derived
+fact/evidence revisions inherit that source under a new receipt. Missing/wrong
+receipt/source fails recovery even with rehashed manifest. Separate archive/SQLite/
+receipt writes are not a distributed transaction; tested retries handle partial
+writes without another review. Existing conflicting/oversized artifacts preserved;
+source8MiB/archive12MiB/receipt16KiB and managed1000file/64MiB limits remain.
+No completeness, source authenticity, job-closure or eligibility inference.
+
+428local tests discovered:337passed/91native archive skips, including16new board
+regressions. Source and actual final v0.29 portable browser/frozen workflows passed;
+source cards inspected with action bounds and900px overflow checks. Browser testing
+caught/corrected a form-ID collision with Applications filters. Windows CI exposed
+archived Tk wrong-thread finalizers/Tcl_AsyncDelete; a CI-only runner now executes
+each archived case in its own process, retaining coverage.95cases discovered from
+flagged modules, including related cases; none executed locally. Updated six
+[PR checks](https://github.com/VSBhargav5/RoleWeave/actions/runs/43843617916) and six
+[main checks](https://github.com/VSBhargav5/RoleWeave/actions/runs/43844218212) passed.
+Complete v0.29 portable ZIP SHA256
+2e72d2ce22098bacd42f2ad213cc66e8468c4f906ecbde96a5eb3366895eb670.
+
+[v0.30 PR #40](https://github.com/VSBhargav5/RoleWeave/pull/40) merged
+e6d397b8a7dc8ffc0a6601705e66fbb14fb2d3fd, tested/published tree
+2d0ecd4ba00377cff204990929f6ff4bac0865c3. [Implementation](https://github.com/VSBhargav5/RoleWeave/commit/4edbe5bf9050ef928165471bc6dc4b10284a8998),
+[local review undo guide](https://github.com/VSBhargav5/RoleWeave/blob/main/docs/review-undo.md).
+Undo/Redo covers wording and selected suggestions, with undoable per-field reset to
+the original proposal. Bounded20states, deep copies/redo-branch invalidation; each
+restore resets factual-accuracy confirmation. New proposal/preview/close clears the
+stack. No provider request, storage/key handling or backend source/acceptance relaxation.
+This is not a persisted full chat or old-proposal browser, and it makes no erasure guarantee.
+
+Five Node state tests,14web workspace and11AI source/acceptance tests passed locally.
+Actual source and final v0.30 portable browser/frozen checks passed; synthetic review
+screenshot inspected. Browser checks confirm restored wording/selections, no extra
+send, renewed accuracy and fresh history after revision. All six [PR checks](https://github.com/VSBhargav5/RoleWeave/actions/runs/43845713766)
+passed. Complete v0.30 ZIP SHA256
+e60612f1e28d929c470ede4526acad6db30e6a506652ed6d9bb65ca07cfa5fcf.
+
+No new live provider/model call, personal transmission, account link or application
+send. Existing legacy tools remain retired. Real employer compatibility, live model
+quality and personal acceptance remain unverified. The scoped matrix stays12/6/7:
+board migration and local undo improve partial areas without claiming broader
+aggregators, scheduled AI agents or persisted refinement chat complete. Rich profile,
+assessment and browser/broader Calendar still need work. Learning is not claimed.
+
 ## 16 November2026 — portable resume theme builder
 
 [PR #38](https://github.com/VSBhargav5/RoleWeave/pull/38),
