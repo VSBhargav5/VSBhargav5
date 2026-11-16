@@ -2,6 +2,40 @@
 
 Entries distinguish shipped code, verification, limitations, and planned work.
 
+## 16 November 2026 — private interview rehearsal in the browser
+
+[Release PR #33](https://github.com/VSBhargav5/RoleWeave/pull/33),
+[coherent workflow commit](https://github.com/VSBhargav5/RoleWeave/commit/71bfc7ea734849fe169207e59867cdd87623777d),
+[rehearsal guide](https://github.com/VSBhargav5/RoleWeave/blob/main/docs/browser-rehearsal.md).
+
+Saved applications now offer exact requirement questions, linked evidence reveal,
+private answer/reflection drafts and explicitly reviewed immutable versions.
+Reopen after restart or download original private JSON. Editing clears confirmation;
+close/replacement guards preserve unsaved drafts unless discard is confirmed.
+Journals include full frozen review/source notes and are unencrypted/private.
+They are separate from employer-facing application kits. No account/provider used.
+
+Managed workspace recovery includes journals and validates their complete embedded
+review against the shelf, including rehashed wrong-context rejection before any
+persistent restore output. Old bundles remain supported. Collections are bounded
+to 1000 files/64 MiB; further saves refuse overflow without hiding previous versions.
+
+354 offline tests discovered: 263 passed, 91 archived native UI skips. Eight new
+regressions cover persistence, original bytes, limits, wrong review, tampering,
+capacity and recovery. Full source and actual v0.23 packaged synthetic browser
+journeys plus frozen API/TLS/parser/recovery/studio/AI smoke passed. The first
+browser check read before asynchronous reopen completed; it now waits for loaded
+answers, then passed. [All six PR CI checks](https://github.com/VSBhargav5/RoleWeave/actions/runs/43803782580)
+passed, including Windows/Linux Python3.11/3.12, packaged browser/runtime and
+installer lifecycle. Tested/published tree157dc78c669e297c35cfd3bcd11bfd55f5c7844c;
+merged at a243efbb16163ef94236382880708a87667d67c6. Local portable ZIP SHA256:
+7f92a9d1332df4e401dc80af3d6a2ca19161882e9cee37cce066246e41730d9d.
+
+This flow records no timer and generates/grades no answers. Older journal import,
+comparison and private text packs still await browser migration. Evidence references
+and hashes do not prove an answer's truth or interview readiness. No learning,
+personal usefulness, live AI quality or production acceptance claimed.
+
 ## 14 November 2026 — stop reopening the retired native interface
 
 [Browser-only release PR #32](https://github.com/VSBhargav5/RoleWeave/pull/32),
