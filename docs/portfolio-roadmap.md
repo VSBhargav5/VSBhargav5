@@ -8,6 +8,18 @@ meaningful verification, and an explanation of the engineering tradeoffs.
 
 ## Project focus
 
+Latest November16: [provider PR #36](https://github.com/VSBhargav5/RoleWeave/pull/36)
+and [insights PR #37](https://github.com/VSBhargav5/RoleWeave/pull/37) are merged.
+Non-secret provider/model selection (OpenAI/Anthropic/Mistral and numeric-loopback
+Ollama/LMStudio) preserves exact reviewed destinations and per-send consent. A new
+read-only Insights page shows current/ever-recorded stages,12UTC weeks and a
+market-filtered follow-up calendar, with review-level rather than outcome claims.
+313passing local tests/91native skips; actual source/portable journeys/runtime and
+all six PR/post-merge checks passed. Live model compatibility/quality/accounts and
+personal acceptance remain unverified. Broad partial-completion remains active;
+custom theme builder next, followed by remaining current matrix areas. No deployment,
+account linking, automatic application, model start/download or paid call performed.
+
 Latest November 16 milestone: [v0.25 PR #35](https://github.com/VSBhargav5/RoleWeave/pull/35)
 ships saved manual discovery queries, explicit first-page runs, a persisted review
 queue, exact source recovery and Markdown import. Three active named searches,

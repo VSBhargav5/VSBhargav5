@@ -2,6 +2,47 @@
 
 Entries distinguish shipped code, verification, limitations, and planned work.
 
+
+## 16 November2026 — explicit model providers and read-only workspace insights
+
+Provider milestone [PR #36](https://github.com/VSBhargav5/RoleWeave/pull/36),
+[implementation327ec8c](https://github.com/VSBhargav5/RoleWeave/commit/327ec8c5593f703afa445faebbce0a78535aa1c4),
+[guide](https://github.com/VSBhargav5/RoleWeave/blob/main/docs/model-providers.md).
+Selected models: fixed OpenAI/Anthropic/Mistral HTTPS, numeric-loopback Ollama and
+LMStudio-compatible. Save only kind/model/port, with no provider request on save.
+Exact destination+payload-bound frozen previews, per-send masked credentials and
+consent, source-bound human-reviewed v2 draft provenance/recovery. No arbitrary URL,
+key persistence/files/env lookup, model start/download, retry or automatic send.
+12new offline regressions including owned synthetic HTTP loopback;393discovered,
+302passed/91native archive skips. Actual source and final portable journeys/frozen
+runtime passed. All six [PR checks](https://github.com/VSBhargav5/RoleWeave/actions/runs/43819878811)
+and [post-merge checks](https://github.com/VSBhargav5/RoleWeave/actions/runs/43821796608) passed.
+Tested/published tree2c5311623ad23b4a7136fe63511ab981ecbc0317. v0.26 ZIP SHA256
+979ee221eb510426677a2d623d1b59df7a14b80a99c251239dddd71f643f45d6.
+
+Insights milestone [PR #37](https://github.com/VSBhargav5/RoleWeave/pull/37),
+[implementation034db2a](https://github.com/VSBhargav5/RoleWeave/commit/034db2a1f3f1f64b78daadedc6e6b15e14882709),
+[guide](https://github.com/VSBhargav5/RoleWeave/blob/main/docs/workspace-insights.md).
+Read-only current/ever-recorded stage bars,12UTC weeks of first explicit Applied
+observations, market-filtered month calendar and paged exact-review reminder agenda.
+One SQLite read transaction;10000review/50000history cap refuses partial counts.
+Private notes/posting/profile content are excluded. No account/provider/calendar
+request or stage change. Multiple snapshots may represent one real vacancy; counts
+are saved reviews and manual observations, not verified submissions/conversion.
+11new targeted regressions;404discovered313passed/91native skips. Actual source and
+final v0.27 package browser/frozen checks passed. All six [PR checks](https://github.com/VSBhargav5/RoleWeave/actions/runs/43822979282)
+and [post-merge checks](https://github.com/VSBhargav5/RoleWeave/actions/runs/43823520935) passed.
+Tested/published tree26d0b7023d92f4d5f51bc12118c6edc42f2fd97a. v0.27 ZIP SHA256
+5456f57579821139d60d4f38eb9a3e757fd821015ab3ac83dccc8699c3e70938.
+
+Live provider/model compatibility and quality, personal usefulness and real employer/
+mail-client acceptance remain unverified. Loopback destinations can forward work;
+no offline-processing guarantee. No paid/live call or personal transmission made.
+[Scoped parity](https://github.com/VSBhargav5/RoleWeave/blob/main/docs/dossier-parity.md)
+now11implemented/7partial/7missing workflow areas, not effort/production acceptance.
+The broad partial-completion request remains active; theme builder is next work,
+not claimed shipped in this entry. Saved queue/Markdown/email remain implemented.
+
 ## 16 November 2026 — saved searches, review queue and Markdown intake
 
 [Milestone PR #35](https://github.com/VSBhargav5/RoleWeave/pull/35),
