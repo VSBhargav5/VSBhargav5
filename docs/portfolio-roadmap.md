@@ -8,7 +8,20 @@ meaningful verification, and an explanation of the engineering tradeoffs.
 
 ## Project focus
 
-Latest 17 November: [v0.34 PR #44](https://github.com/VSBhargav5/RoleWeave/pull/44)
+Latest 17 November: [v0.35 automatic recovery PR #45](https://github.com/VSBhargav5/RoleWeave/pull/45)
+is merged. Opt-in local-host nightly snapshots/catch-up, verified seven-file
+retention, exact ZIP download and separate restore protect the managed application
+workspace. Off by default; restored policies require renewed consent. Same-device,
+unencrypted, no OS task/cloud backup or operation while the host is closed.
+489 offline tests: 398 passed / 91 archived-native skips; source/actual Windows
+portable/frozen journeys and all six PR checks passed. Overnight/sleep/power-loss
+and personal acceptance remain unverified. [Guide](https://github.com/VSBhargav5/RoleWeave/blob/main/docs/automatic-backups.md).
+Current scoped checklist: **16 implemented / 3 partial / 6 missing**. Remaining
+priorities include scored/scheduled discovery and browser/broader Calendar; external
+accounts, provider compatibility and live quality retain separate consent/evidence
+gates. One previously missing area is now implemented, not overall production readiness.
+
+Earlier on 17 November: [v0.34 PR #44](https://github.com/VSBhargav5/RoleWeave/pull/44)
 adds optional experimental JSearch discovery: explicit public-query review,
 one-request credentials/consent, cursor pages, original-byte evidence and managed
 recovery. Final source/Windows portable flows pass, including a real stale-board
@@ -36,7 +49,7 @@ the user's laptop. Last full local suite: 461 tests, 370 passed / 91 native skip
 assessment/provider and 5 Node checks plus actual browser/frozen verification.
 
 [Current capability checklist](https://github.com/VSBhargav5/RoleWeave/blob/main/docs/dossier-parity.md):
-15 implemented / 3 partial / 7 missing. Three of six requested partial areas closed. Next:
+At v0.34: 15 implemented / 3 partial / 7 missing. Three of six requested partial areas closed. The v0.35 recovery milestone above supersedes that missing count. Next:
 permitted JSearch compatibility validation, additional aggregate sources, scheduled/scored discovery and browser/
 broader Calendar, followed by the seven still-missing areas. Actual account setup,
 permitted live trials, personal acceptance and observed quality remain separate gates.
