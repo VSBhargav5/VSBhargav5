@@ -2,6 +2,69 @@
 
 Entries distinguish shipped code, verification, limitations, and planned work.
 
+## 17 November 2026 — keyless startup notices and source-close ownership
+
+[v0.36 PR #46](https://github.com/VSBhargav5/RoleWeave/pull/46) merged at
+4fea580490f5d766b3f1fa07dc87e43b0a1085a1, exact tested/published tree
+1ddd0c81af9fe638ba0d1ea415bdb3b050a7cc8e. [Implementation](https://github.com/VSBhargav5/RoleWeave/commit/5c641e86d9f50ff5ea9910d9564ed809d7d468e8),
+[workflow/limits](https://github.com/VSBhargav5/RoleWeave/blob/main/docs/startup-discovery.md)
+and [limited public sample](https://github.com/VSBhargav5/RoleWeave/blob/main/docs/evidence/hn-jobs-2026-11-17.json).
+
+Startup jobs observes the official Hacker News jobs index with explicit batches
+of up to ten notices, local filtering and checked employer/market imports. HN labels
+its jobs page as YC-startup jobs; RoleWeave does not verify membership or offer the
+full YC directory or Who is hiring threads. A source notice can be shorter than a
+full job description. No eligibility/location/salary/sponsorship inference or
+application submission. No company-board URL, account or key is required.
+
+At most eleven fixed-host public GETs per batch; no profile or query data is sent
+and employer destinations are not fetched. New batches recapture index positions,
+which can shift. Original index/item response bytes have individual fingerprints
+inside a bounded composite, distinct from the composite/archive hash. Existing
+observation sessions, cancellation, local filtering, archive replay/comparison,
+exact import receipts and managed recovery are reused. Missing source evidence
+fails recovery. Mutable votes/unrelated fields do not manufacture new reviews;
+changed notices and different markets retain separate reviews without Applied state.
+
+Fourteen new regressions; full local suite 503 tests, 412 passed / 91 archived-native
+skips. Final source and rebuilt actual Windows portable browser journeys plus source/
+frozen self-tests passed. Synthetic layout inspected and narrow overflow checked.
+Browser checks await completed visible close/replay selection rather than Chrome's
+evicted inspector response-body cache. A reproduced shared-transport gap now refuses
+short declared HTTP bodies even when their JSON prefix parses. The corrections
+remain in one coherent feature commit. No native GUI tests ran on the laptop.
+All six [feature PR checks](https://github.com/VSBhargav5/RoleWeave/actions/runs/44051961362)
+passed. The original [post-merge run](https://github.com/VSBhargav5/RoleWeave/actions/runs/44052583917)
+had five passing jobs and a Windows packaged browser close/replay failure.
+Investigation reproduced a separate request-ownership defect: an older page read
+could resurrect an already-closed source before a later refresh removed it again.
+[v0.36.1 correction PR #47](https://github.com/VSBhargav5/RoleWeave/pull/47) invalidates
+that source's pending page read. The controlled regression fails on the old code
+and passes on the patch; source and actual Windows package journeys also pass ten
+close/replay cycles, five Node history checks and the frozen runtime check.
+The exact original CI pointer-failure causality is not independently established.
+Patch merged at 99731b9d8f7e90130be101e7aded5835ef9412fd, exact tested/published tree
+1ff44f9334ba09bb9a52e636e17890558f470f75. [Fix commit](https://github.com/VSBhargav5/RoleWeave/commit/c6fa32dc4dc2104a3c225f5aa91b0624f8dc7f3d).
+All six [patch PR checks](https://github.com/VSBhargav5/RoleWeave/actions/runs/44057565534)
+and six branch checks passed. All six [patch post-merge checks](https://github.com/VSBhargav5/RoleWeave/actions/runs/44058407517)
+also passed, including Windows/Linux, packaged browser and installer lifecycle.
+Local main fast-forwarded cleanly without merging local counterpart commits.
+Final local v0.36.1 portable ZIP SHA256:
+3cc8764f6798526ef0098b8c7dbe7b0ac9df3ada4a5d3ae21f92a58fc7085f50.
+
+One authorized public API batch had 31 index entries, ten requested/accepted notices
+and zero exclusions. Only counts and composite fingerprint are committed, no real
+notice text. This verifies that observation's transport/shape, not source completeness,
+current availability, quality, hiring outcomes or personal usefulness. No personal
+material, paid/model call, account linking, employer-site fetch or outreach occurred.
+Archives and recovery remain unencrypted; hashes prove consistency, not authenticity.
+
+The scoped checklist moves to 17 implemented / 3 partial / 5 missing. Remaining
+missing areas: connected Gmail, inbox/AI responses, external MCP, remote hosting/auth
+and document localization. Broader aggregation, scheduled/scored discovery and
+browser/broader Calendar remain partial. A synthetic practice exercise is available;
+learning completion and overall production readiness are not presumed.
+
 ## 17 November 2026 — automatic local recovery and verified retention
 
 [v0.35 PR #45](https://github.com/VSBhargav5/RoleWeave/pull/45) merged at
