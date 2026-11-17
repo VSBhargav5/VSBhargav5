@@ -2,6 +2,52 @@
 
 Entries distinguish shipped code, verification, limitations, and planned work.
 
+## 17 November 2026 — automatic local recovery and verified retention
+
+[v0.35 PR #45](https://github.com/VSBhargav5/RoleWeave/pull/45) merged at
+7914f602bb1ce97ebe6242b171d071ad9988f8be, exact tested/published tree
+ab0b317494aa6155d84ba5815823b3825cb1c52b. [Implementation](https://github.com/VSBhargav5/RoleWeave/commit/04c0fa2f7cc47c67c33aed5bc3010896edb56996)
+and [workflow/limits](https://github.com/VSBhargav5/RoleWeave/blob/main/docs/automatic-backups.md).
+
+An opt-in schedule protects reviewed profiles, managed documents, source observations
+and application history without a remembered manual export. The running local host
+checks the machine-local 02:00 cycle, catches up once after a missed cycle and permits
+explicit manual snapshots. No OS task, laptop wake, cloud upload or operation while
+the host is closed. Restored workspaces start with scheduling disabled.
+
+The existing managed ZIP format is validated, atomically published without overwrite
+and read back before seven-file retention. Only reverified owned filenames can be
+pruned; unknown/linked/corrupt/excess entries stop cleanup. Failed capture, storage
+and retention are distinguished. A new verified snapshot survives failed retention.
+The browser lists status, downloads exact verified bytes and previews recovery before
+creating a separate workspace. Broken storage still permits disabling the schedule.
+
+16 new regressions; full local suite 489 tests, 398 passed / 91 archived-native skips.
+Final source and rebuilt actual Windows portable journeys, exact download/preview
+hash equality, narrow layout and frozen self-test passed. Source self-test failed
+once during concurrent disk-heavy checks and passed once in isolation; the initial
+cause remains unestablished. No application retry was added. Verification also
+caught a download query mismatch and catalog reads seeing publication staging; the
+latter has a forced-interleaving regression. No retired GUI tests ran on the laptop.
+All six [PR checks](https://github.com/VSBhargav5/RoleWeave/actions/runs/44039636313)
+passed. [Post-merge run](https://github.com/VSBhargav5/RoleWeave/actions/runs/44040361904).
+Final local ZIP SHA256:
+7709ce4826b805cfd9f83ebcc85337c6213aeda9bd980b45d545e86def6edc95.
+
+Backups are unencrypted and on the same device, not protection against device loss
+or ransomware. Keep a separate trusted copy. Existing 64MiB/ZIP and 1,000-artifact
+bounds apply; interrupted retention can leave extra files and pause automation.
+No cross-process scheduler, corruption repair, real overnight/sleep/power-loss
+trial, production performance or personal usefulness claim. No personal schedule
+was enabled; all verification used synthetic workspaces and no provider/account call.
+
+The scoped checklist is now 16 implemented / 3 partial / 6 missing: the local-host
+nightly-backup area closes, not the complete product. Broader discovery, scheduled/
+scored discovery and browser/broader Calendar remain partial. Startup sources,
+connected Gmail, inbox/AI responses, MCP, remote hosting/authentication and document
+localization remain missing. A synthetic practice exercise is available; learning
+completion is not presumed.
+
 ## 17 November 2026 — optional JSearch observations and replay race correction
 
 [v0.34 PR #44](https://github.com/VSBhargav5/RoleWeave/pull/44) merged at
