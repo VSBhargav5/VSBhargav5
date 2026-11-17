@@ -8,7 +8,20 @@ meaningful verification, and an explanation of the engineering tradeoffs.
 
 ## Project focus
 
-Latest 17 November: [v0.36 startup notices PR #46](https://github.com/VSBhargav5/RoleWeave/pull/46)
+Latest 17 November: [v0.37 document languages PR #48](https://github.com/VSBhargav5/RoleWeave/pull/48)
+is merged after all six PR checks passed. It adds fixed labels, structured dates,
+letter scaffold and metadata across seven
+languages/nine choices. Human-authored content stays exact, preview consent binds
+locale, saved selections show it, and frozen exports/recovery retain original bytes.
+512offline tests:421passed/91archived-native skips, five Node checks and final
+source/actual Windows package/frozen journeys passed. Synthetic German/French
+PDF layouts inspected. No full21-language/content/app translation, language-quality
+acceptance or personal acceptance claim. [Guide](https://github.com/VSBhargav5/RoleWeave/blob/main/docs/document-localization.md).
+Current checklist: **17implemented/4partial/4missing**. Localization is partial;
+Gmail, inbox/AI replies, MCP and remote hosting/auth are still missing. Choose a
+useful next workflow without assuming account access or personal transmission.
+
+Earlier on 17 November: [v0.36 startup notices PR #46](https://github.com/VSBhargav5/RoleWeave/pull/46)
 is merged. Keyless explicit HN jobs observations feed local filtering, checked
 employer/market imports, exact source receipts and managed recovery. One public
 sample accepted ten notices from a 31-entry index; no profile/query transmission

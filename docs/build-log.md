@@ -2,6 +2,48 @@
 
 Entries distinguish shipped code, verification, limitations, and planned work.
 
+## 17 November 2026 — reviewed document languages
+
+[v0.37 PR #48](https://github.com/VSBhargav5/RoleWeave/pull/48) adds nine document
+choices across seven languages: original English ISO months, English UK/US named
+months, German, Spanish, French, Italian, Brazilian Portuguese and Dutch. Fixed
+section/field labels, structured month dates, ongoing labels, letter scaffold and
+metadata change; human-authored claims, summary, names, custom headings, titles,
+introduction and closing remain exact. No network translation, model request,
+new dependency or global language assumption.
+
+Locale is bound to preview approval and new frozen resume/letter-v3 snapshots.
+Changing it invalidates approval. Letter editing starts with the frozen resume
+language and allows an explicit different choice. Saved cards and attachment
+selectors display it; TXT, private dossiers, recipient packs and managed recovery
+retain the correct locale and exact bytes. Localized PDFs replay from their
+source/theme/locale; old English v1/v2 contracts remain supported. New localized
+snapshots require the updated app. Unsupported PDF characters still fail rather
+than being replaced.
+
+Nine focused regressions; full512offline tests:421passed/91archived-native skips.
+Five Node history checks, source browser journey, final actual rebuilt Windows
+portable journey and frozen runtime check passed. Tests exposed an English-only
+dossier replay caller; it was fixed before publication. German resume/French
+letter synthetic PDFs were rendered with Poppler and visually inspected. No
+retired GUI tests ran on the laptop. Fixed wording has no native-speaker acceptance,
+no full21-language/app/content-translation or personal usefulness claim.
+
+[Workflow, boundaries and practice](https://github.com/VSBhargav5/RoleWeave/blob/main/docs/document-localization.md).
+Merged at ce7ef27cb91a1b13ae8365216e49101f25318b28. All six
+[PR checks](https://github.com/VSBhargav5/RoleWeave/actions/runs/44064800056) and
+six branch checks passed. [Post-merge checks](https://github.com/VSBhargav5/RoleWeave/actions/runs/44065821372).
+Tested/published tree0bf5bad1c3f11bf40f6ea903a70db2ad6f10b008.
+[Implementation](https://github.com/VSBhargav5/RoleWeave/commit/ed6ee24c319a6d66388a56d14a658d5abc414fa3).
+Local Windows ZIP SHA256:
+3cde968039c8a740060734e534cc3d133a68fefd7387f9ac89995b247d580f17.
+
+Localization moves missing to partial: **17implemented/4partial/4missing**.
+Connected Gmail, inbox/AI responses, external MCP and remote hosting/auth remain
+missing. Broader discovery, scheduled/scored discovery and browser/broader Calendar
+remain partial alongside localization. No account linking, private transmission,
+paid call or application submission; existing consent and evidence gates remain.
+
 ## 17 November 2026 — keyless startup notices and source-close ownership
 
 [v0.36 PR #46](https://github.com/VSBhargav5/RoleWeave/pull/46) merged at
