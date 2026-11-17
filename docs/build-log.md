@@ -2,6 +2,49 @@
 
 Entries distinguish shipped code, verification, limitations, and planned work.
 
+## 17 November 2026 — StudyFrame returns to screen assistance
+
+User explicitly shifted the active sprint from RoleWeave's local MVP back to the
+Cue-like Python assistant. RoleWeave/SettleTrace stay paused; CueDesk is a historical
+reference, not a second active implementation or imported upstream source.
+[StudyFrame v0.3 PR #5](https://github.com/VSBhargav5/StudyFrame/pull/5) merged at
+9f907fd19a01326fad908ca1811f182dca5f1d67; exact tested/published tree
+ca6f9182d18f135e243a98cdc521c655cf391069.
+[Implementation](https://github.com/VSBhargav5/StudyFrame/commit/5f6feb92e4e6695a83b139b049c11e67d291de05).
+
+Previously the app required saved images and paid OpenAI. It now captures one
+explicitly selected display, retains physical pixels in a fresh bounded PNG,
+shows a capture timestamp, reuses crop/review and offers visible pinning. Selection
+lists monitor metadata without thumbnail capture. The app briefly hides before
+capture. Cancel/Clear/Close disarm the pending timer. Explain is the initial style;
+notes are optional. No continuous capture/video/audio or hidden sharing overlay.
+
+Default fixed OpenRouter free route uses reviewed text/image, zero price caps,
+no provider fallbacks and a data-collection-deny request. This can leave no eligible
+route; nothing is automatically relaxed or switched to paid OpenAI. OpenAI remains
+separately labelled paid. Provider changes clear key, approval and previous exchange;
+sanitized returned-model metadata is shown. No new runtime dependency. Official
+Gemini/Groq/OpenRouter key links and local Ollama candidates were researched; no
+keys were obtained, accounts linked, model downloads or live model calls performed.
+
+All85offline tests pass (70baseline+15new); all four
+[PR checks](https://github.com/VSBhargav5/StudyFrame/actions/runs/44078964875) passed
+on Windows/Linux3.11/3.12, including installed-runtime verification and native Qt
+on Windows. All four [post-merge checks](https://github.com/VSBhargav5/StudyFrame/actions/runs/44079219522)
+also passed. Final synthetic dark UI rendered/inspected with a process-local font;
+no personal desktop pixels. Local installed package refreshed to0.3 and imported
+outside checkout. The first offline reinstall lacked wheel; isolated pip build
+then succeeded. No credential/global setting changes. Local main fast-forwarded
+cleanly to connector history.
+
+[Screen workflow and practice](https://github.com/VSBhargav5/StudyFrame/blob/main/docs/screen-assistant.md),
+[free provider research](https://github.com/VSBhargav5/StudyFrame/blob/main/docs/free-vision-options.md).
+Real display/compositor/permissions, unusual scaling, actual free account routing,
+model quality, personal usefulness and installer remain unverified. This is still
+capture/manual refresh, not completed live watching. A permitted synthetic live
+trial is next, then deliberately bounded watching and further provider/local
+adapters where useful. No learning completion or measured performance claim.
+
 ## 17 November 2026 — reviewed document languages
 
 [v0.37 PR #48](https://github.com/VSBhargav5/RoleWeave/pull/48) adds nine document

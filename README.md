@@ -40,7 +40,7 @@ Alongside that, I build focused AI tools for **evaluation**, **decision capture*
 | | Project | What it solves | Stack |
 |---|---------|----------------|-------|
 | 🧵 | **[RoleWeave](https://github.com/VSBhargav5/RoleWeave)** `v0.37 beta · browser interface` | Reviewed AI application drafts, visual PDFs, job discovery, contact filling and source-verified recovery | Python · SQLite · CSS/SVG · MV3 · ReportLab |
-| 🖥️ | **[StudyFrame](https://github.com/VSBhargav5/StudyFrame)** `v0.2 · screenshot focus` | Crop code/diagrams before reviewed AI requests; restore originals, ask follow-ups and cancel; live quality unverified | Python · PySide6 · unittest |
+| 🖥️ | **[StudyFrame](https://github.com/VSBhargav5/StudyFrame)** `v0.3 · screen assistant` | Capture a selected display, crop pixels and ask through reviewed free vision routing; live quality unverified | Python · PySide6 · unittest |
 | 🧾 | **[SettleTrace](https://github.com/VSBhargav5/SettleTrace)** `v0.3` | Exact-money exceptions, audited bank mappings, declared windows, and replayable evidence | Python · CSV · HTML/JSON · unittest |
 | 💥 | **[BlastPath](https://github.com/VSBhargav5/BlastPath)** `v0.2` | What breaks if this PR lands — **git blast-radius**, owners, snapshot Δ | Python · AST · Pydantic · Typer |
 | 🔁 | **[OpenLoop](https://github.com/VSBhargav5/OpenLoop)** `v0.2` | Commitments that die in chat/notes → open loops + still-open digest | Python · Pydantic · SQLite · Typer · Rich |
