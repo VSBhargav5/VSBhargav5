@@ -16,6 +16,12 @@ or employer-page fetch. This is HN-listed startup notices, not the full YC direc
 Who is hiring threads or verified eligibility. 503 offline tests: 412 passed /
 91 archived-native skips; final source/Windows portable/frozen journeys and all six
 PR checks passed. [Guide](https://github.com/VSBhargav5/RoleWeave/blob/main/docs/startup-discovery.md).
+[Merged v0.36.1 correction PR #47](https://github.com/VSBhargav5/RoleWeave/pull/47) fixes a
+reproduced older-page response resurrecting a closed source. A controlled held-read
+regression and ten actual Windows package close/replay cycles pass. All six patch PR
+and six post-merge checks passed. The original
+feature post-merge Windows browser job failed; its exact pointer-failure cause is
+not independently established. No retry was used to hide that result.
 Current scoped checklist: **17 implemented / 3 partial / 5 missing**. Missing:
 connected Gmail, inbox/AI responses, MCP, remote hosting/authentication and document
 localization. Existing permission/account/live-quality gates remain; no overall
