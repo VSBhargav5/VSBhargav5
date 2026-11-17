@@ -8,7 +8,23 @@ meaningful verification, and an explanation of the engineering tradeoffs.
 
 ## Project focus
 
-Latest explicit focus switch17November: **StudyFrame is active; RoleWeave is paused
+Latest17November: [StudyFrame v0.4 glass companion PR #6](https://github.com/VSBhargav5/StudyFrame/pull/6)
+is merged. Compact translucent/gradient overlay, question and answer together,
+draggable/resizable frame, connection/preview drawers and reversible small bar.
+Capture & ask explicitly sends one freshly captured screen to the shown provider;
+preview/crop/approve/send stays optional and separate. Failed or cancelled captures
+never send stale images. No recording/process concealment or native-blur claim.
+98offline tests/all four PR checks passed, synthetic answer/settings/bar inspected,
+narrow overflow and key-field scroll corrected. Installed0.4 refreshed and verified.
+[Guide and practice](https://github.com/VSBhargav5/StudyFrame/blob/main/docs/glass-overlay.md).
+
+StudyFrame remains the one active implementation; RoleWeave is paused as a local
+MVP. Next is an authorized real-screen/synthetic live answer trial and observed
+fixes; physical capture/compositor/scaling, live routing/quality and personal
+usefulness remain unverified. No personal image/live/paid call/key access exercised.
+Click-triggered stills are not completed continuous watching. No churn for counts.
+
+Earlier explicit focus switch17November: **StudyFrame is active; RoleWeave is paused
 as a local MVP.** CueDesk remains a reference; one original Python assistant is
 being developed. [v0.3 PR #5](https://github.com/VSBhargav5/StudyFrame/pull/5) merged:
 selected-display still capture, physical-pixel crop/review, timestamp, pinning,
