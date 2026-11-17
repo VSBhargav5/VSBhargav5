@@ -2,6 +2,47 @@
 
 Entries distinguish shipped code, verification, limitations, and planned work.
 
+## 17 November 2026 — compact glass companion and one-click answers
+
+[StudyFrame v0.4 PR #6](https://github.com/VSBhargav5/StudyFrame/pull/6) merged at
+d92b627d34f0a98d1e0bcbc2745c8ba8869a4946. Exact tested/published tree
+7f906ca23a06e9d83535c1de2474cd4000d658bb.
+[Implementation](https://github.com/VSBhargav5/StudyFrame/commit/a83253f9f7f2981922fe153a8abb41a4a2727e6a).
+
+The large tabbed worksheet is replaced by a compact frameless translucent gradient
+surface, draggable title, resize grip and reversible small bar. Question and
+plain-text answer share the surface; connection and preview/crop are drawers.
+No second UI application or runtime dependency. Glass-style alpha/gradient paint,
+not a claim of native blur/Mica. Ordinary visible overlay; no recording exclusion,
+process hiding or monitoring bypass.
+
+Capture & ask explicitly authorizes one fresh screenshot send to the shown
+provider. No mandatory notes/tab/checkbox in that direct path. Blank new questions
+use a screen explanation. A missing key opens settings without capture. The
+optional preview-only capture/crop/prepare/approve/send path remains separate.
+Unseen direct-capture pixels are not marked reviewed. Inputs/provider/key/source
+changes, Cancel/Clear/Close disarm pending capture. Capture failures never send
+an old image; one request at a time. Follow-up can deliberately use the last
+exchange with new pixels. Existing free-price/privacy/body/deadline rules remain.
+
+98offline tests passed (85prior+13new overlay regressions). All four
+[PR checks](https://github.com/VSBhargav5/StudyFrame/actions/runs/44084227283) passed
+on Windows/Linux3.11/3.12, including native Qt, installed-runtime verification and
+overlay/compact-bar renders. All four [post-merge checks](https://github.com/VSBhargav5/StudyFrame/actions/runs/44084546327)
+also passed. Synthetic visual QA found/fixed a mnemonic/glyph,
+key-field scroll and narrow horizontal overflow; final answer/settings/bar states
+inspected. Existing tests now check actual drawer/answer behavior rather than
+removed tabs. Final installed local0.4 verified outside checkout. Sandboxed pip
+build dependency fetch failed DNS; permitted isolated build succeeded. No global
+credential/settings changes or user-data removal. Local main fast-forwarded cleanly.
+
+[Workflow, direct-send meaning and limits](https://github.com/VSBhargav5/StudyFrame/blob/main/docs/glass-overlay.md).
+Physical capture/compositor/permissions, unusual scaling/manual acceptance, actual
+provider routing and live model quality remain unverified. No personal screen,
+live/paid call or credential access was exercised. This is click-triggered still
+capture, not continuous watching. StudyFrame stays active; RoleWeave/other projects
+stay paused. No learning completion or production acceptance claim.
+
 ## 17 November 2026 — StudyFrame returns to screen assistance
 
 User explicitly shifted the active sprint from RoleWeave's local MVP back to the
