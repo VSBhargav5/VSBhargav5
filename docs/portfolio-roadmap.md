@@ -8,7 +8,20 @@ meaningful verification, and an explanation of the engineering tradeoffs.
 
 ## Project focus
 
-Latest 17 November: [v0.35 automatic recovery PR #45](https://github.com/VSBhargav5/RoleWeave/pull/45)
+Latest 17 November: [v0.36 startup notices PR #46](https://github.com/VSBhargav5/RoleWeave/pull/46)
+is merged. Keyless explicit HN jobs observations feed local filtering, checked
+employer/market imports, exact source receipts and managed recovery. One public
+sample accepted ten notices from a 31-entry index; no profile/query transmission
+or employer-page fetch. This is HN-listed startup notices, not the full YC directory,
+Who is hiring threads or verified eligibility. 503 offline tests: 412 passed /
+91 archived-native skips; final source/Windows portable/frozen journeys and all six
+PR checks passed. [Guide](https://github.com/VSBhargav5/RoleWeave/blob/main/docs/startup-discovery.md).
+Current scoped checklist: **17 implemented / 3 partial / 5 missing**. Missing:
+connected Gmail, inbox/AI responses, MCP, remote hosting/authentication and document
+localization. Existing permission/account/live-quality gates remain; no overall
+personal or production acceptance claim.
+
+Earlier on 17 November: [v0.35 automatic recovery PR #45](https://github.com/VSBhargav5/RoleWeave/pull/45)
 is merged. Opt-in local-host nightly snapshots/catch-up, verified seven-file
 retention, exact ZIP download and separate restore protect the managed application
 workspace. Off by default; restored policies require renewed consent. Same-device,
@@ -16,7 +29,7 @@ unencrypted, no OS task/cloud backup or operation while the host is closed.
 489 offline tests: 398 passed / 91 archived-native skips; source/actual Windows
 portable/frozen journeys and all six PR checks passed. Overnight/sleep/power-loss
 and personal acceptance remain unverified. [Guide](https://github.com/VSBhargav5/RoleWeave/blob/main/docs/automatic-backups.md).
-Current scoped checklist: **16 implemented / 3 partial / 6 missing**. Remaining
+At v0.35: **16 implemented / 3 partial / 6 missing**; the startup milestone above supersedes that missing count. Remaining
 priorities include scored/scheduled discovery and browser/broader Calendar; external
 accounts, provider compatibility and live quality retain separate consent/evidence
 gates. One previously missing area is now implemented, not overall production readiness.
