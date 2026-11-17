@@ -8,7 +8,23 @@ meaningful verification, and an explanation of the engineering tradeoffs.
 
 ## Project focus
 
-Latest 17 November: [v0.37 document languages PR #48](https://github.com/VSBhargav5/RoleWeave/pull/48)
+Latest explicit focus switch17November: **StudyFrame is active; RoleWeave is paused
+as a local MVP.** CueDesk remains a reference; one original Python assistant is
+being developed. [v0.3 PR #5](https://github.com/VSBhargav5/StudyFrame/pull/5) merged:
+selected-display still capture, physical-pixel crop/review, timestamp, pinning,
+Explain default and a fixed reviewed free OpenRouter route. No paid fallback or
+automatic upload.85offline tests/all four PR checks passed; installed local0.3
+verified outside checkout. No personal capture, live model call or key/account
+access. [Workflow](https://github.com/VSBhargav5/StudyFrame/blob/main/docs/screen-assistant.md).
+
+Next evidence gate: a permitted synthetic real-screen/API trial, then bounded
+started/stopped watching and additional direct/local adapters. Still capture is
+not continuous video. Free quotas and privacy policies constrain cloud usage;
+[official provider/key research](https://github.com/VSBhargav5/StudyFrame/blob/main/docs/free-vision-options.md)
+is documented. Live quality, physical capture behavior, installer and user learning
+remain unverified. Do not resume RoleWeave merely to add features/counts.
+
+Earlier RoleWeave release evidence17November: [v0.37 document languages PR #48](https://github.com/VSBhargav5/RoleWeave/pull/48)
 is merged after all six PR checks passed. It adds fixed labels, structured dates,
 letter scaffold and metadata across seven
 languages/nine choices. Human-authored content stays exact, preview consent binds
