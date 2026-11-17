@@ -2,6 +2,72 @@
 
 Entries distinguish shipped code, verification, limitations, and planned work.
 
+## 17 November 2026 — reviewed assessments; structured profiles and conversation evidence
+
+[v0.33 PR #43](https://github.com/VSBhargav5/RoleWeave/pull/43) merged on 17 November
+at 413fb10a2fced3361a4f7be106f03fc5dd802cfa, tested/published tree
+b91d984e8560bbdea500afd2f511af512ee86f13. [Implementation](https://github.com/VSBhargav5/RoleWeave/commit/8f0189002a58000ccf81ad738e9c559415090ce1)
+and [workflow/limits](https://github.com/VSBhargav5/RoleWeave/blob/main/docs/job-assessment.md).
+
+A saved posting can be assessed against explicitly selected reviewed facts. Exact
+request preview and one-send consent precede a bounded proposal. Humans correct
+advisory scores, exact quote/status/evidence links and reasons, then confirm before
+saving an immutable assessment. Ranking groups share profile snapshot/fact set,
+provider-model configuration and rubric. India/remote and relocation filters apply
+before pagination; per-job history retains older review versions. No profile,
+posting review or application-stage mutation. Quoted-row coverage is not complete
+posting coverage; scores are uncalibrated opinions, not eligibility or hiring odds.
+
+Requests replay byte-for-byte from exact sources during listing/recovery; rehashed
+wrong-context requests are refused. Partial file-publication retries reuse pending
+IDs/bytes and reject changed wording. Credential fields are not stored; selected
+private text is not scrubbed. Saved records/recovery ZIPs remain unencrypted.
+20 rows/page, 20 selected facts, 30 quotes, 1,000 files, 1 MiB/record, 256 KiB/request and
+64 MiB managed-recovery bounds; no automatic model retry or arbitrary execution.
+
+Last full local suite: 461 tests, 370 passed / 91 retired-native skips. Final 17 November
+12 assessment + 12 provider regressions and 5 Node undo-state checks passed; actual
+source/final v0.33 Windows portable browser journeys and frozen self-test passed.
+Synthetic UI inspected, including market filters, source groups, reopened review,
+fresh accuracy, immutable history and preserved tracking/profile state. All six
+[PR checks](https://github.com/VSBhargav5/RoleWeave/actions/runs/44013829742) passed.
+All six [post-merge main checks](https://github.com/VSBhargav5/RoleWeave/actions/runs/44014719644) passed.
+Complete v0.33 ZIP SHA256
+6e568eb36f757cec14c5ad43f23e0d17ded721563db3d89b32fee0f5bb04511a.
+
+The same evidence update records two features actually shipped on 16 November:
+
+- [Structured career sections PR #41](https://github.com/VSBhargav5/RoleWeave/pull/41),
+  [commit 7cfa202](https://github.com/VSBhargav5/RoleWeave/commit/7cfa202918967bf3c544712d7106abfe0ad29c90):
+  ten typed sections, browser edit/order/remove/review, selected resume/letter/evidence
+  reuse, stale-editor guard and managed recovery. Structured reference contacts
+  are excluded from model context and print only with explicit entry selection.
+  347 local tests passed / 91 native skips,10 new lifecycle tests, source/portable/frozen
+  and rendered synthetic PDF checks. All six PR/main jobs passed. [Guide](https://github.com/VSBhargav5/RoleWeave/blob/main/docs/structured-career-profile.md).
+- [Retained refinement conversations PR #42](https://github.com/VSBhargav5/RoleWeave/pull/42),
+  [feature commit](https://github.com/VSBhargav5/RoleWeave/commit/a544b92d36eb9a9bcfc30c44114be747ce724258)
+  and [tracking-race correction](https://github.com/VSBhargav5/RoleWeave/commit/7c6685da2d92502c6e8cdba09c9a3416dbc64032):
+  opt-in unencrypted instruction/request/proposal turns, immutable parent branches,
+  exact-source older-proposal reopening without a send, fresh review, explicit
+  whole-conversation removal and recovery.11 new history regressions;358 local tests
+  passed / 91 native skips. Initial Windows portable CI failed at a tracking conflict:
+  a previous save's refresh could advance global state after a newer dialog opened.
+  Frozen dialog job/revision now changes only on explicit Reload. A controlled
+  browser regression reproduces old HTTP 200 versus corrected 400 with draft preserved.
+  All six corrected PR checks and post-merge workflow passed. [Guide](https://github.com/VSBhargav5/RoleWeave/blob/main/docs/refinement-conversations.md).
+
+Three of the six requested partial areas are now closed in scoped offline workflows.
+[Current comparison](https://github.com/VSBhargav5/RoleWeave/blob/main/docs/dossier-parity.md)
+is 15 implemented / 3 partial / 7 missing, with an explicit current-status column separate
+from historical baseline. Wider aggregators, scheduled/scored discovery and browser/
+broader Calendar remain partial; seven missing areas remain. No production-readiness
+percentage, live model/provider quality, personal usefulness, hiring or learning claim.
+No paid/live model call, personal/employer transmission, account link or application
+send performed. Archived native GUI tests stayed CI-only; installer/manual acceptance
+and real employer compatibility remain gates. Work preserved overnight was published
+with actual 17 November timestamps, not attributed to 16 November or rest days.
+
+
 
 
 

@@ -8,24 +8,34 @@ meaningful verification, and an explanation of the engineering tradeoffs.
 
 ## Project focus
 
-Latest resumed16November work: [browser boards v0.29 PR #39](https://github.com/VSBhargav5/RoleWeave/pull/39)
-and [local review undo v0.30 PR #40](https://github.com/VSBhargav5/RoleWeave/pull/40)
-are merged. Existing four ATS board contracts, local filters/import/replay/comparison
-and required source receipts now stay in the browser; unchanged observations reuse
-reviews and derived evidence revisions preserve source recovery. No application or
-account action. Local Undo/Redo/reset improves wording review without another model
-request; accuracy confirmation resets,20states per proposal, no permanent chat log.
-Board337local Python tests/91native skips; undo25targeted Python+5Node tests; actual
-source/final portable workflows and all six PR release checks passed. Windows CI's
-caught archived-Tk lifecycle failure was resolved by per-case process isolation,
-retaining coverage. No native GUI checks executed on the user's laptop.
+Latest 17 November: [reviewed assessment v0.33 PR #43](https://github.com/VSBhargav5/RoleWeave/pull/43)
+is merged after completing the preserved candidate's final source/Windows portable/
+frozen checks. The workflow links selected facts to exact requirement quotes, human
+corrections and uncalibrated advisory opinions. Comparable-source/model ranking,
+separate market filters, per-job history and exact-request recovery are implemented.
+No eligibility/hiring-probability or production/personal acceptance claim.
 
-The12implemented/6partial/7missing matrix remains honest: broader aggregators,
-scheduled/scored agents, persisted full refinement chat, rich structured profiles,
-assessment and browser/broader Calendar remain. No new live provider/model/account,
-personal transmission, production readiness or learning outcome claimed. Next focus
-should complete a justified remaining workflow and validate personal usefulness.
-Earlier break notes below are historical; the user explicitly resumed.
+[Structured career sections v0.31 PR #41](https://github.com/VSBhargav5/RoleWeave/pull/41)
+and [retained conversations v0.32 PR #42](https://github.com/VSBhargav5/RoleWeave/pull/42)
+shipped on 16 November. Typed evidence survives review/documents/recovery. Opt-in local
+conversation turns retain original requests/proposals and reopen without another
+model call. A real CI tracking race was fixed with frozen dialog revisions and a
+deterministic browser regression. All six release PR checks passed for each release.
+Current source/final portable flows use synthetic data; no native GUI tests run on
+the user's laptop. Last full local suite: 461 tests, 370 passed / 91 native skips, with 24 final
+assessment/provider and 5 Node checks plus actual browser/frozen verification.
+
+[Current capability checklist](https://github.com/VSBhargav5/RoleWeave/blob/main/docs/dossier-parity.md):
+15 implemented / 3 partial / 7 missing. Three of six requested partial areas closed. Next:
+verified wider aggregate-source contracts, scheduled/scored discovery and browser/
+broader Calendar, followed by the seven still-missing areas. Actual account setup,
+permitted live trials, personal acceptance and observed quality remain separate gates.
+Use public/synthetic data; no paid calls, secrets from files/env, personal/employer
+transmission, accounts, deployment or applications without required authorization.
+[Assessment practice](https://github.com/VSBhargav5/RoleWeave/blob/main/docs/job-assessment.md)
+compares quoted-row coverage with advisory opinion; practice is not presumed complete.
+
+Earlier milestones below are historical; completed work supersedes their next-step notes.
 
 Latest v0.28 [theme builder PR #38](https://github.com/VSBhargav5/RoleWeave/pull/38)
 is merged: bounded document styling and portable JSON sharing preserve exact old
