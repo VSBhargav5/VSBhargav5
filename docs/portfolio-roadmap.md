@@ -8,7 +8,17 @@ meaningful verification, and an explanation of the engineering tradeoffs.
 
 ## Project focus
 
-Latest 17 November: [reviewed assessment v0.33 PR #43](https://github.com/VSBhargav5/RoleWeave/pull/43)
+Latest 17 November: [v0.34 PR #44](https://github.com/VSBhargav5/RoleWeave/pull/44)
+adds optional experimental JSearch discovery: explicit public-query review,
+one-request credentials/consent, cursor pages, original-byte evidence and managed
+recovery. Final source/Windows portable flows pass, including a real stale-board
+refresh correction with a forced delayed-response regression. 473 local tests:
+382 passed / 91 retired-native skips. All six PR checks passed; one Windows package
+check needed a targeted retry after an isolated localhost connection failure.
+Live response compatibility and usefulness remain unverified; FreeHire stays the
+default and named saved searches still use FreeHire. [Workflow and limits](https://github.com/VSBhargav5/RoleWeave/blob/main/docs/jsearch-discovery.md).
+
+Earlier on 17 November: [reviewed assessment v0.33 PR #43](https://github.com/VSBhargav5/RoleWeave/pull/43)
 is merged after completing the preserved candidate's final source/Windows portable/
 frozen checks. The workflow links selected facts to exact requirement quotes, human
 corrections and uncalibrated advisory opinions. Comparable-source/model ranking,
@@ -27,7 +37,7 @@ assessment/provider and 5 Node checks plus actual browser/frozen verification.
 
 [Current capability checklist](https://github.com/VSBhargav5/RoleWeave/blob/main/docs/dossier-parity.md):
 15 implemented / 3 partial / 7 missing. Three of six requested partial areas closed. Next:
-verified wider aggregate-source contracts, scheduled/scored discovery and browser/
+permitted JSearch compatibility validation, additional aggregate sources, scheduled/scored discovery and browser/
 broader Calendar, followed by the seven still-missing areas. Actual account setup,
 permitted live trials, personal acceptance and observed quality remain separate gates.
 Use public/synthetic data; no paid calls, secrets from files/env, personal/employer

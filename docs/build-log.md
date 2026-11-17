@@ -2,6 +2,53 @@
 
 Entries distinguish shipped code, verification, limitations, and planned work.
 
+## 17 November 2026 — optional JSearch observations and replay race correction
+
+[v0.34 PR #44](https://github.com/VSBhargav5/RoleWeave/pull/44) merged at
+c8841a2fadfaeb223ab8129230c7d502ac15a441, exact tested/published tree
+a3b2aa78c319d307210fa45e6208684a7349456e. [Discovery implementation](https://github.com/VSBhargav5/RoleWeave/commit/9281d70b9c22ca2e5043cf2cf53d4647c6f68494),
+[observed race correction](https://github.com/VSBhargav5/RoleWeave/commit/c72e990bb212113d81ee752c25ee5854f033bb60),
+[contract and practice](https://github.com/VSBhargav5/RoleWeave/blob/main/docs/jsearch-discovery.md).
+
+Discover jobs has an optional experimental JSearch source alongside FreeHire.
+An explicit country and frozen public-request preview precede each one-page
+cursor request. Credentials are masked, passed to one worker and never saved or
+reused; no files/environment lookup. Provider plan/credits apply. Local cancellation
+cannot undo remote processing or charges. No redirects, automatic retries or
+next-page calls. Returning to cached observations makes no provider request.
+
+Original response bytes, exact filters, raw hash and a separate wrapper hash join
+managed recovery on import. Recognized wrappers replay both hashes and the narrow
+parser. Invalid rows are reported without truncation; country/remote labels are
+not eligibility. Changed title/company/posting makes a new review without Applied
+inheritance. Hashes establish consistency, not authenticity. No source-completeness,
+current availability, production performance or personal-usefulness claim.
+
+CI exposed an existing background board refresh hiding a newer offline replay.
+The correction invalidates stale refreshes and checks page identity after both
+reads. A browser regression holds the old real response until the new replay is
+visible, releases it, and checks that the new source remains. Another actual UI
+check fixed search consent incorrectly activating the document-draft guard.
+
+473 offline tests: 382 passed / 91 archived-native skips. Five Node checks passed.
+Final source and actual rebuilt Windows portable browser journeys plus source/
+frozen self-tests passed. Synthetic layout inspected; no narrow horizontal overflow.
+All six [PR checks](https://github.com/VSBhargav5/RoleWeave/actions/runs/44020147028)
+passed after one targeted Windows package retry: its initial attempt had a late
+localhost connection failure. The identical branch package/install check and final
+retry passed; that isolated failure's root cause is not established. No application
+write retry was added. [Post-merge CI](https://github.com/VSBhargav5/RoleWeave/actions/runs/44020916875).
+Final local portable ZIP SHA256:
+5b28462ddc0509a74eb940f9a9e11c5ce093a6b8b636b785ee00e9f0679111e6.
+
+Current official cursor input contracts were inspected; the response envelope is
+still a narrow synthetic contract awaiting an authorized live test. No live/paid
+JSearch or model call, key access, account linking or personal transmission occurred.
+Existing named searches remain FreeHire-only. The broader checklist stays
+15 implemented / 3 partial / 7 missing; additional providers, scheduled/scored
+discovery and broader browser/Calendar integrations remain open. Learning practice
+is available and has not been presumed completed.
+
 ## 17 November 2026 — reviewed assessments; structured profiles and conversation evidence
 
 [v0.33 PR #43](https://github.com/VSBhargav5/RoleWeave/pull/43) merged on 17 November
