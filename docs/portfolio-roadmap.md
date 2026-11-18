@@ -8,7 +8,18 @@ meaningful verification, and an explanation of the engineering tradeoffs.
 
 ## Project focus
 
-Latest17November: [StudyFrame v0.4 glass companion PR #6](https://github.com/VSBhargav5/StudyFrame/pull/6)
+Latest 18 November: [StudyFrame v0.5 native glass capsule PR #7](https://github.com/VSBhargav5/StudyFrame/pull/7)
+is merged. Small 360 × 90 logical-pixel startup capsule, expandable answers,
+rounded native shape and guarded Acrylic compatibility effect. Windows capture
+exclusion is on by default with explicit read-back status and lifecycle reapply.
+Actual blur and visible/excluded/restored synthetic capture were checked on build
+26300; 106 offline native Windows tests and all four PR checks passed. Installed
+v0.5 verified outside checkout. [Reproduction and tradeoff](https://github.com/VSBhargav5/StudyFrame/blob/main/docs/native-capsule.md).
+Acrylic uses an undocumented compatibility export with fallback; this capture
+check does not establish support for every recorder. Live model quality, unusual
+scaling and personal usefulness remain unverified. Only StudyFrame is active.
+
+Earlier 17 November: [StudyFrame v0.4 glass companion PR #6](https://github.com/VSBhargav5/StudyFrame/pull/6)
 is merged. Compact translucent/gradient overlay, question and answer together,
 draggable/resizable frame, connection/preview drawers and reversible small bar.
 Capture & ask explicitly sends one freshly captured screen to the shown provider;
@@ -342,8 +353,8 @@ No hiring outcomes, time savings or personal usefulness are claimed.
 | Project | Operational problem | Evidence to build | Status |
 | --- | --- | --- | --- |
 | [CueDesk](https://github.com/VSBhargav5/CueDesk) | Screen-assisted study and coding on Windows | Reviewed capture, explicit AI request, personally verified usefulness | Paused; real screen and provider trial remain |
-| [StudyFrame](https://github.com/VSBhargav5/StudyFrame) | Asking for study/coding help on Windows repeatedly requires assembling context | Bounded screenshot crop/restore, deliberate provider send/cancel, reviewed follow-ups, personally verified usefulness | Paused; [v0.2 screenshot focus](https://github.com/VSBhargav5/StudyFrame/pull/4); 70 offline tests; live validation and usefulness gate remain |
-| [RoleWeave](https://github.com/VSBhargav5/RoleWeave) | Relating job requirements to defensible career evidence and application decisions | Reviewed claims, exact posting quotes, separate job markets, personally usable workflow | Active; public-board discovery, optional reviewed AI quotes and calendar files extend the local workflow; live AI/personal trial next |
+| [StudyFrame](https://github.com/VSBhargav5/StudyFrame) | Asking for study/coding help on Windows repeatedly requires assembling context | Bounded screenshot crop/restore, deliberate provider send/cancel, reviewed follow-ups, personally verified usefulness | Active; [v0.5 native capsule](https://github.com/VSBhargav5/StudyFrame/pull/7); 106 offline tests, bounded native blur/exclusion check; live quality/usefulness gate remains |
+| [RoleWeave](https://github.com/VSBhargav5/RoleWeave) | Relating job requirements to defensible career evidence and application decisions | Reviewed claims, exact posting quotes, separate job markets, personally usable workflow | Paused as a local MVP; browser discovery/application preparation and recovery remain shipped; live AI/personal acceptance next |
 | [SettleTrace](https://github.com/VSBhargav5/SettleTrace) | A custom merchant ledger, processor activity, and bank deposits can disagree | Exact-money contracts, source-row evidence, verified export mapping, operator feedback | Paused; [v0.3 mapping and observation evidence merged](https://github.com/VSBhargav5/SettleTrace/pull/3) |
 | [PromptGuard](https://github.com/VSBhargav5/PromptGuard) | AI prompt changes can silently break previously working cases | Coverage-aware comparisons, labeled failure examples, repeatable evaluation, external pilot feedback | Reliability sprint completed; [merged work](https://github.com/VSBhargav5/PromptGuard/pull/2) |
 | [LMS ETL](https://github.com/VSBhargav5/LMS-ETL-PIPELINE) | Missing, duplicate, or late events can undermine learner scores and reports | Known expected results, idempotent reruns, controlled crash recovery, measured workloads | Next engineering sprint; review the existing architecture audit first |
@@ -353,9 +364,9 @@ Keep one implementation sprint active. Existing DecisionLog, OpenLoop, and Nifty
 projects remain available while these priorities are evaluated.
 
 StudyFrame remains an independent Python project. CueDesk is the separate,
-GPL-attributed Cue adaptation preserved for a later sprint. The current
-screen-study path requires deliberate capture preview and explicit send; the
-inherited meeting assistant is not yet integrated into that path. No live model
+GPL-attributed Cue adaptation preserved as a reference. StudyFrame Capture & ask
+explicitly authorizes one fresh still send; optional preview/crop remains local
+until separately approved. Continuous watching and meeting audio are not built. No live model
 call or personal screen capture was made during implementation. Product demand
 and usefulness remain unvalidated.
 
