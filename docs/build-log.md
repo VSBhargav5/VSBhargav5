@@ -4,6 +4,42 @@ Entries distinguish shipped code, verification, limitations, and planned work.
 
 
 
+
+## 18 November 2026 — standalone Windows workflow and real loopback repair
+
+[StudyFrame PR #9](https://github.com/VSBhargav5/StudyFrame/pull/9) merged at
+d5b3c5f3bcd1632c5497db796fd8321f889e943f; exact tested/published tree
+657a6c164aa2c91898fb5b75cda630df3f74108a verified; local main synchronized.
+
+Six coherent shipped changes:
+
+- [Worker startup repair](https://github.com/VSBhargav5/StudyFrame/commit/efd141334617573b259b0edfd04e8982d42d4e37): an explicitly authorized public-sample playback trial found blocking stdin on another thread stalled NumPy DLL initialization. Nonblocking Windows pipe polling and an actual native-import regression fix it. After the user unmuted, default-playback loopback recognized the expected opening digits. No captured audio saved/uploaded; no cloud call.
+- [Non-secret setup](https://github.com/VSBhargav5/StudyFrame/commit/026dbe011b872e385a30b30390217bd99cc2cfce): atomic local provider/source/model-folder/pinning preferences. No key, prompt, image, answer, transcript or approval is persisted. Capture exclusion resets on each launch; invalid preferences use defaults.
+- [Signal diagnostics](https://github.com/VSBhargav5/StudyFrame/commit/3769340560505d15963416c6974e928752776b42): a live bounded meter and distinct no-signal versus audio-without-recognition guidance, based on the observed muted-output case.
+- [Portable runtime](https://github.com/VSBhargav5/StudyFrame/commit/3c5dc4ba9f6440a907d92c4f2b768ac362f93eb6): windowed EXE/ZIP, explicit frozen worker dispatch/private pipes, local model paths, runtime self-test, notices/manifest and fresh-stage no-overwrite build. Build-environment isolation fixes an unrelated tool ICU DLL that broke standalone Qt startup.
+- [Missing license delivery](https://github.com/VSBhargav5/StudyFrame/commit/927b234b1643397bda4962c0ffe8e4ea5b1021b3): supplement the upstream wheel's commercial-only notice directory with standard Qt open-source license texts and source/replacement information. Final local package is v0.7.1.
+- [Windows path aliases](https://github.com/VSBhargav5/StudyFrame/commit/eb08b948f4b9a8f76b02df6198ec9a395b8e5e4d): CI exposed a test comparing short/long names for the same temp directory; it now checks physical directory identity, not a spelling assumption.
+
+124 offline native Windows tests passed. All five [PR jobs](https://github.com/VSBhargav5/StudyFrame/actions/runs/44254832063)
+passed on Windows/Linux3.11/3.12 plus portable build/runtime; all five [post-merge jobs](https://github.com/VSBhargav5/StudyFrame/actions/runs/44255494813) also passed. Source and actual
+windowed EXE passed synthetic capsule, text-only answer/clear, non-secret setup and
+packaged local-model/worker-pipe checks without opening audio or making an AI call.
+A guarded opaque full-screen fixture also verified the real selected-display capture → fresh PNG payload → synthetic text-answer path at 1920 × 1080 physical pixels: every captured pixel matched the owned fixture, with no file saved or network request.
+Final local 318-file manifest, ZIP integrity and license bytes verified. ZIP SHA256:
+`c5d0385d13c3a597ee3210c0e9666ee141c238ad703fd778c72abebe1ce53c47`.
+Local package includes the public small English model; CI artifact does not include
+weights. Installed v0.7.1 entry point also refreshed; source launcher prefers the
+new local portable version. Old/failed stages retained; no running folder overwrite.
+
+[Open/build/practice guide](https://github.com/VSBhargav5/StudyFrame/blob/main/docs/windows-release.md).
+This is an unsigned portable release, not a signed installer or blanket production
+acceptance. Microphone quality, other devices, live AI quality and personal usefulness
+remain unverified; small-model recognition errors remain disclosed. Fully frosted
+native blur remains unresolved; correct rounded translucency and qualified Windows
+capture exclusion remain. No personal/employer material, paid API call, credential
+lookup, account link or deployment. No learning completion claim. Other projects paused.
+
+
 ## 18 November 2026 — local voice questions and capsule edge correction
 
 [StudyFrame PR #8](https://github.com/VSBhargav5/StudyFrame/pull/8) merged at
