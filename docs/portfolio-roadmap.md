@@ -8,7 +8,19 @@ meaningful verification, and an explanation of the engineering tradeoffs.
 
 ## Project focus
 
-Latest 18 November: [StudyFrame v0.5 native glass capsule PR #7](https://github.com/VSBhargav5/StudyFrame/pull/7)
+Latest 18 November follow-up: [StudyFrame v0.6 PR #8](https://github.com/VSBhargav5/StudyFrame/pull/8)
+is merged. Explicit local microphone/default-playback speech, 30-second clips,
+Stop/Discard, editable transcript and a separate text-only model send; no audio or
+old screenshot/notes accompany it. Optional local Vosk/SoundCard model setup, not
+a cloud transcription key. The rectangular Acrylic backdrop was removed after
+pixel checks disproved correct clipping; 36/36 outer-corner pixels now stay equal
+to the sharp background. Fully frosted native blur remains unresolved. Windows
+capture exclusion remains independently checked and on by default.
+115 offline native Windows tests/all four PR checks passed; local public-sample
+recognition ran with later-digit errors disclosed. Physical devices, live AI
+quality and personal usefulness remain unverified. [Setup and tradeoff](https://github.com/VSBhargav5/StudyFrame/blob/main/docs/speech.md).
+
+Earlier 18 November: [StudyFrame v0.5 native glass capsule PR #7](https://github.com/VSBhargav5/StudyFrame/pull/7)
 is merged. Small 360 × 90 logical-pixel startup capsule, expandable answers,
 rounded native shape and guarded Acrylic compatibility effect. Windows capture
 exclusion is on by default with explicit read-back status and lifecycle reapply.
@@ -353,7 +365,7 @@ No hiring outcomes, time savings or personal usefulness are claimed.
 | Project | Operational problem | Evidence to build | Status |
 | --- | --- | --- | --- |
 | [CueDesk](https://github.com/VSBhargav5/CueDesk) | Screen-assisted study and coding on Windows | Reviewed capture, explicit AI request, personally verified usefulness | Paused; real screen and provider trial remain |
-| [StudyFrame](https://github.com/VSBhargav5/StudyFrame) | Asking for study/coding help on Windows repeatedly requires assembling context | Bounded screenshot crop/restore, deliberate provider send/cancel, reviewed follow-ups, personally verified usefulness | Active; [v0.5 native capsule](https://github.com/VSBhargav5/StudyFrame/pull/7); 106 offline tests, bounded native blur/exclusion check; live quality/usefulness gate remains |
+| [StudyFrame](https://github.com/VSBhargav5/StudyFrame) | Asking for study/coding help on Windows repeatedly requires assembling context | Bounded screenshot crop/restore, deliberate provider send/cancel, reviewed follow-ups, personally verified usefulness | Active; [v0.6 local voice](https://github.com/VSBhargav5/StudyFrame/pull/8); 115 offline tests, corrected rounded shape/capture exclusion; device/live quality and frosted blur remain open |
 | [RoleWeave](https://github.com/VSBhargav5/RoleWeave) | Relating job requirements to defensible career evidence and application decisions | Reviewed claims, exact posting quotes, separate job markets, personally usable workflow | Paused as a local MVP; browser discovery/application preparation and recovery remain shipped; live AI/personal acceptance next |
 | [SettleTrace](https://github.com/VSBhargav5/SettleTrace) | A custom merchant ledger, processor activity, and bank deposits can disagree | Exact-money contracts, source-row evidence, verified export mapping, operator feedback | Paused; [v0.3 mapping and observation evidence merged](https://github.com/VSBhargav5/SettleTrace/pull/3) |
 | [PromptGuard](https://github.com/VSBhargav5/PromptGuard) | AI prompt changes can silently break previously working cases | Coverage-aware comparisons, labeled failure examples, repeatable evaluation, external pilot feedback | Reliability sprint completed; [merged work](https://github.com/VSBhargav5/PromptGuard/pull/2) |

@@ -3,6 +3,50 @@
 Entries distinguish shipped code, verification, limitations, and planned work.
 
 
+
+## 18 November 2026 — local voice questions and capsule edge correction
+
+[StudyFrame PR #8](https://github.com/VSBhargav5/StudyFrame/pull/8) merged at
+971d02afcff38e836aa2b7a51a89bb2b56096174. Exact tested/published tree
+03291351e969f8c7782c9654c766fa5b6c0f78b9 verified; clean local main synchronized.
+[Implementation](https://github.com/VSBhargav5/StudyFrame/commit/ba93808802c4352a53cfaf947887ae91fe685d40).
+
+The user identified the rectangle outside v0.5's rounded inner surface. A native
+API success/visual blur did not prove correct clipping: alternate native-region
+and composition probes also failed the outside-corner check. v0.6 removes the
+Acrylic backdrop instead of retaining a misleading glass claim. Rounded translucent
+paint now leaves 36/36 sampled corner pixels unchanged from the sharp synthetic
+background; the overlay still disappears/restores in the checked capture path.
+Fully frosted native blur remains unresolved. Capture exclusion remains enabled
+by default with documented Windows read-back and explicit status.
+
+Voice opens controls for default microphone or exact default-playback loopback.
+Listen/Stop captures at most 30 seconds locally, with bounded disposable worker,
+45-second startup/session deadline, 3-second stop finalization, cancellation and
+stale-result guards. Review/edit transcript, then Ask text only sends the transcript
+and learning style; no audio, image, notes or previous conversation. No startup
+recording, automatic send, mixed source or silent source fallback.
+
+115 offline native Windows tests passed: 106 previous minus one obsolete Acrylic
+case plus 10 speech cases. All four [PR CI checks](https://github.com/VSBhargav5/StudyFrame/actions/runs/44242544294)
+passed on Windows/Linux Python 3.11/3.12; all four [post-merge checks](https://github.com/VSBhargav5/StudyFrame/actions/runs/44242716738)
+also passed. Tests caught/fixed a real deferred Qt
+process-deletion ownership crash. Existing native input tests now open/scroll the
+review drawer before clicking. Installed local v0.6 verified outside checkout;
+optional packages and an official small English model are installed locally only.
+
+Local inference on the upstream Vosk example WAV ran through the conversion/
+recognition path. Opening digits were recognized; later digits contained errors.
+This is not an accuracy benchmark. No physical microphone/playback recording,
+personal audio upload or live model call. One visual QA run was occluded by Codex;
+artifacts discarded and the fixture fixed with owned topmost backdrop/occlusion
+guards. Final capsule/exclusion/voice panel inspected.
+[Speech setup, evidence and limits](https://github.com/VSBhargav5/StudyFrame/blob/main/docs/speech.md),
+[capsule correction and reproducible checks](https://github.com/VSBhargav5/StudyFrame/blob/main/docs/native-capsule.md).
+Physical devices, live AI, unusual scaling/other recorders and personal acceptance
+remain gates. No learning/usefulness claim. StudyFrame active; other projects paused.
+
+
 ## 18 November 2026 — native glass capsule and capture exclusion
 
 [StudyFrame PR #7](https://github.com/VSBhargav5/StudyFrame/pull/7) merged at
