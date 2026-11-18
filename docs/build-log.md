@@ -5,6 +5,39 @@ Entries distinguish shipped code, verification, limitations, and planned work.
 
 
 
+## 18 November 2026 — Fix glass washout reported in actual desktop photos
+
+[StudyFrame v0.8.1 PR #11](https://github.com/VSBhargav5/StudyFrame/pull/11) ·
+[Implementation](https://github.com/VSBhargav5/StudyFrame/commit/e4e6a175a747cec2b5c196cc2678c8a5c8b188ef).
+Merged `ddd815a8204017bfdec24385a61796d1368de3de` matches tested tree
+`b4811ff2929219a91da7b4a68c72c375467477ff`.
+All five [PR checks](https://github.com/VSBhargav5/StudyFrame/actions/runs/44277915033) passed.
+
+The user’s photos exposed a real visual defect missed by the earlier colourful
+fixture: a light application washed out the first native glass tint and secondary
+text. Add a stronger dark material floor, reduce the pale glow, brighten/enlarge
+secondary labels/actions, and set explicit input/placeholder colors. Native frost,
+rounded clipping and consent/capture behavior remain intact. Some desktop
+show-through is deliberately traded for stable legibility; no desktop sampling.
+
+131 offline native Windows tests passed. The new regression renders native and
+fallback paint over black/white, checking actual enabled widget palette colors
+against sampled interior material for at least 4.5:1 contrast. This is not a
+whole-app accessibility certification. Both controlled light/dark Windows previews
+were visually inspected: 36/36 corners unchanged; excluded image exactly equals
+hidden-overlay baseline. First light check refused an occluded fixture; raising
+only the owned backdrop fixed ordering without weakening capture guards.
+
+Standalone v0.8.1 passed compositor/answer/preferences/worker/local-model runtime
+checks, all 341 manifest hashes and ZIP integrity. ZIP SHA256
+`047a45c9eeb9e1705847279daeec5951cf95c1cc6c4cf4f145fe1835ef62fca2`.
+Installed package refreshed and verified outside checkout; local launcher selects
+v0.8.1. No personal screen capture/transmission or live model call. Other devices/
+recorders, microphone/live AI quality, personal acceptance and signed installation
+remain open. Other projects paused.
+
+[Light/dark reproduction and tradeoff](https://github.com/VSBhargav5/StudyFrame/blob/main/docs/native-capsule.md#readability-over-light-applications-v081).
+
 ## 18 November 2026 — StudyFrame v0.8 real rounded frost
 
 [PR #10 merged](https://github.com/VSBhargav5/StudyFrame/pull/10) ·
