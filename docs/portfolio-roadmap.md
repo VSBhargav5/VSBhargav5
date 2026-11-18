@@ -8,7 +8,21 @@ meaningful verification, and an explanation of the engineering tradeoffs.
 
 ## Project focus
 
-Latest 18 November release: [StudyFrame v0.7.1 PR #9](https://github.com/VSBhargav5/StudyFrame/pull/9)
+Latest 18 November release: [StudyFrame v0.8 PR #10](https://github.com/VSBhargav5/StudyFrame/pull/10)
+is merged. True compositor-clipped Windows 11 frost replaces the square Acrylic
+halo. Physical bounds/input shape, pinning, capture/minimize/close lifecycle and
+both-layer exclusion read-back are covered; unsupported hosts retain Qt fallback.
+130 offline native Windows tests and five PR checks passed. The frozen runtime
+loads the compositor; 341 manifest hashes and ZIP integrity verified. Guarded
+synthetic exclusion matches the hidden-overlay baseline, with 36/36 corners
+unchanged. [Contracts and focused practice](https://github.com/VSBhargav5/StudyFrame/blob/main/docs/native-capsule.md).
+No background screenshot loop or personal transmission. Native system policy can
+change appearance; microphone/live AI quality, other devices/recorders, personal
+acceptance and signed installation remain gates. Use the complete unsigned
+portable folder; enter a key only in the app for an explicit synthetic trial.
+Only StudyFrame is active. No overall long-term feature-completion claim.
+
+Earlier 18 November release: [StudyFrame v0.7.1 PR #9](https://github.com/VSBhargav5/StudyFrame/pull/9)
 is merged. Standalone Windows EXE/ZIP, non-secret setup persistence, input signal
 meter, silent-source guidance and correct frozen worker pipes. An authorized
 public-sample default-playback trial found a native-DLL startup deadlock; the
@@ -18,7 +32,7 @@ CI leaves weight selection explicit.124 native Windows offline tests and all fiv
 PR checks passed, including portable build/runtime. [Build artifacts](https://github.com/VSBhargav5/StudyFrame/actions/runs/44254832063).
 [First use and remaining acceptance](https://github.com/VSBhargav5/StudyFrame/blob/main/docs/windows-release.md).
 Unsigned portable software; microphone quality, other devices, live AI and personal
-acceptance remain gates. True frosted native blur remains unresolved. StudyFrame
+acceptance remained gates; v0.8 above subsequently addresses native frost. StudyFrame
 is the only active implementation, not a claim that every long-term feature is done.
 
 Earlier 18 November follow-up: [StudyFrame v0.6 PR #8](https://github.com/VSBhargav5/StudyFrame/pull/8)

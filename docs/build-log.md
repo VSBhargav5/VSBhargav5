@@ -5,6 +5,44 @@ Entries distinguish shipped code, verification, limitations, and planned work.
 
 
 
+## 18 November 2026 — StudyFrame v0.8 real rounded frost
+
+[PR #10 merged](https://github.com/VSBhargav5/StudyFrame/pull/10) ·
+[Implementation](https://github.com/VSBhargav5/StudyFrame/commit/ed1d6fe8f68cd4a4791b9f1acf5f6a8b9663d713).
+Merged `7dc0709d1aa105b9f2dfe03c52f3abae4c62ff44` matches tested tree
+`492e63271e0f75d938175c620feacf83c4ac4af2`.
+
+The main visual gap was real frost without the square halo. A Windows 11 host
+backdrop brush is geometrically clipped behind the existing Qt controls. Its
+companion tracks physical HWND bounds, pinning and input shape; hides during
+capture/minimization; and closes with the app. Both layers receive capture
+exclusion read-back. Unsupported APIs or unconfirmed companion affinity use the
+rounded Qt fallback. No background screenshot simulates blur.
+
+130 offline native Windows tests passed, including failure fallback, pending
+capture hiding, bounds/movement, input corners, pinning, minimization and cleanup.
+The guarded synthetic striped fixture on build 26300 at 125% scaling shows actual
+frost, 36/36 outside-corner pixels unchanged, and excluded capture exactly equal
+to the hidden-overlay baseline. All five [PR checks](https://github.com/VSBhargav5/StudyFrame/actions/runs/44275280356)
+passed on Windows/Linux 3.11/3.12 plus portable build/runtime.
+All five [post-merge checks](https://github.com/VSBhargav5/StudyFrame/actions/runs/44275697231) also passed.
+
+Local v0.8 standalone EXE/ZIP passed frozen compositor/answer/preferences/worker/
+local-model checks, 341 manifest hashes and ZIP integrity. First build failed on
+long WinRT license paths; removing the repeated distribution/version directory
+fixed it, with all 11 WinRT license files retained. ZIP SHA256
+`52aec12e853122435523e3246dde58152e924bf75a7718ae4eb786ad2b7e5486`.
+Installed v0.8 imports outside the checkout. Launcher selects the new portable
+folder; old/failed stages are retained.
+
+This adds seven Windows-only bindings and companion/dispatcher lifecycle without
+replacing Python capture, consent or speech. Appearance follows Windows policy;
+other DPI/devices/recorders, microphone quality, live AI/account access, personal
+acceptance and signed installation remain open. No paid call, personal capture/
+transmission or learning/usefulness claim. Other projects stay paused.
+
+[Reproduce the check and tradeoff](https://github.com/VSBhargav5/StudyFrame/blob/main/docs/native-capsule.md).
+
 ## 18 November 2026 — standalone Windows workflow and real loopback repair
 
 [StudyFrame PR #9](https://github.com/VSBhargav5/StudyFrame/pull/9) merged at
