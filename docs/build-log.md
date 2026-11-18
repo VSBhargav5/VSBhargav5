@@ -2,6 +2,41 @@
 
 Entries distinguish shipped code, verification, limitations, and planned work.
 
+
+## 18 November 2026 — native glass capsule and capture exclusion
+
+[StudyFrame PR #7](https://github.com/VSBhargav5/StudyFrame/pull/7) merged at
+d2e9dc298e280540b6b16ef4794fff6984c3f6e8. Tested/published tree
+c4c56329a30e2d455e83774773d5dd19e83fa94f matches exactly.
+[Implementation](https://github.com/VSBhargav5/StudyFrame/commit/c65694dfc3751b5dc50dac55f9391e2ada7b0fda).
+
+The user's capsule reference is now the startup shape: 360 × 90 logical pixels,
+rounded native clipping, capture action, settings, expansion and close. The same
+window expands for question/answer and keeps session state. Native Acrylic uses a
+guarded Windows compatibility export with painted fallback. Capture exclusion is
+requested by default and confirmed by documented Windows affinity read-back;
+pinning/window-handle changes and show restoration reapply it. Visible status
+separates confirmed/off/unconfirmed settings from appearance.
+
+106 offline native Windows tests passed (98 previous + 8 effects/capsule cases).
+All four [PR checks](https://github.com/VSBhargav5/StudyFrame/actions/runs/44236535755)
+passed on Windows/Linux Python 3.11/3.12; all four [post-merge checks](https://github.com/VSBhargav5/StudyFrame/actions/runs/44236728800)
+also passed. Installed local v0.5 verified outside
+checkout. An owned opaque synthetic backdrop verified actual blurred stripes,
+then disappearance from the bounded Qt screen capture with exclusion on and
+restoration after it was switched off. Rounded capsule and expanded panel were
+visually inspected. An initial fontless offscreen run failed three existing
+mouse-click tests; the complete native run passed. A documented DWM backdrop
+request returned success but stayed opaque, so it was not represented as glass.
+
+[Runnable verification and focused practice](https://github.com/VSBhargav5/StudyFrame/blob/main/docs/native-capsule.md).
+Acrylic's export is undocumented and may change; supported fallback remains.
+Capture exclusion is not a guarantee for every recorder/session. No personal
+screen transmission, live model call, credential access or process concealment.
+Real provider quality, other capture tools, unusual scaling and personal acceptance
+remain gates. Learning is not marked complete. StudyFrame active; others paused.
+
+
 ## 17 November 2026 — compact glass companion and one-click answers
 
 [StudyFrame v0.4 PR #6](https://github.com/VSBhargav5/StudyFrame/pull/6) merged at
