@@ -8,7 +8,16 @@ meaningful verification, and an explanation of the engineering tradeoffs.
 
 ## Project focus
 
-Latest 18 November release: [StudyFrame v0.8 PR #10](https://github.com/VSBhargav5/StudyFrame/pull/10)
+Latest 18 November: [StudyFrame v0.8.1 PR #11](https://github.com/VSBhargav5/StudyFrame/pull/11)
+corrects low-contrast glass found in the user’s light-desktop photos. Stronger dark
+material, reduced glow and brighter/larger secondary text preserve native frost.
+131 offline Windows tests and all five PR checks, including portable runtime, passed; actual
+native light/dark previews retain 36/36 corner pixels and hidden-baseline exclusion.
+The rebuilt standalone runtime and 341 manifest hashes verified. This addresses
+an observed issue, not a new speculative feature. Personal acceptance/live AI/mic
+quality and signed distribution remain gates. [Reproduce it](https://github.com/VSBhargav5/StudyFrame/blob/main/docs/native-capsule.md).
+
+Earlier 18 November release: [StudyFrame v0.8 PR #10](https://github.com/VSBhargav5/StudyFrame/pull/10)
 is merged. True compositor-clipped Windows 11 frost replaces the square Acrylic
 halo. Physical bounds/input shape, pinning, capture/minimize/close lifecycle and
 both-layer exclusion read-back are covered; unsupported hosts retain Qt fallback.
