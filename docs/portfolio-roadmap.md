@@ -8,6 +8,15 @@ meaningful verification, and an explanation of the engineering tradeoffs.
 
 ## Project focus
 
+Latest 19 November: [StudyFrame v0.10 streaming/glass workflow](https://github.com/VSBhargav5/StudyFrame/pull/15)
+follows user-confirmed correct synthetic text/screen answers and a separate timeout.
+Quick mode and explicit length precedence address unwanted long lessons. Streamed
+text, partial/completed distinction and session-only first-text/total timings
+remove wait-for-whole-answer display behavior without promising upstream speed.
+Capture/Voice share the header, glass tint is lighter with tested contrast, and
+key-ready clears stale feedback without authenticating. 160 offline native Windows
+tests passed. Live streaming acceptance remains unverified; no agent inference call.
+
 Latest 19 November: [StudyFrame v0.9.2 free-usage diagnostics](https://github.com/VSBhargav5/StudyFrame/pull/14)
 is merged with all five PR checks passed; it
 follows the [v0.9.1 visibility fix](https://github.com/VSBhargav5/StudyFrame/pull/13).

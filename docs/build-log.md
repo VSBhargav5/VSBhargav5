@@ -5,6 +5,41 @@ Entries distinguish shipped code, verification, limitations, and planned work.
 
 
 
+## 19 November 2026 — Stream answers and simplify the glass workflow
+
+[StudyFrame PR #15](https://github.com/VSBhargav5/StudyFrame/pull/15) ·
+[Implementation](https://github.com/VSBhargav5/StudyFrame/commit/00d3f923d5a079dc715f33d6390c9ea1744cf9dc).
+Exact tested/published tree `8b8b6e783dec28d79c92c95bd914849aefe9e731`.
+Merged `930cb2ad9077b7d449aff5be4710226b33d3682c` after all five PR checks
+passed (run44496851040), including portable/installer lifecycle. Eight actual
+frozen runtime checks and bundle/ZIP integrity passed locally. Local v0.10 ZIP
+SHA256 `d0d21a7c698bf7ca4acdb40c78d85670d256c37b29e886e2c6fc6e656567b1fa`.
+
+User-run trials produced a correct 2+2 text answer and a correct screen answer for
+print(2+3), alongside a 60-second timeout. The photos also show excessive teaching
+output despite a one-sentence request. This is limited synthetic evidence, not a
+model-quality or latency benchmark. The agent made no live inference request.
+
+Quick answer is now the UI default, and explicit length/format requests take
+priority over the suggested lesson structure. Responses text streams as it arrives;
+only a completed response becomes a successful answer/follow-up. Interrupted text
+is labelled partial. First-text and total timings stay in memory. No client retry,
+paid fallback, privacy relaxation or claim of faster upstream service.
+
+Capture and Voice share the header in both layouts; a slightly wider capsule
+keeps them usable. Lighter native glass retains contrast with brighter secondary
+text, and one status banner replaces duplicated footer errors. Key-ready clears
+stale feedback but makes no test request; explicit requests already use the entered
+session key. A timeout does not prove missing credentials. Real Qt tests also
+caught/fixed rawHeader's string-name contract, including Retry-After.
+
+160 offline native Windows tests passed, including real localhost streaming before
+EOF, incomplete/cancel/byte caps, split UTF-8/multiline events, real429 delay and
+contrast/layout regressions. Final targeted contrast and eight source runtime
+checks passed. Owned synthetic light/dark fixture checks retained36of36corners
+and capture exclusion matching hidden baselines. Live streaming latency/quality,
+new UI acceptance and microphone first-word accuracy require user trials.
+
 ## 19 November 2026 — Diagnose free usage after a real HTTP429 report
 
 [StudyFrame PR #14](https://github.com/VSBhargav5/StudyFrame/pull/14) ·
