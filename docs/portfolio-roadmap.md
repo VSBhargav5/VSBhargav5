@@ -8,6 +8,13 @@ meaningful verification, and an explanation of the engineering tradeoffs.
 
 ## Project focus
 
+Latest 19 November: [StudyFrame v0.11 session/capture/speech changes](https://github.com/VSBhargav5/StudyFrame/pull/16)
+follows reports of lost session key, slower vision and poor accent recognition.
+165 offline Windows tests pass. Provider-isolated in-memory keys and reset clarity
+are defensive; exact key loss is not reproduced. Balanced captures reduce pixels
+with original restoration, without claiming measured vision speed. An installed
+Indian-English model offers an offline comparison; personal accuracy is unverified.
+
 Latest 19 November: [StudyFrame v0.10 streaming/glass workflow](https://github.com/VSBhargav5/StudyFrame/pull/15)
 follows user-confirmed correct synthetic text/screen answers and a separate timeout.
 Quick mode and explicit length precedence address unwanted long lessons. Streamed

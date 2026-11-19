@@ -5,6 +5,39 @@ Entries distinguish shipped code, verification, limitations, and planned work.
 
 
 
+## 19 November 2026 — Session continuity, smaller captures and accent trial
+
+[StudyFrame PR #16](https://github.com/VSBhargav5/StudyFrame/pull/16) ·
+[Implementation](https://github.com/VSBhargav5/StudyFrame/commit/1127b4382b6a4e5eca9ab65ea992a4e38e149034).
+Exact tested/published tree `23a8a3d563fcba9eb976899d6dd1502e6a063190`.
+Merged `408c4456a8baf14c317facbddaf47adce5e967a1` after all five PR checks
+passed (run44500010815), including portable/installer lifecycle. Eight source and
+eight actual frozen runtime checks per bundled model passed, no recording/network.
+Manifest/README/ZIP verified; local ZIP SHA256
+`00e87262ef4ae98322e19dc4ca057c43a82e11258dc860235baa0332bd0c3eda`.
+
+User reports key re-entry after Capture/Voice switching,10–20+s vision vs1–2s text,
+and poor Indian pronunciation transcription. Repeated synthetic Capture/Voice
+requests retain the key; exact loss is not reproduced. Defensive provider-specific
+session-memory keys restore on switching back, with wheel changes disabled and
+Clear answer distinct from End session. End/exit forget all keys; none persisted.
+
+Balanced new captures use aspect-preserving PNGs up to1280px on the longest edge,
+no upscaling, with preview/send sharing the prepared bytes. Original pixels remain
+for restore/crop, Full size retains fine text, loaded images are unchanged. Fewer
+pixels are not a verified speedup; vision/provider latency can still exceed text.
+
+Local package offers installed small US/Indian-English model presets. Official
+Indian-English0.4 archive is Apache2.0,36MB; loaded to Ready without recording.
+Its published49.05% NPTEL Pure word-error rate prevents a personal-accuracy claim.
+This is an offline alternative to compare, not a demonstrated fix. No user audio
+recording/upload or agent model call was made.
+
+165 native Windows offline tests passed, covering repeated sends, provider key
+isolation/end-session clearing, bounded resize/original restoration and model
+selection without recording. New live key-continuity, vision timing and speech
+accuracy comparisons remain user evidence gates.
+
 ## 19 November 2026 — Stream answers and simplify the glass workflow
 
 [StudyFrame PR #15](https://github.com/VSBhargav5/StudyFrame/pull/15) ·
