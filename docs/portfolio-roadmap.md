@@ -8,7 +8,17 @@ meaningful verification, and an explanation of the engineering tradeoffs.
 
 ## Project focus
 
-Latest 19 November: [StudyFrame v0.9 Windows MVP](https://github.com/VSBhargav5/StudyFrame/pull/12)
+Latest 19 November: [StudyFrame v0.9.2 free-usage diagnostics](https://github.com/VSBhargav5/StudyFrame/pull/14)
+is merged with all five PR checks passed; it
+follows the [v0.9.1 visibility fix](https://github.com/VSBhargav5/StudyFrame/pull/13).
+The user-run trial now shows HTTP429; no answer is verified yet. Explicit metadata-only
+usage counters, safe status/retry guidance and eligible free-provider failover help
+investigate limits while retaining zero-price/privacy constraints and no client retries.
+152 offline Windows tests and eight frozen runtime checks passed. The user confirmed49of50 daily requests remaining through the new metadata UI;
+model success is still unverified. The agent has not accessed the key.
+[Diagnostics and acceptance](https://github.com/VSBhargav5/StudyFrame/blob/main/docs/windows-release.md#http429-and-free-usage).
+
+Earlier 19 November: [StudyFrame v0.9 Windows MVP](https://github.com/VSBhargav5/StudyFrame/pull/12)
 is merged. Visible model setup, prepared/reusable audio recognizer, exact named
 microphone/playback selection, on-screen window fit and unsigned per-user installer.
 142 native Windows offline tests and all five PR checks passed, including installed

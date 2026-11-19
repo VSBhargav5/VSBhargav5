@@ -5,6 +5,74 @@ Entries distinguish shipped code, verification, limitations, and planned work.
 
 
 
+## 19 November 2026 — Diagnose free usage after a real HTTP429 report
+
+[StudyFrame PR #14](https://github.com/VSBhargav5/StudyFrame/pull/14) ·
+[Implementation](https://github.com/VSBhargav5/StudyFrame/commit/baffadb1caad6dab9350a22dd3ed5ef1a1c6e8d4).
+Exact tested/published tree `50ba8ac73bccd71bb028019996c8a84f980d6cb3`.
+Merged `204ed730280ec43877f30f7ef62317c8713524b8` after all five PR checks passed
+(run44481578819), including portable and installer lifecycle. Postmerge CI pending.
+
+The user-run request now displays OpenRouter HTTP429. This does not identify daily,
+per-minute or upstream capacity limits. A user-clicked authenticated metadata GET
+shows only reported daily used/limit/remaining; it sends no question, pixels, audio
+or model request and preserves the previous answer. Unknown quota formats remain
+unknown; a key spending cap is not treated as purchased credits or daily allowance.
+Valid numeric Retry-After guidance is bounded to one day. No automatic retry.
+
+OpenRouter backup-provider routing is enabled under the same fixed free router,
+zero prompt/completion/request/image prices and data-collection-deny filter.
+There is no paid alternative, app resend or account-quota bypass. The agent has
+not obtained the user's key or made an authenticated quota/inference call.
+
+152 offline native Windows tests passed, including quota-button click, no POST,
+private-body suppression, retry bounds, and rejection of weakened price/privacy
+policies. Eight source and eight frozen runtime checks passed; no recording or
+network in those checks. Manifest and ZIP verified. Local v0.9.2 ZIP SHA256
+`1f7c961b4ae5594fa0addda0c4bec81245294988b174531dad6386f1eac9c377`.
+The user manually checked usage and reported49of50 daily requests remaining.
+Metadata UI/account access is now user-confirmed; model inference is not.
+Daily exhaustion looks unlikely at that observation, while minute/upstream limits
+remain possible. Live AI success and microphone first-word acceptance are open.
+
+## 19 November 2026 — Diagnose “nothing happens” without reading the key
+
+[StudyFrame PR #13](https://github.com/VSBhargav5/StudyFrame/pull/13) ·
+[Implementation](https://github.com/VSBhargav5/StudyFrame/commit/051735d1bd40da9d33f8196f17d585fc90a7a63c).
+Tested tree `2e555221653b158f6ac4c5dc1015105114e9c809`. Merged
+`18558bef71b570ffd313e5fa1260c742f6d4ae40`; all five PR and postmerge checks passed.
+
+User created an OpenRouter key and attempted use, reporting no answer/preview and
+an apparently unresponsive Capture button. Read-only process paths confirmed v0.9
+was running; no memory, key, private window or clipboard content was inspected.
+Confirmed UI gaps: Preview did not scroll to the image; request failures could
+leave a blank answer area with a footer-only message; invalid-key preflight could
+stop a collapsed capture without a visible explanation.
+
+The fix reveals answer/progress/failure state, scrolls Preview to its image, opens
+key setup with a safe explanation for invalid input, retains an explicit failure
+badge when collapsed, and exposes Cancel in the header. HTTP status and fixed
+network explanations replace a generic failure without echoing provider bodies.
+No free-price/privacy constraints were relaxed. The user-run v0.9.1 trial then reported HTTP429; this is not a claim of successful
+live inference or proof of which rate limit applies.
+
+148 offline native Windows tests passed. New real Qt localhost tests use native
+hit targeting, button events, natural capture timer and actual QNetwork HTTP for
+synthetic image/answer, text-only 404, visible viewport/draft preservation, preview
+scroll and header cancellation. A restricted run could not reach localhost; the
+permitted native run passed. Clipboard tests remain isolated stubs.
+
+Final v0.9.1 portable passed TLS availability, compositor, fake answer/clear,
+preferences, real worker/model and warm-ready self-tests. Manifest/ZIP verified;
+ZIP SHA256 `4a8eb3509ca50d9b73f7b7d26798d16bfec5d83482954d2b34ab2b3e29084ef8`.
+An explicit packaged public-metadata HTTPS check reached OpenRouter with Schannel
+and HTTP200, sending no key/study content/model request. This validates transport,
+not key access, routing eligibility or answer quality. Old running v0.9 untouched;
+user was given the new build and asked for only its banner message after a synthetic
+free-route trial. No real key was obtained or personal screen/audio transmitted.
+
+[Reproduce transport and read safe failures](https://github.com/VSBhargav5/StudyFrame/blob/main/docs/windows-release.md#when-a-request-appears-to-do-nothing).
+
 ## 19 November 2026 — StudyFrame Windows MVP and prepared audio
 
 [PR #12 merged](https://github.com/VSBhargav5/StudyFrame/pull/12) at
