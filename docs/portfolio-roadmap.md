@@ -8,7 +8,19 @@ meaningful verification, and an explanation of the engineering tradeoffs.
 
 ## Project focus
 
-Latest 18 November: [StudyFrame v0.8.1 PR #11](https://github.com/VSBhargav5/StudyFrame/pull/11)
+Latest 19 November: [StudyFrame v0.9 Windows MVP](https://github.com/VSBhargav5/StudyFrame/pull/12)
+is merged. Visible model setup, prepared/reusable audio recognizer, exact named
+microphone/playback selection, on-screen window fit and unsigned per-user installer.
+142 native Windows offline tests and all five PR checks passed, including installed
+runtime, active-session guard, reinstall and config-preserving uninstall in CI.
+User's missing-opening-words report drove the Prepare → Ready → Listen → Listening
+now flow; physical retest and actual microphone accuracy remain pending. OpenRouter
+free trial is explicitly deferred until the user obtains and enters their own key.
+No personal audio/model call. Local model and portable available; CI installer omits
+weights. Signing, interrupted-upgrade recovery and personal acceptance remain gates.
+[Defined scope and acceptance](https://github.com/VSBhargav5/StudyFrame/blob/main/docs/mvp.md).
+
+Earlier 18 November: [StudyFrame v0.8.1 PR #11](https://github.com/VSBhargav5/StudyFrame/pull/11)
 corrects low-contrast glass found in the user’s light-desktop photos. Stronger dark
 material, reduced glow and brighter/larger secondary text preserve native frost.
 131 offline Windows tests and all five PR checks, including portable runtime, passed; actual

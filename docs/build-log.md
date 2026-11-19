@@ -5,6 +5,48 @@ Entries distinguish shipped code, verification, limitations, and planned work.
 
 
 
+## 19 November 2026 — StudyFrame Windows MVP and prepared audio
+
+[PR #12 merged](https://github.com/VSBhargav5/StudyFrame/pull/12) at
+`4995f53393613255fe4a461f4cb59df37beca0fa`, matching tested tree
+`ea3d0027860524498469a0abf5d06c961067a26b`.
+
+The user reported missing opening words while the microphone starts. Previously,
+the worker loaded the model before opening the stream. The new path is Prepare
+audio → Ready → Listen → Listening now. Preparation opens no recording stream;
+the loaded recognizer is reused across clips and released after 90 idle seconds.
+Speak only after Listening now. This moves model loading before recording; it is
+not a zero-latency hardware or speech-accuracy guarantee. Physical retest is pending.
+
+Three coherent implementation changes:
+
+- [Visible session setup](https://github.com/VSBhargav5/StudyFrame/commit/0f757fa09c4513bf11af24de8a4d46822efd2613): Connect model and a top-positioned key drawer; key entry is not represented as a validated connection or an automatic send.
+- [Prepared recognizer and reachable controls](https://github.com/VSBhargav5/StudyFrame/commit/b7ad8af5d135f7cfe58600adbaa8a42d212fd8ad): explicit readiness/recording phases, cancellation/late-output guards, repeated clips, monitor work-area fit and source-disconnect cancellation.
+- [Exact devices and per-user delivery](https://github.com/VSBhargav5/StudyFrame/commit/df4ed9a8f847d46efbe0bab138aa188d1a4fa5e8): bounded device metadata, exact identity/type matching with no silent fallback, official key-page help, verified-bundle installer, Start menu/uninstall and running-session guard.
+
+142 native Windows offline tests passed. All five [PR jobs](https://github.com/VSBhargav5/StudyFrame/actions/runs/44457986688)
+passed on Windows/Linux 3.11/3.12 plus portable/installed runtime and CI installer
+compile/install/active-update refusal/reinstall/settings-preserving uninstall.
+All five [post-merge checks](https://github.com/VSBhargav5/StudyFrame/actions/runs/44458441945) also passed.
+Local source/frozen runtime reached actual model Ready without recording or network.
+Light/dark owned native previews still preserve 36/36 corner pixels and exactly
+match the hidden-overlay exclusion baseline. Local portable manifest and ZIP verified:
+`e9f4d8028396bac4d225325c7a0739124a0146312b3b10cf80d381eb1e35a0a3`.
+
+The local portable includes the trusted small English model. CI artifacts include
+an unsigned installer but omit model weights; local Inno compiler is absent. The
+CI artifact was retrieved via the connector and ZIP digest matched GitHub metadata;
+its setup EXE was saved locally without execution. Setup SHA256
+`dde9c231fe7a1249bcbe485277e85089481ee9f0023850f4189727a4f1c7c7e0`. No
+installer was run on the user's laptop. Signing/interrupted-upgrade recovery and
+personal acceptance remain open. User selected OpenRouter free routing but has no
+key and explicitly deferred live trials. The app opens only the official key page
+on a click; no keys are obtained/read by the agent and no account is linked.
+No personal recording/transmission, paid model call or learning/usefulness claim.
+
+[Use the MVP and check acceptance](https://github.com/VSBhargav5/StudyFrame/blob/main/docs/mvp.md) ·
+[Speech workflow](https://github.com/VSBhargav5/StudyFrame/blob/main/docs/speech.md).
+
 ## 18 November 2026 — Fix glass washout reported in actual desktop photos
 
 [StudyFrame v0.8.1 PR #11](https://github.com/VSBhargav5/StudyFrame/pull/11) ·
