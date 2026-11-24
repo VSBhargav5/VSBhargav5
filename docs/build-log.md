@@ -5,6 +5,42 @@ Entries distinguish shipped code, verification, limitations, and planned work.
 
 
 
+## 24 November 2026 — Complete the reviewed local screen-text path
+
+[StudyFrame PR #17](https://github.com/VSBhargav5/StudyFrame/pull/17) ·
+[Implementation](https://github.com/VSBhargav5/StudyFrame/commit/4ddc56540b1e9790bc68a9116eeebc31460f04c7).
+Exact tested/published tree `d8d53f19fa17590bb076814d323f371b9766ea3e`.
+Merged `b900642813e7f2711faed1ec84e76ea45920256d` after all five PR checks
+passed(run45323718106), including portable/installer actual OCR runtime. Nine local
+frozen runtime checks passed; manifest/README/ZIP verified. ZIP SHA256
+`a8fc986cb8708123b891a20eaa7490a8f22a16053bfb82330d56c1af7fcd2643`.
+
+The user requested the remaining MVP work after slow vision requests and a401
+photo. Read screen text now captures/extracts locally without a key or provider
+request. Cropped/loaded images can also be extracted. Correct the text, explicitly
+review it, then Ask reviewed text only sends no pixels, audio or old notes.
+Edits revoke consent; image changes invalidate the extracted-source binding.
+
+CPU RapidOCR/ONNX models ship with verified hashes and explicit local paths;
+no model-download fallback or cloud OCR. ONNX telemetry disabled before sessions.
+The disposable process has30s/8MiB input/128KiB output/20k text bounds, cancellation
+and late-result guards. Text is never executed. OCR can lose syntax, indentation,
+ordering and diagrams. Added dependencies/models make packages larger; no personal
+OCR-accuracy or end-to-end speedup claim. Apache/dependency attribution included.
+
+Badges distinguish entered key, rejected auth, metadata accepted and successful
+answer.401 retains the key and gives provider-appropriate guidance, no retries.
+Exact account/app cause still requires same-instance metadata evidence; the agent
+has not read a key or made an authenticated provider call.
+
+173 native Windows offline tests passed, with actual generated-image CPU OCR
+while networking is blocked; final OCR/auth tests and text contrast passed. Source
+runtime includes actual OCR extraction without send plus existing speech readiness.
+Synthetic review render inspected. MVP checklist now separates implemented screen,
+text, voice, provider, answer, overlay and release paths from real acceptance.
+Speech quality, live timing/account access and manual installer recovery remain
+user gates. No learning/usefulness/performance/adoption/revenue claim.
+
 ## 19 November 2026 — Session continuity, smaller captures and accent trial
 
 [StudyFrame PR #16](https://github.com/VSBhargav5/StudyFrame/pull/16) ·

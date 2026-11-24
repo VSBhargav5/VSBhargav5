@@ -8,6 +8,15 @@ meaningful verification, and an explanation of the engineering tradeoffs.
 
 ## Project focus
 
+Latest24November: [StudyFrame v0.12 reviewed local screen-text workflow](https://github.com/VSBhargav5/StudyFrame/pull/17)
+adds keyless local capture/OCR, editable review and consented text-only asks with
+no old image/audio/notes.173 native Windows tests passed, including actual CPU OCR
+with networking forbidden. Verified local models, bounded disposable worker,
+telemetry-disabled sessions and honest auth badges address observed gaps. Personal
+OCR/speech accuracy, provider timing,401 diagnosis and manual installer acceptance
+remain open; no overall completion percentage or production acceptance claim.
+[Core paths and acceptance](https://github.com/VSBhargav5/StudyFrame/blob/main/docs/mvp.md).
+
 Latest 19 November: [StudyFrame v0.11 session/capture/speech changes](https://github.com/VSBhargav5/StudyFrame/pull/16)
 follows reports of lost session key, slower vision and poor accent recognition.
 165 offline Windows tests pass. Provider-isolated in-memory keys and reset clarity
