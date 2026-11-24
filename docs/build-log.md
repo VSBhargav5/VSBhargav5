@@ -5,6 +5,38 @@ Entries distinguish shipped code, verification, limitations, and planned work.
 
 
 
+## 24 November 2026 — Clear glass and ready offline speech packages
+
+[StudyFrame PR #18](https://github.com/VSBhargav5/StudyFrame/pull/18) ·
+[Implementation](https://github.com/VSBhargav5/StudyFrame/commit/8bbd894c92fb5a3057b68a7fb0126dc8c0a4345d).
+Exact tested/published tree `99db9f72376219aa7f17bcc4c2f97fa896f34e33`.
+Merged `7f72f6443903dcc659cd9e1d9cbe151739929b01` after all five PR checks
+passed(run45327129468), including actual public asset fetch and bundled-model
+portable/installer readiness. No manual folder setup in these CI distributions.
+
+User requested much stronger transparency. DefaultClear glass25%, Full clear0,
+Frosted50, Readable78 and a0–90slider make the tradeoff explicit. The shadow used
+to fill/darken the interior; clipping it outside yields zero painted center alpha
+at zero tint. Controls/text retain local backing; native frost follows Windows.
+Version2 non-secret preferences preserve tint with strict version1 compatibility,
+no keys/content/approval stored. Capture exclusion remains separate and starts on.
+
+The remaining distribution gap is offline speech-model availability. CI now builds
+portable/installer with both fixed official US/Indian archives, verified SHA256,
+bounded path-safe extraction, staged new-destination publication and no overwrite.
+Failure stops CI before build; installed runtime verifies actual model Ready.
+No runtime download, API call or recording. Availability is not personal accuracy.
+
+180 native Windows tests passed, covering default-clear control contrast, zero
+canvas alpha, no-secret preference migration, asset hash/size/path/link/duplicate
+rejection and existing OCR/screen/voice behavior. Owned striped25% and light0%
+Windows fixtures retain36of36corner pixels and exclusion matching hidden baseline;
+visuals inspected. Actual cached official archives replayed through the extractor.
+Nine actual frozen checks passed; manifest/README/both model folders/ZIP verified.
+Local ZIP SHA256 `bd7834a8afd1aa8e2fe5ab8691f717e6b7f50f2e1f4b987ee078b66a8a9cf11b`.
+Account401cause, user accuracy/timing, unusual devices/recorders and manual unsigned
+installer acceptance remain unverified. No broad production/performance claim.
+
 ## 24 November 2026 — Complete the reviewed local screen-text path
 
 [StudyFrame PR #17](https://github.com/VSBhargav5/StudyFrame/pull/17) ·

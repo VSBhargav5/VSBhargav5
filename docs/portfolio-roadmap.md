@@ -8,6 +8,14 @@ meaningful verification, and an explanation of the engineering tradeoffs.
 
 ## Project focus
 
+Latest24November: [StudyFrame v0.13 clear glass and ready model distributions](https://github.com/VSBhargav5/StudyFrame/pull/18)
+adds much stronger canvas transparency with saved0–90tint and explicit presets.
+Interior shadow no longer hides zero transparency; controls retain local backing.
+Both small speech models now ship through verified build-time asset setup instead
+of manual folder setup.180 native Windows tests, native corner/exclusion fixtures
+and nine local frozen checks passed. Personal accuracy/timing,401 and unsigned
+installer manual acceptance remain evidence gates, not claimed complete.
+
 Latest24November: [StudyFrame v0.12 reviewed local screen-text workflow](https://github.com/VSBhargav5/StudyFrame/pull/17)
 adds keyless local capture/OCR, editable review and consented text-only asks with
 no old image/audio/notes.173 native Windows tests passed, including actual CPU OCR
