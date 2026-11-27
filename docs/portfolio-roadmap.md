@@ -8,6 +8,15 @@ meaningful verification, and an explanation of the engineering tradeoffs.
 
 ## Project focus
 
+Latest 27 November: **RoleWeave is active**, superseding the earlier StudyFrame
+focus below. [v0.51.1 PR #49](https://github.com/VSBhargav5/RoleWeave/pull/49)
+ships reviewed reusable answers with recovery, embedded application frames,
+section tailoring, batch rehearsal and saved-search continuation. Both six-job
+CI runs passed; main matches tested tree ecf7bdc2c35682324a88570412b87c0e6ac63381.
+Next work should follow observed user needs and manual acceptance. Real employer
+forms, live model quality and account integrations remain evidence gates.
+StudyFrame v0.13 is preserved and paused; do not repeat its shipped glass/OCR work.
+
 Latest24November: [StudyFrame v0.13 clear glass and ready model distributions](https://github.com/VSBhargav5/StudyFrame/pull/18)
 adds much stronger canvas transparency with saved0–90tint and explicit presets.
 Interior shadow no longer hides zero transparency; controls retain local backing.
