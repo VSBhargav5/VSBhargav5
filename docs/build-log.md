@@ -2,6 +2,25 @@
 
 Entries distinguish shipped code, verification, limitations, and planned work.
 
+## 27 November 2026 — RoleWeave application workflows published
+
+[PR #49](https://github.com/VSBhargav5/RoleWeave/pull/49) merges six previously
+authored commits through v0.51.1, including [the tracking refresh correction](https://github.com/VSBhargav5/RoleWeave/commit/4187c4f8021d653bd42db064f5dae3683c919d9c).
+Main `87070f8afd5f048515cca61597c0970519526d0e` matches tested tree
+`ecf7bdc2c35682324a88570412b87c0e6ac63381`. All six checks passed in both push
+run45791058589 and PR run45791067901, including Windows packaging and browser
+journeys. Earlier failures were addressed before this revision was merged.
+
+Ships cumulative reviewed resume sections, refined PDF layout, discovery filters,
+reviewed embedded-frame filling and reusable professional answers. Workspace
+answers join recovery bundles; helper JSON transfer remains explicit. Batch
+interview requirements and additional saved-search pages reduce repeated setup.
+Late tracking responses cannot redraw a different view or replace newer history.
+No automatic submission, live model-quality or real employer-compatibility claim.
+Local packages remain unsigned; manual acceptance and live integration trials are
+still open. These six commits were first published on main today; their earlier
+authorship dates were preserved.
+
 
 
 

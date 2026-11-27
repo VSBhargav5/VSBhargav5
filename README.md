@@ -39,7 +39,7 @@ Alongside that, I build focused AI tools for **evaluation**, **decision capture*
 
 | | Project | What it solves | Stack |
 |---|---------|----------------|-------|
-| 🧵 | **[RoleWeave](https://github.com/VSBhargav5/RoleWeave)** `v0.37 beta · browser interface` | Reviewed AI application drafts, visual PDFs, job discovery, contact filling and source-verified recovery | Python · SQLite · CSS/SVG · MV3 · ReportLab |
+| 🧵 | **[RoleWeave](https://github.com/VSBhargav5/RoleWeave)** `v0.51.1 beta · browser interface` | Reviewed application drafts, visual PDFs, discovery, reusable answers, embedded-form filling and recovery | Python · SQLite · CSS/SVG · MV3 · ReportLab |
 | 🖥️ | **[StudyFrame](https://github.com/VSBhargav5/StudyFrame)** `v0.13 · Clear glass and ready models` | Rounded native frosted capsule, screen/voice, local speech and private setup; microphone/live AI quality still unverified | Python · PySide6 · unittest |
 | 🧾 | **[SettleTrace](https://github.com/VSBhargav5/SettleTrace)** `v0.3` | Exact-money exceptions, audited bank mappings, declared windows, and replayable evidence | Python · CSV · HTML/JSON · unittest |
 | 💥 | **[BlastPath](https://github.com/VSBhargav5/BlastPath)** `v0.2` | What breaks if this PR lands — **git blast-radius**, owners, snapshot Δ | Python · AST · Pydantic · Typer |
@@ -65,9 +65,9 @@ Alongside that, I build focused AI tools for **evaluation**, **decision capture*
 ### 🔭 Currently
 
 - **CueDesk is paused** after the screen-study iteration; real capture and live usefulness remain unverified.
-- 🖥️ **StudyFrame is active** — [v0.13 clear glass](https://github.com/VSBhargav5/StudyFrame/pull/18) adds saved0–90canvas tint and Clear/Full clear/Frosted/Readable presets; zero tint removes the interior shadow shade. Verified build-time US/Indian speech assets now make distributed packages model-ready. 180 native Windows tests and nine local frozen checks passed. Account401, personal accuracy/timing and manual unsigned-installer acceptance remain open. [Appearance evidence](https://github.com/VSBhargav5/StudyFrame/blob/main/docs/native-capsule.md#v013-configurable-clear-canvas).
-- **RoleWeave is paused as a local MVP** — [v0.37 document languages](https://github.com/VSBhargav5/RoleWeave/pull/48) remains shipped. Browser job discovery, reviewed application drafts, PDFs, contact filling and recovery are implemented; personal acceptance and connected live trials remain open.
-- 🧾 **SettleTrace paused at v0.3** while StudyFrame leads the sprint. [Verified shipped work](https://github.com/VSBhargav5/SettleTrace/pull/3) remains intact; completeness, real-account validation, and customer demand remain open.
+- 🖥️ **StudyFrame is paused** — [v0.13 clear glass](https://github.com/VSBhargav5/StudyFrame/pull/18) adds saved0–90canvas tint and Clear/Full clear/Frosted/Readable presets; zero tint removes the interior shadow shade. Verified build-time US/Indian speech assets now make distributed packages model-ready. 180 native Windows tests and nine local frozen checks passed. Account401, personal accuracy/timing and manual unsigned-installer acceptance remain open. [Appearance evidence](https://github.com/VSBhargav5/StudyFrame/blob/main/docs/native-capsule.md#v013-configurable-clear-canvas).
+- **RoleWeave is active** — [v0.51.1 workflow release](https://github.com/VSBhargav5/RoleWeave/pull/49) ships reusable reviewed answers with recovery, embedded-form filling, batch interview preparation and saved-search pages. Both six-job push and PR CI runs passed. Real employer-form compatibility, live model quality and personal acceptance remain unverified; submission stays manual.
+- 🧾 **SettleTrace paused at v0.3** while RoleWeave leads the sprint. [Verified shipped work](https://github.com/VSBhargav5/SettleTrace/pull/3) remains intact; completeness, real-account validation, and customer demand remain open.
 - 🛡️ **PromptGuard reliability sprint completed** — coverage gates, validated inputs, safe history, and CI reports. [Merged work](https://github.com/VSBhargav5/PromptGuard/pull/2)
 - 🔧 **Later: LMS pipeline reliability** — scoring invariants, duplicate/late-event handling, and recovery
 - 📌 [90-day engineering roadmap](docs/portfolio-roadmap.md) · [Build log and verification](docs/build-log.md)
